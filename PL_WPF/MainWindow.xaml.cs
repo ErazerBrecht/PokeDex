@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DAL_JSON;
 
 namespace PL_WPF
 {
@@ -27,6 +28,15 @@ namespace PL_WPF
             PokemonListBox.ItemsSource = ListPokemons;
 
         }
-        
+
+        private void PokemonListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (PokemonListBox.SelectedIndex >= 0)
+            {
+                var selectedPokemon = PokemonListBox.SelectedItem as JsonParse.Pokemon;
+                MainGrid.DataContext = selectedPokemon;
+
+            }
+        }
     }
 }
