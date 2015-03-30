@@ -1,0 +1,912 @@
+{Property1:
+[
+{
+  "pkdx_id": 1,
+  "name": "Bulbasaur",
+  "species": "seed pokemon",
+  "ImageURL": "http://img.pokemondb.net/artwork/bulbasaur.jpg",
+  "Description": "The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.",
+  "male_female_ratio": "87.5/12.5",
+  "weight": 69,
+  "height": 7,
+  "catch_rate": 0,
+  "evolutions": [
+    {
+      "Level": 16,
+      "Method": "level_up",
+      "To": "Ivysaur"
+    },
+    {
+      "Level": 32,
+      "Method": "level_up",
+      "To": "Venusaur"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "chlorophyll"
+    },
+    {
+      "name": "overgrow"
+    }
+  ],
+  "moves": [
+    {
+      "learn_type": "machine",
+      "Name": "Strength",
+      "level": 0,
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Flash",
+      "level": 0,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "description": "Lowers the target's accuracy by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Defense-curl",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "description": "Raises user's Defense by one stage.\n\nAfter this move is used, the power of ice-ball and rollout are doubled until the user leaves the field."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Headbutt",
+      "level": 0,
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Has a 30% chance to make the target flinch."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Substitute",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "Transfers 1/4 the user's max HP into a doll that absorbs damage and causes most negative move effects to fail.  If the user leaves the field, the doll will vanish.  If the user cannot pay the HP cost, this move will fail.\n\nThe doll takes damage as normal, using the user's stats and types, and will break when its HP reaches zero.  Self-inflicted damage from confusion or recoil is not absorbed.  Healing effects from opponents ignore the doll and heal the user as normal.  Moves that work based on the user's HP still do so; the doll's HP does not influence any move.\n\nThe doll will block major status effect-effects, confusion, and flinch.  The effects of smelling-salts and wake-up-slap do not trigger against a doll, even if the PokÃ©mon behind the doll has the appropriate major status effect-effect.  Multi-turn trapping moves like wrap will hit the doll for their regular damage, but the multi-turn trapping and damage effects will not activate.\n\nMoves blocked or damage absorbed by the doll do not count as hitting the user or inflicting damage for any effects that respond to such, e.g., avalanche, counter, or a rowap-berry.  magic-coat still works as normal, even against moves the doll would block.  Opposing PokÃ©mon that damage the doll with a leech move like absorb are healed as normal.\n\nIt will also block acupressure, block, the curse effect of curse, dream-eater, embargo, flatter, gastro-acid, grudge, heal-block, leech-seed, lock-on, mean-look, mimic, mind-reader, nightmare, pain-split, psycho-shift, spider-web, sketch, swagger, switcheroo, trick, worry-seed, and yawn.  A PokÃ©mon affected by yawn before summoning the doll will still fall to sleep.\n\nThe doll blocks intimidate, but all other abilities act as though the doll did not exist.  If the user has an ability that absorbs moves of a certain type for HP (such as volt-absorb absorbing thunder-wave), such moves will not be blocked.\n\nlife-orb and berries that cause confusion still work as normal, but their respective HP loss and confusion are absorbed/blocked by the doll.\n\nThe user is still vulnerable to damage inflicted when entering or leaving the field, such as by pursuit or spikes; however, the doll will block the poison effect of toxic-spikes.\n\nThe doll is passed on by baton-pass.  It keeps its existing HP, but uses the replacement PokÃ©mon's stats and types for damage calculation.\n\nAll other effects work as normal."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Rest",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "User falls to sleep and immediately regains all its HP.  If the user has another major status effect-effect, sleep will replace it.  The user will always wake up after two turns, or one turn with early-bird.\n\nThis move fail if the PokÃ©mon cannot fall asleep due to uproar, insomnia, or vital-spirit.  It also fails if the PokÃ©mon is at full health or is already asleep."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Bide",
+      "level": 0,
+      "accuracy": 0,
+      "power": 1,
+      "pp": 10,
+      "description": "User waits for two turns.  On the second turn, the user inflicts twice the damage it accumulated on the last PokÃ©mon to hit it.  Damage inflicted is typeless.\n\nThis move cannot be selected by sleep-talk."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Reflect",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "description": "Erects a barrier around the user's side of the field that reduces damage from physical attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Double-team",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "description": "Raises the user's evasion by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Mimic",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "This move is replaced by the target's last successfully used move, and its PP changes to 5.  If the target hasn't used a move since entering the field, if it tried to use a move this turn and failed, or if the user already knows the targeted move, this move will fail.  This effect vanishes when the user leaves the field.\n\nIf chatter, metronome, mimic, sketch, or struggle is selected, this move will fail.\n\nThis move cannot be copied by mirror-move, nor selected by assist or metronome, nor forced by encore."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Rage",
+      "level": 0,
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "description": "Inflicts regular damage.  Every time the user is hit after it uses this move but before its next action, its Attack raises by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Toxic",
+      "level": 0,
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
+      "description": "Badly poisons the target.  Never misses when used by a poison-type PokÃ©mon."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Sleep-powder",
+      "level": 41,
+      "accuracy": 75,
+      "power": 0,
+      "pp": 15,
+      "description": "Puts the target to sleep."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Poisonpowder",
+      "level": 20,
+      "accuracy": 75,
+      "power": 0,
+      "pp": 35,
+      "description": "Poisons the target."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Solarbeam",
+      "level": 48,
+      "accuracy": 100,
+      "power": 120,
+      "pp": 10,
+      "description": "Inflicts regular damage.  User charges for one turn before attacking.\n\nDuring sunny-day, the charge turn is skipped.\n\nDuring hail, rain-dance, or sandstorm, power is halved.\n\nThis move cannot be selected by sleep-talk."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Razor-leaf",
+      "level": 27,
+      "accuracy": 95,
+      "power": 55,
+      "pp": 25,
+      "description": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Growth",
+      "level": 34,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "description": "Raises the user's Attack and Special Attack by one stage each.  During sunny-day, raises both stats by two stages."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Leech-seed",
+      "level": 7,
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
+      "description": "Plants a seed on the target that drains 1/8 of its max HP at the end of every turn and heals the user for the amount taken.  Has no effect on grass PokÃ©mon.  The seed remains until the target leaves the field.\n\nThe user takes damage instead of being healed if the target has liquid-ooze.\n\nrapid-spin will remove this effect.\n\nThis effect is passed on by baton-pass."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Mega-drain",
+      "level": 0,
+      "accuracy": 100,
+      "power": 40,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Drains half the damage inflicted to heal the user."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Growl",
+      "level": 1,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 40,
+      "description": "Lowers the target's Attack by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Double-edge",
+      "level": 0,
+      "accuracy": 100,
+      "power": 120,
+      "pp": 15,
+      "description": "Inflicts regular damage.  User takes 1/3 the damage it inflicts in recoil."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Take-down",
+      "level": 0,
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "description": "Inflicts regular damage.  User takes 1/4 the damage it inflicts in recoil."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Body-slam",
+      "level": 0,
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Has a 30% chance to paralyze the target."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Tackle",
+      "level": 1,
+      "accuracy": 100,
+      "power": 50,
+      "pp": 35,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Vine-whip",
+      "level": 13,
+      "accuracy": 100,
+      "power": 35,
+      "pp": 15,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Cut",
+      "level": 0,
+      "accuracy": 95,
+      "power": 50,
+      "pp": 30,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Swords-dance",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 30,
+      "description": "Raises the user's Attack by two stages."
+    }
+  ],
+  "types": [
+    {
+      "Name": "poison"
+    },
+    {
+      "Name": "grass"
+    }
+  ],
+  "hp": 45,
+  "attack": 49,
+  "defense": 49,
+  "sp_atk": 65,
+  "sp_def": 65,
+  "speed": 45
+},
+{
+  "pkdx_id": 2,
+  "name": "Ivysaur",
+  "species": "",
+  "ImageURL": "http://img.pokemondb.net/artwork/ivysaur.jpg",
+  "Description": "The bulb on its back grows as it absorbs nutrients. The bulb gives off a pleasant aroma when it blooms.",
+  "male_female_ratio": "",
+  "weight": 130,
+  "height": 10,
+  "catch_rate": 0,
+  "evolutions": [
+    {
+      "Level": 32,
+      "Method": "level_up",
+      "To": "Venusaur"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "chlorophyll"
+    },
+    {
+      "name": "overgrow"
+    }
+  ],
+  "moves": [
+    {
+      "learn_type": "machine",
+      "Name": "Light-screen",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 30,
+      "description": "Erects a barrier around the user's side of the field that reduces damage from special attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Strength",
+      "level": 0,
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Flash",
+      "level": 0,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "description": "Lowers the target's accuracy by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Defense-curl",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "description": "Raises user's Defense by one stage.\n\nAfter this move is used, the power of ice-ball and rollout are doubled until the user leaves the field."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Headbutt",
+      "level": 0,
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Has a 30% chance to make the target flinch."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Substitute",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "Transfers 1/4 the user's max HP into a doll that absorbs damage and causes most negative move effects to fail.  If the user leaves the field, the doll will vanish.  If the user cannot pay the HP cost, this move will fail.\n\nThe doll takes damage as normal, using the user's stats and types, and will break when its HP reaches zero.  Self-inflicted damage from confusion or recoil is not absorbed.  Healing effects from opponents ignore the doll and heal the user as normal.  Moves that work based on the user's HP still do so; the doll's HP does not influence any move.\n\nThe doll will block major status effect-effects, confusion, and flinch.  The effects of smelling-salts and wake-up-slap do not trigger against a doll, even if the PokÃ©mon behind the doll has the appropriate major status effect-effect.  Multi-turn trapping moves like wrap will hit the doll for their regular damage, but the multi-turn trapping and damage effects will not activate.\n\nMoves blocked or damage absorbed by the doll do not count as hitting the user or inflicting damage for any effects that respond to such, e.g., avalanche, counter, or a rowap-berry.  magic-coat still works as normal, even against moves the doll would block.  Opposing PokÃ©mon that damage the doll with a leech move like absorb are healed as normal.\n\nIt will also block acupressure, block, the curse effect of curse, dream-eater, embargo, flatter, gastro-acid, grudge, heal-block, leech-seed, lock-on, mean-look, mimic, mind-reader, nightmare, pain-split, psycho-shift, spider-web, sketch, swagger, switcheroo, trick, worry-seed, and yawn.  A PokÃ©mon affected by yawn before summoning the doll will still fall to sleep.\n\nThe doll blocks intimidate, but all other abilities act as though the doll did not exist.  If the user has an ability that absorbs moves of a certain type for HP (such as volt-absorb absorbing thunder-wave), such moves will not be blocked.\n\nlife-orb and berries that cause confusion still work as normal, but their respective HP loss and confusion are absorbed/blocked by the doll.\n\nThe user is still vulnerable to damage inflicted when entering or leaving the field, such as by pursuit or spikes; however, the doll will block the poison effect of toxic-spikes.\n\nThe doll is passed on by baton-pass.  It keeps its existing HP, but uses the replacement PokÃ©mon's stats and types for damage calculation.\n\nAll other effects work as normal."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Rest",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "User falls to sleep and immediately regains all its HP.  If the user has another major status effect-effect, sleep will replace it.  The user will always wake up after two turns, or one turn with early-bird.\n\nThis move fail if the PokÃ©mon cannot fall asleep due to uproar, insomnia, or vital-spirit.  It also fails if the PokÃ©mon is at full health or is already asleep."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Bide",
+      "level": 0,
+      "accuracy": 0,
+      "power": 1,
+      "pp": 10,
+      "description": "User waits for two turns.  On the second turn, the user inflicts twice the damage it accumulated on the last PokÃ©mon to hit it.  Damage inflicted is typeless.\n\nThis move cannot be selected by sleep-talk."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Reflect",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "description": "Erects a barrier around the user's side of the field that reduces damage from physical attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Double-team",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "description": "Raises the user's evasion by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Mimic",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "This move is replaced by the target's last successfully used move, and its PP changes to 5.  If the target hasn't used a move since entering the field, if it tried to use a move this turn and failed, or if the user already knows the targeted move, this move will fail.  This effect vanishes when the user leaves the field.\n\nIf chatter, metronome, mimic, sketch, or struggle is selected, this move will fail.\n\nThis move cannot be copied by mirror-move, nor selected by assist or metronome, nor forced by encore."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Rage",
+      "level": 0,
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "description": "Inflicts regular damage.  Every time the user is hit after it uses this move but before its next action, its Attack raises by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Toxic",
+      "level": 0,
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
+      "description": "Badly poisons the target.  Never misses when used by a poison-type PokÃ©mon."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Sleep-powder",
+      "level": 46,
+      "accuracy": 75,
+      "power": 0,
+      "pp": 15,
+      "description": "Puts the target to sleep."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Poisonpowder",
+      "level": 22,
+      "accuracy": 75,
+      "power": 0,
+      "pp": 35,
+      "description": "Poisons the target."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Solarbeam",
+      "level": 54,
+      "accuracy": 100,
+      "power": 120,
+      "pp": 10,
+      "description": "Inflicts regular damage.  User charges for one turn before attacking.\n\nDuring sunny-day, the charge turn is skipped.\n\nDuring hail, rain-dance, or sandstorm, power is halved.\n\nThis move cannot be selected by sleep-talk."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Razor-leaf",
+      "level": 30,
+      "accuracy": 95,
+      "power": 55,
+      "pp": 25,
+      "description": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Growth",
+      "level": 38,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "description": "Raises the user's Attack and Special Attack by one stage each.  During sunny-day, raises both stats by two stages."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Leech-seed",
+      "level": 1,
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
+      "description": "Plants a seed on the target that drains 1/8 of its max HP at the end of every turn and heals the user for the amount taken.  Has no effect on grass PokÃ©mon.  The seed remains until the target leaves the field.\n\nThe user takes damage instead of being healed if the target has liquid-ooze.\n\nrapid-spin will remove this effect.\n\nThis effect is passed on by baton-pass."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Mega-drain",
+      "level": 0,
+      "accuracy": 100,
+      "power": 40,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Drains half the damage inflicted to heal the user."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Growl",
+      "level": 1,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 40,
+      "description": "Lowers the target's Attack by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Double-edge",
+      "level": 0,
+      "accuracy": 100,
+      "power": 120,
+      "pp": 15,
+      "description": "Inflicts regular damage.  User takes 1/3 the damage it inflicts in recoil."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Take-down",
+      "level": 0,
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "description": "Inflicts regular damage.  User takes 1/4 the damage it inflicts in recoil."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Body-slam",
+      "level": 0,
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Has a 30% chance to paralyze the target."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Tackle",
+      "level": 1,
+      "accuracy": 100,
+      "power": 50,
+      "pp": 35,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Vine-whip",
+      "level": 13,
+      "accuracy": 100,
+      "power": 35,
+      "pp": 15,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Cut",
+      "level": 0,
+      "accuracy": 95,
+      "power": 50,
+      "pp": 30,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Swords-dance",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 30,
+      "description": "Raises the user's Attack by two stages."
+    }
+  ],
+  "types": [
+    {
+      "Name": "poison"
+    },
+    {
+      "Name": "grass"
+    }
+  ],
+  "hp": 60,
+  "attack": 62,
+  "defense": 63,
+  "sp_atk": 80,
+  "sp_def": 80,
+  "speed": 60
+},
+{
+  "pkdx_id": 3,
+  "name": "Venusaur",
+  "species": "",
+  "ImageURL": "http://img.pokemondb.net/artwork/venusaur.jpg",
+  "Description": "It is able to con vert sunlight into energy. As a result, it is more powerful in the summertime.",
+  "male_female_ratio": "",
+  "weight": 1000,
+  "height": 20,
+  "catch_rate": 0,
+  "evolutions": [],
+  "abilities": [
+    {
+      "name": "chlorophyll"
+    },
+    {
+      "name": "overgrow"
+    }
+  ],
+  "moves": [
+    {
+      "learn_type": "machine",
+      "Name": "Light-screen",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 30,
+      "description": "Erects a barrier around the user's side of the field that reduces damage from special attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Petal-dance",
+      "level": 32,
+      "accuracy": 100,
+      "power": 120,
+      "pp": 10,
+      "description": "Inflicts regular damage.  User is forced to attack with this move for 2â€“3 turns,selected at random.  After the last hit, the user becomes confused.\n\nsafeguard does not protect against the confusion from this move."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Earthquake",
+      "level": 0,
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "description": "Inflicts regular damage.\n\nIf the target is in the first turn of dig, this move will hit with double power."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Strength",
+      "level": 0,
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Flash",
+      "level": 0,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "description": "Lowers the target's accuracy by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Defense-curl",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "description": "Raises user's Defense by one stage.\n\nAfter this move is used, the power of ice-ball and rollout are doubled until the user leaves the field."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Roar",
+      "level": 0,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "description": "Switch the target out for another of its trainer's PokÃ©mon selected at random.  Wild battles end immediately.\n\nDoesn't affect PokÃ©mon with suction-cups or under the effect of ingrain."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Headbutt",
+      "level": 0,
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Has a 30% chance to make the target flinch."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Substitute",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "Transfers 1/4 the user's max HP into a doll that absorbs damage and causes most negative move effects to fail.  If the user leaves the field, the doll will vanish.  If the user cannot pay the HP cost, this move will fail.\n\nThe doll takes damage as normal, using the user's stats and types, and will break when its HP reaches zero.  Self-inflicted damage from confusion or recoil is not absorbed.  Healing effects from opponents ignore the doll and heal the user as normal.  Moves that work based on the user's HP still do so; the doll's HP does not influence any move.\n\nThe doll will block major status effect-effects, confusion, and flinch.  The effects of smelling-salts and wake-up-slap do not trigger against a doll, even if the PokÃ©mon behind the doll has the appropriate major status effect-effect.  Multi-turn trapping moves like wrap will hit the doll for their regular damage, but the multi-turn trapping and damage effects will not activate.\n\nMoves blocked or damage absorbed by the doll do not count as hitting the user or inflicting damage for any effects that respond to such, e.g., avalanche, counter, or a rowap-berry.  magic-coat still works as normal, even against moves the doll would block.  Opposing PokÃ©mon that damage the doll with a leech move like absorb are healed as normal.\n\nIt will also block acupressure, block, the curse effect of curse, dream-eater, embargo, flatter, gastro-acid, grudge, heal-block, leech-seed, lock-on, mean-look, mimic, mind-reader, nightmare, pain-split, psycho-shift, spider-web, sketch, swagger, switcheroo, trick, worry-seed, and yawn.  A PokÃ©mon affected by yawn before summoning the doll will still fall to sleep.\n\nThe doll blocks intimidate, but all other abilities act as though the doll did not exist.  If the user has an ability that absorbs moves of a certain type for HP (such as volt-absorb absorbing thunder-wave), such moves will not be blocked.\n\nlife-orb and berries that cause confusion still work as normal, but their respective HP loss and confusion are absorbed/blocked by the doll.\n\nThe user is still vulnerable to damage inflicted when entering or leaving the field, such as by pursuit or spikes; however, the doll will block the poison effect of toxic-spikes.\n\nThe doll is passed on by baton-pass.  It keeps its existing HP, but uses the replacement PokÃ©mon's stats and types for damage calculation.\n\nAll other effects work as normal."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Rest",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "User falls to sleep and immediately regains all its HP.  If the user has another major status effect-effect, sleep will replace it.  The user will always wake up after two turns, or one turn with early-bird.\n\nThis move fail if the PokÃ©mon cannot fall asleep due to uproar, insomnia, or vital-spirit.  It also fails if the PokÃ©mon is at full health or is already asleep."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Bide",
+      "level": 0,
+      "accuracy": 0,
+      "power": 1,
+      "pp": 10,
+      "description": "User waits for two turns.  On the second turn, the user inflicts twice the damage it accumulated on the last PokÃ©mon to hit it.  Damage inflicted is typeless.\n\nThis move cannot be selected by sleep-talk."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Reflect",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "description": "Erects a barrier around the user's side of the field that reduces damage from physical attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Double-team",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "description": "Raises the user's evasion by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Mimic",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "description": "This move is replaced by the target's last successfully used move, and its PP changes to 5.  If the target hasn't used a move since entering the field, if it tried to use a move this turn and failed, or if the user already knows the targeted move, this move will fail.  This effect vanishes when the user leaves the field.\n\nIf chatter, metronome, mimic, sketch, or struggle is selected, this move will fail.\n\nThis move cannot be copied by mirror-move, nor selected by assist or metronome, nor forced by encore."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Rage",
+      "level": 0,
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "description": "Inflicts regular damage.  Every time the user is hit after it uses this move but before its next action, its Attack raises by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Toxic",
+      "level": 0,
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
+      "description": "Badly poisons the target.  Never misses when used by a poison-type PokÃ©mon."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Sleep-powder",
+      "level": 55,
+      "accuracy": 75,
+      "power": 0,
+      "pp": 15,
+      "description": "Puts the target to sleep."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Poisonpowder",
+      "level": 22,
+      "accuracy": 75,
+      "power": 0,
+      "pp": 35,
+      "description": "Poisons the target."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Solarbeam",
+      "level": 65,
+      "accuracy": 100,
+      "power": 120,
+      "pp": 10,
+      "description": "Inflicts regular damage.  User charges for one turn before attacking.\n\nDuring sunny-day, the charge turn is skipped.\n\nDuring hail, rain-dance, or sandstorm, power is halved.\n\nThis move cannot be selected by sleep-talk."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Razor-leaf",
+      "level": 30,
+      "accuracy": 95,
+      "power": 55,
+      "pp": 25,
+      "description": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Growth",
+      "level": 43,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "description": "Raises the user's Attack and Special Attack by one stage each.  During sunny-day, raises both stats by two stages."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Leech-seed",
+      "level": 1,
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
+      "description": "Plants a seed on the target that drains 1/8 of its max HP at the end of every turn and heals the user for the amount taken.  Has no effect on grass PokÃ©mon.  The seed remains until the target leaves the field.\n\nThe user takes damage instead of being healed if the target has liquid-ooze.\n\nrapid-spin will remove this effect.\n\nThis effect is passed on by baton-pass."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Mega-drain",
+      "level": 0,
+      "accuracy": 100,
+      "power": 40,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Drains half the damage inflicted to heal the user."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Hyper-beam",
+      "level": 0,
+      "accuracy": 90,
+      "power": 150,
+      "pp": 5,
+      "description": "Inflicts regular damage.  User loses its next turn to \"recharge\", and cannot attack or switch out during that turn."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Growl",
+      "level": 1,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 40,
+      "description": "Lowers the target's Attack by one stage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Double-edge",
+      "level": 0,
+      "accuracy": 100,
+      "power": 120,
+      "pp": 15,
+      "description": "Inflicts regular damage.  User takes 1/3 the damage it inflicts in recoil."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Take-down",
+      "level": 0,
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "description": "Inflicts regular damage.  User takes 1/4 the damage it inflicts in recoil."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Body-slam",
+      "level": 0,
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "description": "Inflicts regular damage.  Has a 30% chance to paralyze the target."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Tackle",
+      "level": 1,
+      "accuracy": 100,
+      "power": 50,
+      "pp": 35,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "level up",
+      "Name": "Vine-whip",
+      "level": 1,
+      "accuracy": 100,
+      "power": 35,
+      "pp": 15,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Cut",
+      "level": 0,
+      "accuracy": 95,
+      "power": 50,
+      "pp": 30,
+      "description": "Inflicts regular damage."
+    },
+    {
+      "learn_type": "machine",
+      "Name": "Swords-dance",
+      "level": 0,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 30,
+      "description": "Raises the user's Attack by two stages."
+    }
+  ],
+  "types": [
+    {
+      "Name": "poison"
+    },
+    {
+      "Name": "grass"
+    }
+  ],
+  "hp": 80,
+  "attack": 82,
+  "defense": 83,
+  "sp_atk": 100,
+  "sp_def": 100,
+  "speed": 80
+  }
+]
+}
