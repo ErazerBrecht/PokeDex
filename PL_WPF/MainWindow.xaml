@@ -1,6 +1,7 @@
-﻿<Window x:Class="PL_WPF.MainWindow"
+﻿<controls:MetroWindow x:Class="PL_WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         Title="MainWindow" WindowState="Maximized">
     <Grid>
         
@@ -41,8 +42,23 @@
                         <Image MaxHeight="250" Source="{Binding ImageURL}"></Image>
                     </GroupBox>
                     
-                    <StackPanel Grid.Column="1" Name="NameStackPanel">
-                        <TextBlock FontSize="18" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
+                    <StackPanel Margin="15,0,0,0" Grid.Column="1" Name="NameStackPanel">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="18" FontWeight="Bold" Text="Name: " Margin="0,0,10,0"></TextBlock>
+                            <TextBlock FontSize="18" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
+                        </StackPanel>
+                    <DockPanel Margin="0,15,0,0">
+                            <TextBlock  FontSize="18" FontWeight="Bold" Text="Types:" Margin="0,0,10,0"></TextBlock>
+                        <ListBox Name="TypesListBox">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock FontSize="18" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                    </DockPanel>    
+                        
+                        
                     </StackPanel>
                     
                     <GroupBox Grid.Column="2" Header="Information" Name="Information" >
@@ -85,4 +101,4 @@
         </Grid>
         
     </Grid>
-</Window>
+</controls:MetroWindow>
