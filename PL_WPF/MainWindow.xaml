@@ -29,7 +29,6 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
                     
                     <Grid.ColumnDefinitions>
@@ -113,10 +112,39 @@
 
                     </GroupBox>
                     
-                   
+                    
+                    <GroupBox  FontSize="16" Grid.Row="1" Header="Stats">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Margin="0,0,15,0">
+                                <TextBlock>HP</TextBlock>
+                                <TextBlock>Attack</TextBlock>
+                                <TextBlock>Defense</TextBlock>
+                                <TextBlock>SP. Attack</TextBlock>
+                                <TextBlock>SP. Defense</TextBlock>
+                                <TextBlock>Speed</TextBlock>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="{Binding Hp}"></TextBlock>
+                                <TextBlock Text="{Binding Attack}"></TextBlock>
+                                <TextBlock Text="{Binding Defense}"></TextBlock>
+                                <TextBlock Text="{Binding SpAttack}"></TextBlock>
+                                <TextBlock Text="{Binding SpDefense}"></TextBlock>
+                                <TextBlock Text="{Binding Speed}"></TextBlock>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+
                 </Grid>
             </GroupBox>
             
+
         </Grid>
         
     </Grid>
