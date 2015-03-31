@@ -115,29 +115,42 @@
                     
                     <GroupBox  FontSize="16" Grid.Row="1" Header="Stats">
                         <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                                 <ColumnDefinition Width="30"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             
-                            <StackPanel Margin="0,0,15,0">
                                 <TextBlock>HP</TextBlock>
-                                <TextBlock>Attack</TextBlock>
-                                <TextBlock>Defense</TextBlock>
-                                <TextBlock>SP. Attack</TextBlock>
-                                <TextBlock>SP. Defense</TextBlock>
-                                <TextBlock>Speed</TextBlock>
-                            </StackPanel>
+                                <TextBlock Grid.Row="1">Attack</TextBlock>
+                                <TextBlock Grid.Row="2">Defense</TextBlock>
+                                <TextBlock Grid.Row="3">SP. Attack</TextBlock>
+                                <TextBlock Grid.Row="4" Margin="0,0,15,0">SP. Defense</TextBlock>
+                                <TextBlock Grid.Row="5">Speed</TextBlock>
+
                             
-                            <StackPanel Grid.Column="1">
-                                <TextBlock Text="{Binding Hp}"></TextBlock>
-                                <TextBlock Text="{Binding Attack}"></TextBlock>
-                                <TextBlock Text="{Binding Defense}"></TextBlock>
-                                <TextBlock Text="{Binding SpAttack}"></TextBlock>
-                                <TextBlock Text="{Binding SpDefense}"></TextBlock>
-                                <TextBlock Text="{Binding Speed}"></TextBlock>
-                            </StackPanel>
+                            <TextBlock Grid.Column="1" Text="{Binding Hp}"></TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Attack}"></TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Defense}"></TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding SpAttack}"></TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding SpDefense}"></TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Speed}"></TextBlock>
+
+                            <ProgressBar Grid.Column="2" Maximum="250" Value="{Binding Hp}"></ProgressBar>
+                            <ProgressBar Grid.Row="1" Maximum="134" Grid.Column="2" Value="{Binding Attack}"></ProgressBar>
+                            <ProgressBar Grid.Row="2" Maximum="180" Grid.Column="2" Value="{Binding Defense}"></ProgressBar>
+                            <ProgressBar Grid.Row="3" Maximum="154" Grid.Column="2" Value="{Binding SpAttack}"></ProgressBar>
+                            <ProgressBar Grid.Row="4" Maximum="154" Grid.Column="2" Value="{Binding SpDefense}"></ProgressBar>
+                            <ProgressBar Grid.Row="5" Maximum="140" Grid.Column="2" Value="{Binding Speed}"></ProgressBar>
+
                         </Grid>
                     </GroupBox>
 
