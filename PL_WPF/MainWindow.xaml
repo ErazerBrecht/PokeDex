@@ -9,7 +9,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="6*"></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="1.5*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             
             <ListBox Name="PokemonListBox" SelectionChanged="PokemonListBox_OnSelectionChanged">
@@ -24,7 +24,7 @@
                 </ListBox.ItemTemplate>
             </ListBox>
             
-            <GroupBox Header="Information + Stats" Grid.Column="1" Name="StatsInfoGroupBox">
+            <GroupBox Header="Information + Stats" Grid.Column="1">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -72,7 +72,7 @@
 
 
                             <TextBlock Grid.Column="1" Grid.Row="0" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
-                                <ListBox Grid.Column="1" Grid.Row="1" Name="TypesListBox">
+                                <ListBox MinHeight="50" Grid.Column="1" Grid.Row="1" Name="TypesListBox">
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <TextBlock Padding="-4.5,0,0,0" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
@@ -157,6 +157,9 @@
                 </Grid>
             </GroupBox>
             
+            <GroupBox Header="Evolutions" Grid.Column="2">
+                <ListBox Name="EvolutionsListBox"></ListBox>
+            </GroupBox>
 
         </Grid>
         

@@ -53,10 +53,7 @@ namespace DAL_JSON
             public string MaleFemaleRatio { get; set; }
 
             [JsonProperty(PropertyName = "catch_rate")]
-            public int CatchRate { get; set; }
-
-
-
+            public double CatchRate { get; set; }
 
             public List<Evolution> Evolutions { get; set; }
             public List<Ability> Abilities { get; set; }
@@ -75,12 +72,6 @@ namespace DAL_JSON
             public int SpDefense { get; set; }
 
             public int Speed { get; set; }
-
-            public void SayHi()
-            {
-                Console.WriteLine(Name + " " + Pkdx_id);
-            }
-
         }
 
         public class Ability

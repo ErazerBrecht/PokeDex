@@ -26,7 +26,6 @@ namespace PL_WPF
             InitializeComponent();
             var ListPokemons = DAL_JSON.JsonParse.GetPokemons();
             PokemonListBox.ItemsSource = ListPokemons;
-
         }
 
         private void PokemonListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -36,6 +35,7 @@ namespace PL_WPF
                 var selectedPokemon = PokemonListBox.SelectedItem as JsonParse.Pokemon;
                 MainGrid.DataContext = selectedPokemon;
                 TypesListBox.ItemsSource = selectedPokemon.Types;
+                EvolutionsListBox.ItemsSource = selectedPokemon.Evolutions;
 
             }
         }
