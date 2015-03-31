@@ -42,56 +42,75 @@
                         <Image MaxHeight="250" Source="{Binding ImageURL}"></Image>
                     </GroupBox>
                     
-                    <StackPanel Margin="15,0,0,0" Grid.Column="1" Name="NameStackPanel">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontSize="18" FontWeight="Bold" Text="Name: " Margin="0,0,10,0"></TextBlock>
-                            <TextBlock FontSize="18" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
-                        </StackPanel>
-                    <DockPanel Margin="0,15,0,0">
-                            <TextBlock  FontSize="18" FontWeight="Bold" Text="Types:" Margin="0,0,10,0"></TextBlock>
-                        <ListBox Name="TypesListBox">
-                                <ListBox.ItemTemplate>
-                                    <DataTemplate>
-                                        <TextBlock FontSize="18" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
-                                    </DataTemplate>
-                                </ListBox.ItemTemplate>
-                            </ListBox>
-                    </DockPanel>    
-                        
-                        
-                    </StackPanel>
                     
-                    <GroupBox Grid.Column="2" Header="Information" Name="Information" >
-                        <StackPanel Orientation="Vertical">
-                            <TextBlock Text="Description:"></TextBlock>
-                            <TextBlock Text="{Binding Description}" Margin="0,0,0,15"></TextBlock>
+                    
+                    <GroupBox FontSize="16" Grid.Column="1" Grid.ColumnSpan="2" Header="Information" Name="Information" >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
                             
-                            <Grid Width="Auto">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
+                            <TextBlock Text="Name: " Margin="0,0,10,0"></TextBlock>
+                            <TextBlock Grid.Row="1" Text="Types:" Margin="0,0,10,0"></TextBlock>
 
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="Height:  "></TextBlock>
-                                    <TextBlock Text="Weight:  "></TextBlock>
-                                    <TextBlock Text="Catch Rate:  "></TextBlock>                   
-                                </StackPanel>
-                                
-                                <StackPanel Grid.Column="1" Orientation="Vertical">
-                                    <TextBlock Text="{Binding Height}"></TextBlock>
-                                    <TextBlock Text="{Binding Weight}"></TextBlock>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="{Binding CatchRate}"></TextBlock>
-                                        <TextBlock Text="%"></TextBlock>
-                                    </StackPanel>
-                                </StackPanel>
-                                
-
-                            </Grid>
+                            <TextBlock Grid.Row="2" Text="Description:" Margin="0,20,0,0"></TextBlock>
+                            <TextBlock Grid.Row="3" Text="Species:"></TextBlock>
+                            <TextBlock Grid.Row="4" Text="Height:"></TextBlock>
+                            <TextBlock Grid.Row="5" Text="Weight:"></TextBlock>
+                            <TextBlock Grid.Row="6" Text="Catch Rate:"></TextBlock>
+                            <TextBlock Grid.Row="7" Text="Sex Ratio:"></TextBlock>
 
 
-                        </StackPanel>
+                            <TextBlock Grid.Column="1" Grid.Row="0" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
+                                <ListBox Grid.Column="1" Grid.Row="1" Name="TypesListBox">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="-4.5,0,0,0" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+
+                            
+
+                                <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Description}" Margin="0,20,0,20" TextWrapping="Wrap"></TextBlock>
+
+                            <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding Species}"></TextBlock>
+                            <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal">
+                                <TextBlock Text="{Binding Height}"></TextBlock>
+                                <TextBlock Text="m"></TextBlock>
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1" Grid.Row="5" Orientation="Horizontal">
+                                <TextBlock Text="{Binding Weight}"></TextBlock>
+                                <TextBlock Text="kg"></TextBlock>
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1" Grid.Row="6" Orientation="Horizontal">
+                                <TextBlock Text="{Binding CatchRate}"></TextBlock>
+                                <TextBlock Text="%"></TextBlock>
+                            </StackPanel>
+
+                                <TextBlock Grid.Column="1" Grid.Row="7" Text="{Binding MaleFemaleRatio}"></TextBlock>
+
+
+                        </Grid>
+
+                                    
+                                    
+                                    
+                            
+
                     </GroupBox>
                     
                    

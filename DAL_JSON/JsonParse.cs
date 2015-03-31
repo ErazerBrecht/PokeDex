@@ -46,8 +46,8 @@ namespace DAL_JSON
             public string Species { get; set; }
             public string ImageURL { get; set; }
 
-            public int Weight { get; set; }
-            public int Height { get; set; }
+            public double Weight { get; set; }
+            public double Height { get; set; }
 
             [JsonProperty(PropertyName = "male_female_ratio")]
             public string MaleFemaleRatio { get; set; }

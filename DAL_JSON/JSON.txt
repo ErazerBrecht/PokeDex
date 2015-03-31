@@ -6,9 +6,9 @@
   "species": "seed pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/bulbasaur.jpg",
   "Description": "The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.",
-  "male_female_ratio": "87.5/12.5",
-  "weight": 69,
-  "height": 7,
+  "male_female_ratio": "Male: 87,5 Female: 12,5",
+  "weight": 6.9,
+  "height": 0.7,
   "catch_rate": 0,
   "evolutions": [
     {
@@ -277,10 +277,10 @@
   ],
   "types": [
     {
-      "Name": "poison"
+      "Name": "Poison"
     },
     {
-      "Name": "grass"
+      "Name": "Grass"
     }
   ],
   "hp": 45,
@@ -293,12 +293,12 @@
 {
   "pkdx_id": 2,
   "name": "Ivysaur",
-  "species": "",
+  "species": "seed pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/ivysaur.jpg",
   "Description": "The bulb on its back grows as it absorbs nutrients. The bulb gives off a pleasant aroma when it blooms.",
-  "male_female_ratio": "",
-  "weight": 130,
-  "height": 10,
+  "male_female_ratio": "Male: 87,5 Female: 12,5",
+  "weight": 13.0,
+  "height": 1.0,
   "catch_rate": 0,
   "evolutions": [
     {
@@ -571,10 +571,10 @@
   ],
   "types": [
     {
-      "Name": "poison"
+      "Name": "Poison"
     },
     {
-      "Name": "grass"
+      "Name": "Grass"
     }
   ],
   "hp": 60,
@@ -587,12 +587,12 @@
 {
   "pkdx_id": 3,
   "name": "Venusaur",
-  "species": "",
+  "species": "seed pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/venusaur.jpg",
   "Description": "It is able to con vert sunlight into energy. As a result, it is more powerful in the summertime.",
-  "male_female_ratio": "",
-  "weight": 1000,
-  "height": 20,
+  "male_female_ratio": "Male: 87,5 Female: 12,5",
+  "weight": 100.0,
+  "height": 2.0,
   "catch_rate": 0,
   "evolutions": [],
   "abilities": [
@@ -895,10 +895,10 @@
   ],
   "types": [
     {
-      "Name": "poison"
+      "Name": "Poison"
     },
     {
-      "Name": "grass"
+      "Name": "Grass"
     }
   ],
   "hp": 80,
@@ -907,6 +907,6 @@
   "sp_atk": 100,
   "sp_def": 100,
   "speed": 80
-  }
+},
 ]
 }
