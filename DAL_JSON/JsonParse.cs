@@ -58,6 +58,7 @@ namespace DAL_JSON
             public List<Evolution> Evolutions { get; set; }
             public List<Ability> Abilities { get; set; }
             public List<Move> Moves { get; set; }
+            public List<Move> Machines { get; set; }
             public List<Type> Types { get; set; }
 
             //Skills

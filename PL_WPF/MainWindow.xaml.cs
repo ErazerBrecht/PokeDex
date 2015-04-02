@@ -35,6 +35,8 @@ namespace PL_WPF
                 var selectedPokemon = PokemonListBox.SelectedItem as JsonParse.Pokemon;
                 MainGrid.DataContext = selectedPokemon;
                 TypesListBox.ItemsSource = selectedPokemon.Types;
+                MoveListBox.ItemsSource = selectedPokemon.Moves;
+                MachineListBox.ItemsSource = selectedPokemon.Machines;
                 EvolutionsListBox.ItemsSource = selectedPokemon.Evolutions;
 
             }
