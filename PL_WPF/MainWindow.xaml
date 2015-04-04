@@ -114,7 +114,7 @@
                     </GroupBox>
                     
                     
-                    <GroupBox  FontSize="16" Grid.Row="1" Header="Stats">
+                    <GroupBox  FontSize="16" Grid.Row="1" Grid.ColumnSpan="2" Header="Stats">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -195,7 +195,22 @@
             </GroupBox>
             
             <GroupBox Header="Evolutions" Grid.Column="2">
-                <ListBox Name="EvolutionsListBox"></ListBox>
+                <StackPanel>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding Name}"></TextBlock>
+                    <Image MaxHeight="90" Source="{Binding ImageURL}"></Image>
+                    <ListBox Name="EvolutionsListBox">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock HorizontalAlignment="Center" Margin="0,25,0,25" Text="{Binding Level}"></TextBlock>
+                                    <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
+                                    <Image MaxHeight="90" Source="{Binding ImageURL}"></Image>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+                
             </GroupBox>
 
         </Grid>

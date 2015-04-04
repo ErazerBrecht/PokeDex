@@ -104,6 +104,7 @@ namespace DAL_JSON
             public int Level { get; set; }
             public string Method { get; set; }
             public string To { get; set; }
+            public string ImageURL { get; set; }
         }
     }
 }

@@ -14,12 +14,16 @@
     {
       "Level": 16,
       "Method": "level_up",
-      "To": "Ivysaur"
+      "To": "Ivysaur",
+      "ImageURL": "http://img.pokemondb.net/artwork/ivysaur.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/2/"
     },
     {
       "Level": 32,
       "Method": "level_up",
-      "To": "Venusaur"
+      "To": "Venusaur",
+      "ImageURL": "http://img.pokemondb.net/artwork/venusaur.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/3/"
     }
   ],
   "abilities": [
@@ -306,7 +310,9 @@
     {
       "Level": 32,
       "Method": "level_up",
-      "To": "Venusaur"
+      "To": "Venusaur",
+      "ImageURL": "http://img.pokemondb.net/artwork/venusaur.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/3/"
     }
   ],
   "abilities": [
