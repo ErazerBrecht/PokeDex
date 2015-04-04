@@ -202,12 +202,12 @@
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel HorizontalAlignment="Center">
-                                    <Grid>
-                                        <Rectangle HorizontalAlignment="Center" Fill="Black" Stroke="Black" Height="30" Width="15"></Rectangle>
-                                        <TextBlock HorizontalAlignment="Center" Text="{Binding Level}" Margin="-1,6,0,0" Foreground="White" />
+                                    <Grid Margin="0,15,0,0">
+                                        <Rectangle HorizontalAlignment="Center" Fill="Black" Stroke="Black" Height="30" Width="20"></Rectangle>
+                                        <TextBlock HorizontalAlignment="Center" Text="{Binding Level}" Margin="0,6,0,0" Foreground="White" />
                                     </Grid>
-                                    <Polygon HorizontalAlignment="Center" Points="0,0 20,0, 10,20" Stroke="Black" Fill="Black" />
-                                    <TextBlock  Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
+                                    <Polygon Margin="1.75,0,0,15" HorizontalAlignment="Center" Points="0,0 30,0, 15,20" Stroke="Black" Fill="Black" />
+                                    <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
                                     <Image MaxHeight="90" Source="{Binding ImageURL}"></Image>
                                 </StackPanel>
                             </DataTemplate>
