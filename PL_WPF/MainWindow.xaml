@@ -201,9 +201,11 @@
                     <ListBox Name="EvolutionsListBox">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel>
-                                    <TextBlock HorizontalAlignment="Center" Margin="0,25,0,25" Text="{Binding Level}"></TextBlock>
-                                    <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
+                                <StackPanel HorizontalAlignment="Center">
+                                    <Rectangle HorizontalAlignment="Center" Fill="Black" Stroke="Black" Height="30" Width="10"></Rectangle>
+                                    <Polygon HorizontalAlignment="Center" Points="0,0 20,0, 10,20" Stroke="Black" Fill="Black" />
+                                    <TextBlock  Margin="0,25,0,25" Text="{Binding Level}"></TextBlock>
+                                    <TextBlock  Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
                                     <Image MaxHeight="90" Source="{Binding ImageURL}"></Image>
                                 </StackPanel>
                             </DataTemplate>
