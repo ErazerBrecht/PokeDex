@@ -1,0 +1,40 @@
+﻿<controls:MetroWindow x:Class="PL_WPF.Moves"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        Name="MainWindow"
+        Title="{Binding Name}" Height="140" Width="250" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="16"/>
+                </Style>
+            </StackPanel.Resources>
+            <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                <StackPanel>
+                    <TextBlock Text="Type"></TextBlock>
+                    <TextBlock Text="Power"></TextBlock>
+                    <TextBlock Text="Accuracy"></TextBlock>
+                    <TextBlock Text="PP"></TextBlock>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="{Binding Type}"></TextBlock>
+                    <TextBlock Text="{Binding Power}"></TextBlock>
+                    <TextBlock Text="{Binding Accuracy}"></TextBlock>
+                    <TextBlock Text="{Binding PP}"></TextBlock>
+                </StackPanel>
+            </Grid>
+                
+                
+                
+                    
+            </StackPanel>
+    </Grid>
+</controls:MetroWindow>

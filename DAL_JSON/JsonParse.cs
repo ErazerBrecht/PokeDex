@@ -57,8 +57,8 @@ namespace DAL_JSON
 
             public List<Evolution> Evolutions { get; set; }
             public List<Ability> Abilities { get; set; }
-            public List<Move> Moves { get; set; }
-            public List<Move> Machines { get; set; }
+            public List<Move> MovesWeb { get; set; }
+            public List<Move> MachinesWeb { get; set; }
             public List<Type> Types { get; set; }
 
             //Skills
@@ -82,16 +82,18 @@ namespace DAL_JSON
 
         public class Move
         {
-            [JsonProperty(PropertyName = "learn_type")]
-            public string LearnType { get; set; }
+
+            //[JsonProperty(PropertyName = "learn_type")]
+            //public string LearnType { get; set; }
 
             public string Name { get; set; }
 
-            public int Level { get; set; }
+            public string Level { get; set; }
             public int Accuracy { get; set; }
             public int Power { get; set; }
             public int PP { get; set; }
-            public string Description { get; set; }
+            public string Type { get; set; }
+            //public string Description { get; set; }
         }
 
         public class Type

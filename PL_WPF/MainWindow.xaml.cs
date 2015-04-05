@@ -35,10 +35,22 @@ namespace PL_WPF
                 var selectedPokemon = PokemonListBox.SelectedItem as JsonParse.Pokemon;
                 MainGrid.DataContext = selectedPokemon;
                 TypesListBox.ItemsSource = selectedPokemon.Types;
-                MoveListBox.ItemsSource = selectedPokemon.Moves;
-                MachineListBox.ItemsSource = selectedPokemon.Machines;
+                MoveListBox.ItemsSource = selectedPokemon.MovesWeb;
+                MachineListBox.ItemsSource = selectedPokemon.MachinesWeb;
                 EvolutionsListBox.ItemsSource = selectedPokemon.Evolutions;
+                AbilityListBox.ItemsSource = selectedPokemon.Abilities;
 
+            }
+        }
+
+        private void MoveListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (MoveListBox.SelectedIndex >= 0)
+            {
+                var list = sender as ListBox;
+                var selectedMove = list.SelectedItem as JsonParse.Move;
+                var registerwindow = new Moves(selectedMove);
+                registerwindow.Show();
             }
         }
     }

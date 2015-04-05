@@ -34,251 +34,200 @@
       "name": "overgrow"
     }
   ],
-  "moves": [
+  "MovesWeb": [
     {
-      "learn_type": "level up",
       "Name": "Tackle",
-      "level": 1,
-      "accuracy": 100,
-      "power": 50,
+      "level": "Start",
+      "accuracy": 95,
+      "power": 35,
       "pp": 35,
-      "description": "Inflicts regular damage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
       "Name": "Growl",
-      "level": 1,
+      "level": "Start",
       "accuracy": 100,
       "power": 0,
       "pp": 40,
-      "description": "Lowers the target's Attack by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
-      "Name": "Leech-seed",
-      "level": 7,
+      "Name": "LeechSeed",
+      "level": "7",
       "accuracy": 90,
       "power": 0,
       "pp": 10,
-      "description": "Plants a seed on the target that drains 1/8 of its max HP at the end of every turn and heals the user for the amount taken.  Has no effect on grass PokÃ©mon.  The seed remains until the target leaves the field.\n\nThe user takes damage instead of being healed if the target has liquid-ooze.\n\nrapid-spin will remove this effect.\n\nThis effect is passed on by baton-pass."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Vine-whip",
-      "level": 13,
+      "Name": "VineWhip",
+      "level": "13",
       "accuracy": 100,
       "power": 35,
-      "pp": 15,
-      "description": "Inflicts regular damage."
+      "pp": 10,
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Poisonpowder",
-      "level": 20,
+      "Name": "PoisonPowder",
+      "level": "20",
       "accuracy": 75,
       "power": 0,
       "pp": 35,
-      "description": "Poisons the target."
+      "Type": "Poison"
     },
     {
-      "learn_type": "level up",
-      "Name": "Razor-leaf",
-      "level": 27,
+      "Name": "RazorLeaf",
+      "level": "27",
       "accuracy": 95,
       "power": 55,
       "pp": 25,
-      "description": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
       "Name": "Growth",
-      "level": 34,
+      "level": "34",
       "accuracy": 0,
       "power": 0,
       "pp": 40,
-      "description": "Raises the user's Attack and Special Attack by one stage each.  During sunny-day, raises both stats by two stages."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
-      "Name": "Sleep-powder",
-      "level": 41,
+      "Name": "SleepPowder",
+      "level": "41",
       "accuracy": 75,
       "power": 0,
       "pp": 15,
-      "description": "Puts the target to sleep."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Solarbeam",
-      "level": 48,
+      "Name": "SolarBeam",
+      "level": "48",
       "accuracy": 100,
       "power": 120,
       "pp": 10,
-      "description": "Inflicts regular damage.  User charges for one turn before attacking.\n\nDuring sunny-day, the charge turn is skipped.\n\nDuring hail, rain-dance, or sandstorm, power is halved.\n\nThis move cannot be selected by sleep-talk."
+      "Type": "Grass"
     }
   ],
-  "machines": [
+  "MachinesWeb": [
     {
-      "learn_type": "machine",
-      "Name": "Swords-dance",
-      "level": 0,
+      "Name": "SwordsDance",
+      "level": "TM03",
       "accuracy": 0,
       "power": 0,
       "pp": 30,
-      "description": "Raises the user's Attack by two stages."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Cut",
-      "level": 0,
-      "accuracy": 95,
-      "power": 50,
-      "pp": 30,
-      "description": "Inflicts regular damage."
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
     },
     {
-      "learn_type": "machine",
-      "Name": "Body-slam",
-      "level": 0,
+      "Name": "BodySlam",
+      "level": "TM08",
       "accuracy": 100,
       "power": 85,
       "pp": 15,
-      "description": "Inflicts regular damage.  Has a 30% chance to paralyze the target."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Take-down",
-      "level": 0,
+      "Name": "TakeDown",
+      "level": "TM09",
       "accuracy": 85,
       "power": 90,
       "pp": 20,
-      "description": "Inflicts regular damage.  User takes 1/4 the damage it inflicts in recoil."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Double-edge",
-      "level": 0,
+      "Name": "Double-Edge",
+      "level": "TM10",
       "accuracy": 100,
-      "power": 120,
+      "power": 100,
       "pp": 15,
-      "description": "Inflicts regular damage.  User takes 1/3 the damage it inflicts in recoil."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Mega-drain",
-      "level": 0,
-      "accuracy": 100,
-      "power": 40,
-      "pp": 15,
-      "description": "Inflicts regular damage.  Drains half the damage inflicted to heal the user."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Toxic",
-      "level": 0,
-      "accuracy": 90,
-      "power": 0,
-      "pp": 10,
-      "description": "Badly poisons the target.  Never misses when used by a poison-type PokÃ©mon."
-    },
-    {
-      "learn_type": "machine",
       "Name": "Rage",
-      "level": 0,
+      "level": "TM20",
       "accuracy": 100,
       "power": 20,
       "pp": 20,
-      "description": "Inflicts regular damage.  Every time the user is hit after it uses this move but before its next action, its Attack raises by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
+      "Name": "MegaDrain",
+      "level": "TM21",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
+      "Name": "SolarBeam",
+      "level": "TM22",
+      "accuracy": 100,
+      "power": 120,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
       "Name": "Mimic",
-      "level": 0,
+      "level": "TM31",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "This move is replaced by the target's last successfully used move, and its PP changes to 5.  If the target hasn't used a move since entering the field, if it tried to use a move this turn and failed, or if the user already knows the targeted move, this move will fail.  This effect vanishes when the user leaves the field.\n\nIf chatter, metronome, mimic, sketch, or struggle is selected, this move will fail.\n\nThis move cannot be copied by mirror-move, nor selected by assist or metronome, nor forced by encore."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Double-team",
-      "level": 0,
+      "Name": "DoubleTeam",
+      "level": "TM32",
       "accuracy": 0,
       "power": 0,
       "pp": 15,
-      "description": "Raises the user's evasion by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
       "Name": "Reflect",
-      "level": 0,
+      "level": "TM33",
       "accuracy": 0,
       "power": 0,
       "pp": 20,
-      "description": "Erects a barrier around the user's side of the field that reduces damage from physical attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+      "Type": "Psychic"
     },
     {
-      "learn_type": "machine",
       "Name": "Bide",
-      "level": 0,
-      "accuracy": 0,
-      "power": 1,
+      "level": "TM34",
+      "accuracy": 100,
+      "power": 0,
       "pp": 10,
-      "description": "User waits for two turns.  On the second turn, the user inflicts twice the damage it accumulated on the last PokÃ©mon to hit it.  Damage inflicted is typeless.\n\nThis move cannot be selected by sleep-talk."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
       "Name": "Rest",
-      "level": 0,
+      "level": "TM44",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "User falls to sleep and immediately regains all its HP.  If the user has another major status effect-effect, sleep will replace it.  The user will always wake up after two turns, or one turn with early-bird.\n\nThis move fail if the PokÃ©mon cannot fall asleep due to uproar, insomnia, or vital-spirit.  It also fails if the PokÃ©mon is at full health or is already asleep."
+      "Type": "Psychic"
     },
     {
-      "learn_type": "machine",
       "Name": "Substitute",
-      "level": 0,
+      "level": "TM50",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "Transfers 1/4 the user's max HP into a doll that absorbs damage and causes most negative move effects to fail.  If the user leaves the field, the doll will vanish.  If the user cannot pay the HP cost, this move will fail.\n\nThe doll takes damage as normal, using the user's stats and types, and will break when its HP reaches zero.  Self-inflicted damage from confusion or recoil is not absorbed.  Healing effects from opponents ignore the doll and heal the user as normal.  Moves that work based on the user's HP still do so; the doll's HP does not influence any move.\n\nThe doll will block major status effect-effects, confusion, and flinch.  The effects of smelling-salts and wake-up-slap do not trigger against a doll, even if the PokÃ©mon behind the doll has the appropriate major status effect-effect.  Multi-turn trapping moves like wrap will hit the doll for their regular damage, but the multi-turn trapping and damage effects will not activate.\n\nMoves blocked or damage absorbed by the doll do not count as hitting the user or inflicting damage for any effects that respond to such, e.g., avalanche, counter, or a rowap-berry.  magic-coat still works as normal, even against moves the doll would block.  Opposing PokÃ©mon that damage the doll with a leech move like absorb are healed as normal.\n\nIt will also block acupressure, block, the curse effect of curse, dream-eater, embargo, flatter, gastro-acid, grudge, heal-block, leech-seed, lock-on, mean-look, mimic, mind-reader, nightmare, pain-split, psycho-shift, spider-web, sketch, swagger, switcheroo, trick, worry-seed, and yawn.  A PokÃ©mon affected by yawn before summoning the doll will still fall to sleep.\n\nThe doll blocks intimidate, but all other abilities act as though the doll did not exist.  If the user has an ability that absorbs moves of a certain type for HP (such as volt-absorb absorbing thunder-wave), such moves will not be blocked.\n\nlife-orb and berries that cause confusion still work as normal, but their respective HP loss and confusion are absorbed/blocked by the doll.\n\nThe user is still vulnerable to damage inflicted when entering or leaving the field, such as by pursuit or spikes; however, the doll will block the poison effect of toxic-spikes.\n\nThe doll is passed on by baton-pass.  It keeps its existing HP, but uses the replacement PokÃ©mon's stats and types for damage calculation.\n\nAll other effects work as normal."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Headbutt",
-      "level": 0,
-      "accuracy": 100,
-      "power": 70,
-      "pp": 15,
-      "description": "Inflicts regular damage.  Has a 30% chance to make the target flinch."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Defense-curl",
-      "level": 0,
-      "accuracy": 0,
-      "power": 0,
-      "pp": 40,
-      "description": "Raises user's Defense by one stage.\n\nAfter this move is used, the power of ice-ball and rollout are doubled until the user leaves the field."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Flash",
-      "level": 0,
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "description": "Lowers the target's accuracy by one stage."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Strength",
-      "level": 0,
-      "accuracy": 100,
-      "power": 80,
-      "pp": 15,
-      "description": "Inflicts regular damage."
+      "Name": "Cut",
+      "level": "HM01",
+      "accuracy": 95,
+      "power": 50,
+      "pp": 30,
+      "Type": "Normal"
     }
   ],
   "types": [
@@ -323,260 +272,208 @@
       "name": "overgrow"
     }
   ],
-  "moves": [
+  "MovesWeb": [
     {
-      "learn_type": "level up",
       "Name": "Tackle",
-      "level": 1,
-      "accuracy": 100,
-      "power": 50,
+      "level": "Start",
+      "accuracy": 95,
+      "power": 35,
       "pp": 35,
-      "description": "Inflicts regular damage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
       "Name": "Growl",
-      "level": 1,
+      "level": "Start",
       "accuracy": 100,
       "power": 0,
       "pp": 40,
-      "description": "Lowers the target's Attack by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
-      "Name": "Leech-seed",
-      "level": 1,
+      "Name": "LeechSeed",
+      "level": "Start",
       "accuracy": 90,
       "power": 0,
       "pp": 10,
-      "description": "Plants a seed on the target that drains 1/8 of its max HP at the end of every turn and heals the user for the amount taken.  Has no effect on grass PokÃ©mon.  The seed remains until the target leaves the field.\n\nThe user takes damage instead of being healed if the target has liquid-ooze.\n\nrapid-spin will remove this effect.\n\nThis effect is passed on by baton-pass."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Vine-whip",
-      "level": 13,
+      "Name": "LeechSeed",
+      "level": "7",
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
+      "Name": "VineWhip",
+      "level": "13",
       "accuracy": 100,
       "power": 35,
-      "pp": 15,
-      "description": "Inflicts regular damage."
+      "pp": 10,
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Poisonpowder",
-      "level": 22,
+      "Name": "PoisonPowder",
+      "level": "22",
       "accuracy": 75,
       "power": 0,
       "pp": 35,
-      "description": "Poisons the target."
+      "Type": "Poison"
     },
     {
-      "learn_type": "level up",
-      "Name": "Razor-leaf",
-      "level": 30,
+      "Name": "RazorLeaf",
+      "level": "30",
       "accuracy": 95,
       "power": 55,
       "pp": 25,
-      "description": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
       "Name": "Growth",
-      "level": 38,
+      "level": "38",
       "accuracy": 0,
       "power": 0,
       "pp": 40,
-      "description": "Raises the user's Attack and Special Attack by one stage each.  During sunny-day, raises both stats by two stages."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
-      "Name": "Sleep-powder",
-      "level": 46,
+      "Name": "SleepPowder",
+      "level": "46",
       "accuracy": 75,
       "power": 0,
       "pp": 15,
-      "description": "Puts the target to sleep."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Solarbeam",
-      "level": 54,
+      "Name": "SolarBeam",
+      "level": "54",
       "accuracy": 100,
       "power": 120,
       "pp": 10,
-      "description": "Inflicts regular damage.  User charges for one turn before attacking.\n\nDuring sunny-day, the charge turn is skipped.\n\nDuring hail, rain-dance, or sandstorm, power is halved.\n\nThis move cannot be selected by sleep-talk."
+      "Type": "Grass"
     }
   ],
-  "machines": [
+  "MachinesWeb": [
     {
-      "learn_type": "machine",
-      "Name": "Swords-dance",
-      "level": 0,
+      "Name": "SwordsDance",
+      "level": "TM03",
       "accuracy": 0,
       "power": 0,
       "pp": 30,
-      "description": "Raises the user's Attack by two stages."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Cut",
-      "level": 0,
-      "accuracy": 95,
-      "power": 50,
-      "pp": 30,
-      "description": "Inflicts regular damage."
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
     },
     {
-      "learn_type": "machine",
-      "Name": "Body-slam",
-      "level": 0,
+      "Name": "BodySlam",
+      "level": "TM08",
       "accuracy": 100,
       "power": 85,
       "pp": 15,
-      "description": "Inflicts regular damage.  Has a 30% chance to paralyze the target."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Take-down",
-      "level": 0,
+      "Name": "TakeDown",
+      "level": "TM09",
       "accuracy": 85,
       "power": 90,
       "pp": 20,
-      "description": "Inflicts regular damage.  User takes 1/4 the damage it inflicts in recoil."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Double-edge",
-      "level": 0,
+      "Name": "Double-Edge",
+      "level": "TM10",
       "accuracy": 100,
-      "power": 120,
+      "power": 100,
       "pp": 15,
-      "description": "Inflicts regular damage.  User takes 1/3 the damage it inflicts in recoil."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Mega-drain",
-      "level": 0,
-      "accuracy": 100,
-      "power": 40,
-      "pp": 15,
-      "description": "Inflicts regular damage.  Drains half the damage inflicted to heal the user."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Toxic",
-      "level": 0,
-      "accuracy": 90,
-      "power": 0,
-      "pp": 10,
-      "description": "Badly poisons the target.  Never misses when used by a poison-type PokÃ©mon."
-    },
-    {
-      "learn_type": "machine",
       "Name": "Rage",
-      "level": 0,
+      "level": "TM20",
       "accuracy": 100,
       "power": 20,
       "pp": 20,
-      "description": "Inflicts regular damage.  Every time the user is hit after it uses this move but before its next action, its Attack raises by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
+      "Name": "MegaDrain",
+      "level": "TM21",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
+      "Name": "SolarBeam",
+      "level": "TM22",
+      "accuracy": 100,
+      "power": 120,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
       "Name": "Mimic",
-      "level": 0,
+      "level": "TM31",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "This move is replaced by the target's last successfully used move, and its PP changes to 5.  If the target hasn't used a move since entering the field, if it tried to use a move this turn and failed, or if the user already knows the targeted move, this move will fail.  This effect vanishes when the user leaves the field.\n\nIf chatter, metronome, mimic, sketch, or struggle is selected, this move will fail.\n\nThis move cannot be copied by mirror-move, nor selected by assist or metronome, nor forced by encore."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Double-team",
-      "level": 0,
+      "Name": "DoubleTeam",
+      "level": "TM32",
       "accuracy": 0,
       "power": 0,
       "pp": 15,
-      "description": "Raises the user's evasion by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
       "Name": "Reflect",
-      "level": 0,
+      "level": "TM33",
       "accuracy": 0,
       "power": 0,
       "pp": 20,
-      "description": "Erects a barrier around the user's side of the field that reduces damage from physical attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+      "Type": "Psychic"
     },
     {
-      "learn_type": "machine",
       "Name": "Bide",
-      "level": 0,
+      "level": "TM34",
       "accuracy": 0,
-      "power": 1,
+      "power": 0,
       "pp": 10,
-      "description": "User waits for two turns.  On the second turn, the user inflicts twice the damage it accumulated on the last PokÃ©mon to hit it.  Damage inflicted is typeless.\n\nThis move cannot be selected by sleep-talk."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
       "Name": "Rest",
-      "level": 0,
+      "level": "TM44",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "User falls to sleep and immediately regains all its HP.  If the user has another major status effect-effect, sleep will replace it.  The user will always wake up after two turns, or one turn with early-bird.\n\nThis move fail if the PokÃ©mon cannot fall asleep due to uproar, insomnia, or vital-spirit.  It also fails if the PokÃ©mon is at full health or is already asleep."
+      "Type": "Psychic"
     },
     {
-      "learn_type": "machine",
       "Name": "Substitute",
-      "level": 0,
+      "level": "TM50",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "Transfers 1/4 the user's max HP into a doll that absorbs damage and causes most negative move effects to fail.  If the user leaves the field, the doll will vanish.  If the user cannot pay the HP cost, this move will fail.\n\nThe doll takes damage as normal, using the user's stats and types, and will break when its HP reaches zero.  Self-inflicted damage from confusion or recoil is not absorbed.  Healing effects from opponents ignore the doll and heal the user as normal.  Moves that work based on the user's HP still do so; the doll's HP does not influence any move.\n\nThe doll will block major status effect-effects, confusion, and flinch.  The effects of smelling-salts and wake-up-slap do not trigger against a doll, even if the PokÃ©mon behind the doll has the appropriate major status effect-effect.  Multi-turn trapping moves like wrap will hit the doll for their regular damage, but the multi-turn trapping and damage effects will not activate.\n\nMoves blocked or damage absorbed by the doll do not count as hitting the user or inflicting damage for any effects that respond to such, e.g., avalanche, counter, or a rowap-berry.  magic-coat still works as normal, even against moves the doll would block.  Opposing PokÃ©mon that damage the doll with a leech move like absorb are healed as normal.\n\nIt will also block acupressure, block, the curse effect of curse, dream-eater, embargo, flatter, gastro-acid, grudge, heal-block, leech-seed, lock-on, mean-look, mimic, mind-reader, nightmare, pain-split, psycho-shift, spider-web, sketch, swagger, switcheroo, trick, worry-seed, and yawn.  A PokÃ©mon affected by yawn before summoning the doll will still fall to sleep.\n\nThe doll blocks intimidate, but all other abilities act as though the doll did not exist.  If the user has an ability that absorbs moves of a certain type for HP (such as volt-absorb absorbing thunder-wave), such moves will not be blocked.\n\nlife-orb and berries that cause confusion still work as normal, but their respective HP loss and confusion are absorbed/blocked by the doll.\n\nThe user is still vulnerable to damage inflicted when entering or leaving the field, such as by pursuit or spikes; however, the doll will block the poison effect of toxic-spikes.\n\nThe doll is passed on by baton-pass.  It keeps its existing HP, but uses the replacement PokÃ©mon's stats and types for damage calculation.\n\nAll other effects work as normal."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Headbutt",
-      "level": 0,
-      "accuracy": 100,
-      "power": 70,
-      "pp": 15,
-      "description": "Inflicts regular damage.  Has a 30% chance to make the target flinch."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Defense-curl",
-      "level": 0,
-      "accuracy": 0,
-      "power": 0,
-      "pp": 40,
-      "description": "Raises user's Defense by one stage.\n\nAfter this move is used, the power of ice-ball and rollout are doubled until the user leaves the field."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Flash",
-      "level": 0,
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "description": "Lowers the target's accuracy by one stage."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Strength",
-      "level": 0,
-      "accuracy": 100,
-      "power": 80,
-      "pp": 15,
-      "description": "Inflicts regular damage."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Light-screen",
-      "level": 0,
-      "accuracy": 0,
-      "power": 0,
+      "Name": "Cut",
+      "level": "HM01",
+      "accuracy": 95,
+      "power": 50,
       "pp": 30,
-      "description": "Erects a barrier around the user's side of the field that reduces damage from special attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+      "Type": "Normal"
     }
   ],
   "types": [
@@ -613,296 +510,224 @@
       "name": "overgrow"
     }
   ],
-  "moves": [
+  "MovesWeb": [
     {
-      "learn_type": "level up",
-      "Name": "Vine-whip",
-      "level": 1,
-      "accuracy": 100,
-      "power": 35,
-      "pp": 15,
-      "description": "Inflicts regular damage."
-    },
-    {
-      "learn_type": "level up",
       "Name": "Tackle",
-      "level": 1,
-      "accuracy": 100,
-      "power": 50,
+      "level": "Start",
+      "accuracy": 95,
+      "power": 35,
       "pp": 35,
-      "description": "Inflicts regular damage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
       "Name": "Growl",
-      "level": 1,
+      "level": "Start",
       "accuracy": 100,
       "power": 0,
       "pp": 40,
-      "description": "Lowers the target's Attack by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
-      "Name": "Leech-seed",
-      "level": 1,
+      "Name": "LeechSeed",
+      "level": "Start",
       "accuracy": 90,
       "power": 0,
       "pp": 10,
-      "description": "Plants a seed on the target that drains 1/8 of its max HP at the end of every turn and heals the user for the amount taken.  Has no effect on grass PokÃ©mon.  The seed remains until the target leaves the field.\n\nThe user takes damage instead of being healed if the target has liquid-ooze.\n\nrapid-spin will remove this effect.\n\nThis effect is passed on by baton-pass."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Poisonpowder",
-      "level": 22,
+      "Name": "VineWhip",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 35,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
+      "Name": "LeechSeed",
+      "level": "7",
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
+      "Name": "VineWhip",
+      "level": "13",
+      "accuracy": 100,
+      "power": 35,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
+      "Name": "PoisonPowder",
+      "level": "22",
       "accuracy": 75,
       "power": 0,
       "pp": 35,
-      "description": "Poisons the target."
+      "Type": "Poison"
     },
     {
-      "learn_type": "level up",
-      "Name": "Razor-leaf",
-      "level": 30,
+      "Name": "RazorLeaf",
+      "level": "30",
       "accuracy": 95,
       "power": 55,
       "pp": 25,
-      "description": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Petal-dance",
-      "level": 32,
-      "accuracy": 100,
-      "power": 120,
-      "pp": 10,
-      "description": "Inflicts regular damage.  User is forced to attack with this move for 2â€“3 turns,selected at random.  After the last hit, the user becomes confused.\n\nsafeguard does not protect against the confusion from this move."
-    },
-    {
-      "learn_type": "level up",
       "Name": "Growth",
-      "level": 43,
+      "level": "43",
       "accuracy": 0,
       "power": 0,
       "pp": 40,
-      "description": "Raises the user's Attack and Special Attack by one stage each.  During sunny-day, raises both stats by two stages."
+      "Type": "Normal"
     },
     {
-      "learn_type": "level up",
-      "Name": "Sleep-powder",
-      "level": 55,
+      "Name": "SleepPowder",
+      "level": "55",
       "accuracy": 75,
       "power": 0,
       "pp": 15,
-      "description": "Puts the target to sleep."
+      "Type": "Grass"
     },
     {
-      "learn_type": "level up",
-      "Name": "Solarbeam",
-      "level": 65,
+      "Name": "SolarBeam",
+      "level": "65",
       "accuracy": 100,
       "power": 120,
       "pp": 10,
-      "description": "Inflicts regular damage.  User charges for one turn before attacking.\n\nDuring sunny-day, the charge turn is skipped.\n\nDuring hail, rain-dance, or sandstorm, power is halved.\n\nThis move cannot be selected by sleep-talk."
+      "Type": "Grass"
     }
   ],
-  "machines": [
+  "MachinesWeb": [
     {
-      "learn_type": "machine",
-      "Name": "Swords-dance",
-      "level": 0,
+      "Name": "SwordsDance",
+      "level": "TM03",
       "accuracy": 0,
       "power": 0,
       "pp": 30,
-      "description": "Raises the user's Attack by two stages."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Cut",
-      "level": 0,
-      "accuracy": 95,
-      "power": 50,
-      "pp": 30,
-      "description": "Inflicts regular damage."
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
     },
     {
-      "learn_type": "machine",
-      "Name": "Body-slam",
-      "level": 0,
+      "Name": "BodySlam",
+      "level": "TM08",
       "accuracy": 100,
       "power": 85,
       "pp": 15,
-      "description": "Inflicts regular damage.  Has a 30% chance to paralyze the target."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Take-down",
-      "level": 0,
+      "Name": "TakeDown",
+      "level": "TM09",
       "accuracy": 85,
       "power": 90,
       "pp": 20,
-      "description": "Inflicts regular damage.  User takes 1/4 the damage it inflicts in recoil."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Double-edge",
-      "level": 0,
+      "Name": "Double-Edge",
+      "level": "TM10",
       "accuracy": 100,
-      "power": 120,
+      "power": 100,
       "pp": 15,
-      "description": "Inflicts regular damage.  User takes 1/3 the damage it inflicts in recoil."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Hyper-beam",
-      "level": 0,
+      "Name": "HyperBeam",
+      "level": "TM15",
       "accuracy": 90,
       "power": 150,
       "pp": 5,
-      "description": "Inflicts regular damage.  User loses its next turn to \"recharge\", and cannot attack or switch out during that turn."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Mega-drain",
-      "level": 0,
-      "accuracy": 100,
-      "power": 40,
-      "pp": 15,
-      "description": "Inflicts regular damage.  Drains half the damage inflicted to heal the user."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Toxic",
-      "level": 0,
-      "accuracy": 90,
-      "power": 0,
-      "pp": 10,
-      "description": "Badly poisons the target.  Never misses when used by a poison-type PokÃ©mon."
-    },
-    {
-      "learn_type": "machine",
       "Name": "Rage",
-      "level": 0,
+      "level": "TM20",
       "accuracy": 100,
       "power": 20,
       "pp": 20,
-      "description": "Inflicts regular damage.  Every time the user is hit after it uses this move but before its next action, its Attack raises by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
+      "Name": "MegaDrain",
+      "level": "TM21",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
+      "Name": "SolarBeam",
+      "level": "TM22",
+      "accuracy": 100,
+      "power": 120,
+      "pp": 10,
+      "Type": "Grass"
+    },
+    {
       "Name": "Mimic",
-      "level": 0,
+      "level": "TM31",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "This move is replaced by the target's last successfully used move, and its PP changes to 5.  If the target hasn't used a move since entering the field, if it tried to use a move this turn and failed, or if the user already knows the targeted move, this move will fail.  This effect vanishes when the user leaves the field.\n\nIf chatter, metronome, mimic, sketch, or struggle is selected, this move will fail.\n\nThis move cannot be copied by mirror-move, nor selected by assist or metronome, nor forced by encore."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Double-team",
-      "level": 0,
+      "Name": "DoubleTeam",
+      "level": "TM32",
       "accuracy": 0,
       "power": 0,
       "pp": 15,
-      "description": "Raises the user's evasion by one stage."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
       "Name": "Reflect",
-      "level": 0,
+      "level": "TM33",
       "accuracy": 0,
       "power": 0,
       "pp": 20,
-      "description": "Erects a barrier around the user's side of the field that reduces damage from physical attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+      "Type": "Psychic"
     },
     {
-      "learn_type": "machine",
       "Name": "Bide",
-      "level": 0,
+      "level": "TM34",
       "accuracy": 0,
-      "power": 1,
+      "power": 0,
       "pp": 10,
-      "description": "User waits for two turns.  On the second turn, the user inflicts twice the damage it accumulated on the last PokÃ©mon to hit it.  Damage inflicted is typeless.\n\nThis move cannot be selected by sleep-talk."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
       "Name": "Rest",
-      "level": 0,
+      "level": "TM44",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "User falls to sleep and immediately regains all its HP.  If the user has another major status effect-effect, sleep will replace it.  The user will always wake up after two turns, or one turn with early-bird.\n\nThis move fail if the PokÃ©mon cannot fall asleep due to uproar, insomnia, or vital-spirit.  It also fails if the PokÃ©mon is at full health or is already asleep."
+      "Type": "Psychic"
     },
     {
-      "learn_type": "machine",
       "Name": "Substitute",
-      "level": 0,
+      "level": "TM50",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
-      "description": "Transfers 1/4 the user's max HP into a doll that absorbs damage and causes most negative move effects to fail.  If the user leaves the field, the doll will vanish.  If the user cannot pay the HP cost, this move will fail.\n\nThe doll takes damage as normal, using the user's stats and types, and will break when its HP reaches zero.  Self-inflicted damage from confusion or recoil is not absorbed.  Healing effects from opponents ignore the doll and heal the user as normal.  Moves that work based on the user's HP still do so; the doll's HP does not influence any move.\n\nThe doll will block major status effect-effects, confusion, and flinch.  The effects of smelling-salts and wake-up-slap do not trigger against a doll, even if the PokÃ©mon behind the doll has the appropriate major status effect-effect.  Multi-turn trapping moves like wrap will hit the doll for their regular damage, but the multi-turn trapping and damage effects will not activate.\n\nMoves blocked or damage absorbed by the doll do not count as hitting the user or inflicting damage for any effects that respond to such, e.g., avalanche, counter, or a rowap-berry.  magic-coat still works as normal, even against moves the doll would block.  Opposing PokÃ©mon that damage the doll with a leech move like absorb are healed as normal.\n\nIt will also block acupressure, block, the curse effect of curse, dream-eater, embargo, flatter, gastro-acid, grudge, heal-block, leech-seed, lock-on, mean-look, mimic, mind-reader, nightmare, pain-split, psycho-shift, spider-web, sketch, swagger, switcheroo, trick, worry-seed, and yawn.  A PokÃ©mon affected by yawn before summoning the doll will still fall to sleep.\n\nThe doll blocks intimidate, but all other abilities act as though the doll did not exist.  If the user has an ability that absorbs moves of a certain type for HP (such as volt-absorb absorbing thunder-wave), such moves will not be blocked.\n\nlife-orb and berries that cause confusion still work as normal, but their respective HP loss and confusion are absorbed/blocked by the doll.\n\nThe user is still vulnerable to damage inflicted when entering or leaving the field, such as by pursuit or spikes; however, the doll will block the poison effect of toxic-spikes.\n\nThe doll is passed on by baton-pass.  It keeps its existing HP, but uses the replacement PokÃ©mon's stats and types for damage calculation.\n\nAll other effects work as normal."
+      "Type": "Normal"
     },
     {
-      "learn_type": "machine",
-      "Name": "Headbutt",
-      "level": 0,
-      "accuracy": 100,
-      "power": 70,
-      "pp": 15,
-      "description": "Inflicts regular damage.  Has a 30% chance to make the target flinch."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Roar",
-      "level": 0,
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "description": "Switch the target out for another of its trainer's PokÃ©mon selected at random.  Wild battles end immediately.\n\nDoesn't affect PokÃ©mon with suction-cups or under the effect of ingrain."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Defense-curl",
-      "level": 0,
-      "accuracy": 0,
-      "power": 0,
-      "pp": 40,
-      "description": "Raises user's Defense by one stage.\n\nAfter this move is used, the power of ice-ball and rollout are doubled until the user leaves the field."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Flash",
-      "level": 0,
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "description": "Lowers the target's accuracy by one stage."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Strength",
-      "level": 0,
-      "accuracy": 100,
-      "power": 80,
-      "pp": 15,
-      "description": "Inflicts regular damage."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Earthquake",
-      "level": 0,
-      "accuracy": 100,
-      "power": 100,
-      "pp": 10,
-      "description": "Inflicts regular damage.\n\nIf the target is in the first turn of dig, this move will hit with double power."
-    },
-    {
-      "learn_type": "machine",
-      "Name": "Light-screen",
-      "level": 0,
-      "accuracy": 0,
-      "power": 0,
+      "Name": "Cut",
+      "level": "HM01",
+      "accuracy": 95,
+      "power": 50,
       "pp": 30,
-      "description": "Erects a barrier around the user's side of the field that reduces damage from special attacks by half for five turns.  In double battles, the reduction is 1/3.  Critical hit are not affected by the barrier.\n\nIf the user is holding light-clay, the barrier lasts for eight turns.\n\nbrick-break or defog used by an opponent will destroy the barrier."
+      "Type": "Normal"
     }
   ],
   "types": [
@@ -919,6 +744,1905 @@
   "sp_atk": 100,
   "sp_def": 100,
   "speed": 80
+},
+{
+  "pkdx_id": 4,
+  "name": "Charmander",
+  "species": "Lizard pokemon",
+  "ImageURL": "http://img.pokemondb.net/artwork/charmander.jpg",
+  "Description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+  "male_female_ratio": "Male: 87,5%    Female: 12,5%",
+  "weight": 8.5,
+  "height": 0.6,
+  "catch_rate": 5.96,
+  "evolutions": [
+    {
+      "Level": 16,
+      "Method": "level_up",
+      "To": "Charmeleon",
+      "ImageURL": "http://img.pokemondb.net/artwork/charmeleon.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/5/"
+    },
+    {
+      "Level": 36,
+      "Method": "level_up",
+      "To": "Charizard",
+      "ImageURL": "http://img.pokemondb.net/artwork/charizard.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/6/"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "blaze"
+    },
+    {
+      "name": "solar-power"
+    }
+  ],
+  "MovesWeb": [
+    {
+      "Name": "Scratch",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 35,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Growl",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 40,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Ember",
+      "level": "9",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Leer",
+      "level": "15",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rage",
+      "level": "22",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Slash",
+      "level": "30",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Flamethrower",
+      "level": "38",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 15,
+      "Type": "Fire"
+    },
+    {
+      "Name": "FireSpin",
+      "level": "46",
+      "accuracy": 70,
+      "power": 15,
+      "pp": 15,
+      "Type": "Fire"
+    }
+  ],
+  "MachinesWeb": [
+    {
+      "Name": "MegaPunch",
+      "level": "TM01",
+      "accuracy": 85,
+      "power": 80,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SwordsDance",
+      "level": "TM03",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "MegaKick",
+      "level": "TM05",
+      "accuracy": 75,
+      "power": 120,
+      "pp": 5,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
+    },
+    {
+      "Name": "BodySlam",
+      "level": "TM08",
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TakeDown",
+      "level": "TM09",
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Double-Edge",
+      "level": "TM10",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Submission",
+      "level": "TM17",
+      "accuracy": 80,
+      "power": 80,
+      "pp": 25,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Counter",
+      "level": "TM18",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "SeismicToss",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Rage",
+      "level": "TM20",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DragonRage",
+      "level": "TM23",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 10,
+      "Type": "Dragon"
+    },
+    {
+      "Name": "Dig",
+      "level": "TM28",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Mimic",
+      "level": "TM31",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DoubleTeam",
+      "level": "TM32",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Reflect",
+      "level": "TM33",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Bide",
+      "level": "TM34",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "FireBlast",
+      "level": "TM38",
+      "accuracy": 85,
+      "power": 120,
+      "pp": 5,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Swift",
+      "level": "TM39",
+      "accuracy": 0,
+      "power": 60,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "TM40",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rest",
+      "level": "TM44",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Substitute",
+      "level": "TM50",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Cut",
+      "level": "HM01",
+      "accuracy": 95,
+      "power": 50,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Strength",
+      "level": "HM04",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Normal"
+    }
+  ],
+  "types": [
+    {
+      "Name": "Fire"
+    }
+  ],
+  "hp": 39,
+  "attack": 52,
+  "defense": 43,
+  "sp_atk": 60,
+  "sp_def": 50,
+  "speed": 65
+},
+{
+  "pkdx_id": 5,
+  "name": "Charmeleon",
+  "species": "Flame pokemon",
+  "ImageURL": "http://img.pokemondb.net/artwork/charmeleon.jpg",
+  "Description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+  "male_female_ratio": "Male: 87,5%    Female: 12,5%",
+  "weight": 19.0,
+  "height": 1.1,
+  "catch_rate": 5.96,
+  "evolutions": [
+    {
+      "Level": 36,
+      "Method": "level_up",
+      "To": "Charizard",
+      "ImageURL": "http://img.pokemondb.net/artwork/charizard.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/6/"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "blaze"
+    },
+    {
+      "name": "solar-power"
+    }
+  ],
+  "MovesWeb": [
+    {
+      "Name": "Scratch",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 35,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Growl",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 40,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Ember",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Ember",
+      "level": "9",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Leer",
+      "level": "15",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rage",
+      "level": "24",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Slash",
+      "level": "33",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Flamethrower",
+      "level": "42",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 15,
+      "Type": "Fire"
+    },
+    {
+      "Name": "FireSpin",
+      "level": "56",
+      "accuracy": 70,
+      "power": 15,
+      "pp": 15,
+      "Type": "Fire"
+    }
+  ],
+  "MachinesWeb": [
+    {
+      "Name": "MegaPunch",
+      "level": "TM01",
+      "accuracy": 85,
+      "power": 80,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SwordsDance",
+      "level": "TM03",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "MegaKick",
+      "level": "TM05",
+      "accuracy": 75,
+      "power": 120,
+      "pp": 5,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
+    },
+    {
+      "Name": "BodySlam",
+      "level": "TM08",
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TakeDown",
+      "level": "TM09",
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Double-Edge",
+      "level": "TM10",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Submission",
+      "level": "TM17",
+      "accuracy": 80,
+      "power": 80,
+      "pp": 25,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Counter",
+      "level": "TM18",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "SeismicToss",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Rage",
+      "level": "TM20",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DragonRage",
+      "level": "TM23",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 10,
+      "Type": "Dragon"
+    },
+    {
+      "Name": "Dig",
+      "level": "TM28",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Mimic",
+      "level": "TM31",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DoubleTeam",
+      "level": "TM32",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Reflect",
+      "level": "TM33",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Bide",
+      "level": "TM34",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "FireBlast",
+      "level": "TM38",
+      "accuracy": 85,
+      "power": 120,
+      "pp": 5,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Swift",
+      "level": "TM39",
+      "accuracy": 0,
+      "power": 60,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "TM40",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rest",
+      "level": "TM44",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Substitute",
+      "level": "TM50",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Cut",
+      "level": "HM01",
+      "accuracy": 95,
+      "power": 50,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Strength",
+      "level": "HM04",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Normal"
+    }
+  ],
+  "types": [
+    {
+      "Name": "Fire"
+    }
+  ],
+  "hp": 58,
+  "attack": 64,
+  "defense": 58,
+  "sp_atk": 80,
+  "sp_def": 65,
+  "speed": 80
+},
+{
+  "pkdx_id": 6,
+  "name": "Charizard",
+  "species": "Flame pokemon",
+  "ImageURL": "http://img.pokemondb.net/artwork/charizard.jpg",
+  "Description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+  "male_female_ratio": "Male: 87,5%    Female: 12,5%",
+  "weight": 90.5,
+  "height": 1.7,
+  "catch_rate": 5.96,
+  "evolutions": [],
+  "abilities": [
+    {
+      "name": "blaze"
+    },
+    {
+      "name": "solar-power"
+    }
+  ],
+  "MovesWeb": [
+    {
+      "Name": "Scratch",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 35,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Growl",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 40,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Ember",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Leer",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Ember",
+      "level": "9",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Leer",
+      "level": "15",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rage",
+      "level": "24",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Slash",
+      "level": "36",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Flamethrower",
+      "level": "46",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 15,
+      "Type": "Fire"
+    },
+    {
+      "Name": "FireSpin",
+      "level": "55",
+      "accuracy": 70,
+      "power": 15,
+      "pp": 15,
+      "Type": "Fire"
+    }
+  ],
+  "MachinesWeb": [
+    {
+      "Name": "MegaPunch",
+      "level": "TM01",
+      "accuracy": 85,
+      "power": 80,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SwordsDance",
+      "level": "TM03",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "MegaKick",
+      "level": "TM05",
+      "accuracy": 75,
+      "power": 120,
+      "pp": 5,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
+    },
+    {
+      "Name": "BodySlam",
+      "level": "TM08",
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TakeDown",
+      "level": "TM09",
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Double-Edge",
+      "level": "TM10",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "HyperBeam",
+      "level": "TM15",
+      "accuracy": 90,
+      "power": 150,
+      "pp": 5,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Submission",
+      "level": "TM17",
+      "accuracy": 80,
+      "power": 80,
+      "pp": 25,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Counter",
+      "level": "TM18",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "SeismicToss",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Rage",
+      "level": "TM20",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DragonRage",
+      "level": "TM23",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 10,
+      "Type": "Dragon"
+    },
+    {
+      "Name": "Earthquake",
+      "level": "TM26",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Fissure",
+      "level": "TM27",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Dig",
+      "level": "TM28",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Mimic",
+      "level": "TM31",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DoubleTeam",
+      "level": "TM32",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Reflect",
+      "level": "TM33",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Bide",
+      "level": "TM34",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "FireBlast",
+      "level": "TM38",
+      "accuracy": 85,
+      "power": 120,
+      "pp": 5,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Swift",
+      "level": "TM39",
+      "accuracy": 0,
+      "power": 60,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "TM40",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rest",
+      "level": "TM44",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Substitute",
+      "level": "TM50",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Cut",
+      "level": "HM01",
+      "accuracy": 95,
+      "power": 50,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Fly",
+      "level": "HM02Y",
+      "accuracy": 95,
+      "power": 70,
+      "pp": 15,
+      "Type": "Flying"
+    },
+    {
+      "Name": "Strength",
+      "level": "HM04",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Normal"
+    }
+  ],
+  "types": [
+    {
+      "Name": "Flying"
+    },
+    {
+      "Name": "Fire"
+    }
+  ],
+  "hp": 78,
+  "attack": 84,
+  "defense": 78,
+  "sp_atk": 109,
+  "sp_def": 85,
+  "speed": 100
+},
+{
+  "pkdx_id": 7,
+  "name": "Squirtle",
+  "species": "Tiny turtle pokemon",
+  "ImageURL": "http://img.pokemondb.net/artwork/squirtle.jpg",
+  "Description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+  "male_female_ratio": "Male: 87,5%    Female: 12,5%",
+  "weight": 9.0,
+  "height": 0.5,
+  "catch_rate": 5.96,
+  "evolutions": [
+    {
+      "Level": 16,
+      "Method": "level_up",
+      "To": "Wartortle",
+      "ImageURL": "http://img.pokemondb.net/artwork/wartortle.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/8/"
+    },
+    {
+      "Level": 36,
+      "Method": "level_up",
+      "To": "Blastoise",
+      "ImageURL": "http://img.pokemondb.net/artwork/blastoise.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/9/"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "rain-dish"
+    },
+    {
+      "name": "torrent"
+    }
+  ],
+  "MovesWeb": [
+    {
+      "Name": "Tackle",
+      "level": "Start",
+      "accuracy": 95,
+      "power": 35,
+      "pp": 35,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TailWhip",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Bubble",
+      "level": "8",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 30,
+      "Type": "Water"
+    },
+    {
+      "Name": "WaterGun",
+      "level": "15",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Water"
+    },
+    {
+      "Name": "Bite",
+      "level": "22",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 25,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Withdraw",
+      "level": "28",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "Type": "Water"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "35",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "HydroPump",
+      "level": "42",
+      "accuracy": 80,
+      "power": 120,
+      "pp": 5,
+      "Type": "Water"
+    }
+  ],
+  "MachinesWeb": [
+    {
+      "Name": "MegaPunch",
+      "level": "TM01",
+      "accuracy": 85,
+      "power": 80,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "MegaKick",
+      "level": "TM05",
+      "accuracy": 75,
+      "power": 120,
+      "pp": 5,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
+    },
+    {
+      "Name": "BodySlam",
+      "level": "TM08",
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TakeDown",
+      "level": "TM09",
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Double-Edge",
+      "level": "TM10",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "BubbleBeam",
+      "level": "TM11",
+      "accuracy": 100,
+      "power": 65,
+      "pp": 20,
+      "Type": "Water"
+    },
+    {
+      "Name": "WaterGun",
+      "level": "TM12",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Water"
+    },
+    {
+      "Name": "IceBeam",
+      "level": "TM13",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 10,
+      "Type": "Ice"
+    },
+    {
+      "Name": "Blizzard",
+      "level": "TM14",
+      "accuracy": 90,
+      "power": 120,
+      "pp": 5,
+      "Type": "Ice"
+    },
+    {
+      "Name": "Submission",
+      "level": "TM17",
+      "accuracy": 80,
+      "power": 80,
+      "pp": 25,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Counter",
+      "level": "TM18",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "SeismicToss",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Rage",
+      "level": "TM20",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Dig",
+      "level": "TM28",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Mimic",
+      "level": "TM31",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DoubleTeam",
+      "level": "TM32",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Reflect",
+      "level": "TM33",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Bide",
+      "level": "TM34",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "TM40",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rest",
+      "level": "TM44",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Substitute",
+      "level": "TM50",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Surf",
+      "level": "HM03",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 15,
+      "Type": "Water"
+    },
+    {
+      "Name": "Strength",
+      "level": "HM04",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Normal"
+    }
+  ],
+  "types": [
+    {
+      "Name": "Water"
+    }
+  ],
+  "hp": 44,
+  "attack": 48,
+  "defense": 65,
+  "sp_atk": 50,
+  "sp_def": 64,
+  "speed": 43
+},
+{
+  "pkdx_id": 8,
+  "name": "Wartortle",
+  "species": "Turtle pokemon",
+  "ImageURL": "http://img.pokemondb.net/artwork/wartortle.jpg",
+  "Description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+  "male_female_ratio": "Male: 87,5%    Female: 12,5%",
+  "weight": 22.5,
+  "height": 1.0,
+  "catch_rate": 5.96,
+  "evolutions": [
+    {
+      "Level": 36,
+      "Method": "level_up",
+      "To": "Blastoise",
+      "ImageURL": "http://img.pokemondb.net/artwork/blastoise.jpg",
+      "resource_uri": "http://pokeapi.co/api/v1/pokemon/9/"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "rain-dish"
+    },
+    {
+      "name": "torrent"
+    }
+  ],
+  "MovesWeb": [
+    {
+      "Name": "Tackle",
+      "level": "Start",
+      "accuracy": 95,
+      "power": 35,
+      "pp": 35,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TailWhip",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Bubble",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 30,
+      "Type": "Water"
+    },
+    {
+      "Name": "Bubble",
+      "level": "8",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 30,
+      "Type": "Water"
+    },
+    {
+      "Name": "WaterGun",
+      "level": "15",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Water"
+    },
+    {
+      "Name": "Bite",
+      "level": "24",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 25,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Withdraw",
+      "level": "31",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "Type": "Water"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "39",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "HydroPump",
+      "level": "47",
+      "accuracy": 80,
+      "power": 120,
+      "pp": 5,
+      "Type": "Water"
+    }
+  ],
+  "MachinesWeb": [
+    {
+      "Name": "MegaPunch",
+      "level": "TM01",
+      "accuracy": 85,
+      "power": 80,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "MegaKick",
+      "level": "TM05",
+      "accuracy": 75,
+      "power": 120,
+      "pp": 5,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
+    },
+    {
+      "Name": "BodySlam",
+      "level": "TM08",
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TakeDown",
+      "level": "TM09",
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Double-Edge",
+      "level": "TM10",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "BubbleBeam",
+      "level": "TM11",
+      "accuracy": 100,
+      "power": 65,
+      "pp": 20,
+      "Type": "Water"
+    },
+    {
+      "Name": "WaterGun",
+      "level": "TM12",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Water"
+    },
+    {
+      "Name": "IceBeam",
+      "level": "TM13",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 10,
+      "Type": "Ice"
+    },
+    {
+      "Name": "Blizzard",
+      "level": "TM14",
+      "accuracy": 90,
+      "power": 120,
+      "pp": 5,
+      "Type": "Ice"
+    },
+    {
+      "Name": "Submission",
+      "level": "TM17",
+      "accuracy": 80,
+      "power": 80,
+      "pp": 25,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Counter",
+      "level": "TM18",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "SeismicToss",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Rage",
+      "level": "TM20",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Dig",
+      "level": "TM28",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Mimic",
+      "level": "TM31",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DoubleTeam",
+      "level": "TM32",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Reflect",
+      "level": "TM33",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Bide",
+      "level": "TM34",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "TM40",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rest",
+      "level": "TM44",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Substitute",
+      "level": "TM50",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Surf",
+      "level": "HM03",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 15,
+      "Type": "Water"
+    },
+    {
+      "Name": "Strength",
+      "level": "HM04",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Normal"
+    }
+  ],
+  "types": [
+    {
+      "Name": "Water"
+    }
+  ],
+  "hp": 59,
+  "attack": 63,
+  "defense": 80,
+  "sp_atk": 65,
+  "sp_def": 80,
+  "speed": 58
+},
+{
+  "pkdx_id": 9,
+  "name": "Blastoise",
+  "species": "Shellfish pokemon",
+  "ImageURL": "http://img.pokemondb.net/artwork/blastoise.jpg",
+  "Description": "A brutal POKMON with pressurized water jets on its shell. They are used for high speed tackles.",
+  "male_female_ratio": "Male: 87,5%    Female: 12,5%",
+  "weight": 85.5,
+  "height": 1.6,
+  "catch_rate": 5.96,
+  "evolutions": [],
+  "abilities": [
+    {
+      "name": "rain-dish"
+    },
+    {
+      "name": "torrent"
+    }
+  ],
+  "MovesWeb": [
+    {
+      "Name": "Tackle",
+      "level": "Start",
+      "accuracy": 95,
+      "power": 35,
+      "pp": 35,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TailWhip",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Bubble",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 30,
+      "Type": "Water"
+    },
+    {
+      "Name": "WaterGun",
+      "level": "Start",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Water"
+    },
+    {
+      "Name": "Bubble",
+      "level": "8",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 30,
+      "Type": "Water"
+    },
+    {
+      "Name": "WaterGun",
+      "level": "15",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Water"
+    },
+    {
+      "Name": "Bite",
+      "level": "24",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 25,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Withdraw",
+      "level": "31",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "Type": "Water"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "42",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "HydroPump",
+      "level": "52",
+      "accuracy": 80,
+      "power": 120,
+      "pp": 5,
+      "Type": "Water"
+    }
+  ],
+  "MachinesWeb": [
+    {
+      "Name": "MegaPunch",
+      "level": "TM01",
+      "accuracy": 85,
+      "power": 80,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "MegaKick",
+      "level": "TM05",
+      "accuracy": 75,
+      "power": 120,
+      "pp": 5,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Toxic",
+      "level": "TM06",
+      "accuracy": 85,
+      "power": 0,
+      "pp": 10,
+      "Type": "Poison"
+    },
+    {
+      "Name": "BodySlam",
+      "level": "TM08",
+      "accuracy": 100,
+      "power": 85,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TakeDown",
+      "level": "TM09",
+      "accuracy": 85,
+      "power": 90,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Double-Edge",
+      "level": "TM10",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "BubbleBeam",
+      "level": "TM11",
+      "accuracy": 100,
+      "power": 65,
+      "pp": 20,
+      "Type": "Water"
+    },
+    {
+      "Name": "WaterGun",
+      "level": "TM12",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 25,
+      "Type": "Water"
+    },
+    {
+      "Name": "IceBeam",
+      "level": "TM13",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 10,
+      "Type": "Ice"
+    },
+    {
+      "Name": "Blizzard",
+      "level": "TM14",
+      "accuracy": 90,
+      "power": 120,
+      "pp": 5,
+      "Type": "Ice"
+    },
+    {
+      "Name": "HyperBeam",
+      "level": "TM15",
+      "accuracy": 90,
+      "power": 150,
+      "pp": 5,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Submission",
+      "level": "TM17",
+      "accuracy": 80,
+      "power": 80,
+      "pp": 25,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Counter",
+      "level": "TM18",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "SeismicToss",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Rage",
+      "level": "TM20",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Earthquake",
+      "level": "TM26",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Fissure",
+      "level": "TM27",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Dig",
+      "level": "TM28",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 10,
+      "Type": "Ground"
+    },
+    {
+      "Name": "Mimic",
+      "level": "TM31",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DoubleTeam",
+      "level": "TM32",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Reflect",
+      "level": "TM33",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 20,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Bide",
+      "level": "TM34",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SkullBash",
+      "level": "TM40",
+      "accuracy": 100,
+      "power": 100,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Rest",
+      "level": "TM44",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Psychic"
+    },
+    {
+      "Name": "Substitute",
+      "level": "TM50",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Surf",
+      "level": "HM03",
+      "accuracy": 100,
+      "power": 95,
+      "pp": 15,
+      "Type": "Water"
+    },
+    {
+      "Name": "Strength",
+      "level": "HM04",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Normal"
+    }
+  ],
+  "types": [
+    {
+      "Name": "Water"
+    }
+  ],
+  "hp": 79,
+  "attack": 83,
+  "defense": 100,
+  "sp_atk": 85,
+  "sp_def": 105,
+  "speed": 78
 },
 ]
 }

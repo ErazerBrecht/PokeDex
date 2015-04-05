@@ -155,6 +155,18 @@
                         </Grid>
                     </GroupBox>
                     
+                    <GroupBox Grid.Row="1" Grid.Column="2" Header="Abilities">
+                        <ItemsControl Name="AbilityListBox">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Name}"></TextBlock>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </GroupBox>
+                    
                     <GroupBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Header="Moves">
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -163,11 +175,11 @@
                             </Grid.ColumnDefinitions>
                         
                             <GroupBox Header="Level Up">
-                                <ListBox Name="MoveListBox">
+                                <ListBox Name="MoveListBox" SelectionChanged="MoveListBox_OnSelectionChanged">
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal">
-                                                <TextBlock Text="{Binding Level}" Width="50"></TextBlock>
+                                                <TextBlock Text="{Binding Level}" Width="35"></TextBlock>
                                                 <TextBlock Text="{Binding Name}"></TextBlock>
                                             </StackPanel>
                                         </DataTemplate>
@@ -176,11 +188,11 @@
                             </GroupBox>
                        
                             <GroupBox Header="TM/HM" Grid.Column="1">
-                                <ListBox Name="MachineListBox">
+                                <ListBox Name="MachineListBox" SelectionChanged="MoveListBox_OnSelectionChanged">
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal">
-                                                <TextBlock Text="{Binding Level}" Width="50"></TextBlock>
+                                                <TextBlock Text="{Binding Level}" Width="35"></TextBlock>
                                                 <TextBlock Text="{Binding Name}"></TextBlock>
                                             </StackPanel>
                                         </DataTemplate>
@@ -198,21 +210,21 @@
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding Name}"></TextBlock>
                     <Image MaxHeight="90" Source="{Binding ImageURL}"></Image>
-                    <ListBox Name="EvolutionsListBox">
-                        <ListBox.ItemTemplate>
+                    <ItemsControl Name="EvolutionsListBox">
+                        <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel HorizontalAlignment="Center">
-                                    <Grid Margin="0,15,0,0">
-                                        <Rectangle HorizontalAlignment="Center" Fill="Black" Stroke="Black" Height="30" Width="20"></Rectangle>
-                                        <TextBlock HorizontalAlignment="Center" Text="{Binding Level}" Margin="0,6,0,0" Foreground="White" />
+                                    <Grid Margin="0,15,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" ShowGridLines="True">
+                                        <Rectangle Fill="#CC119EDA" Height="30" Width="25"></Rectangle>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Level}" Margin="0,0,0,0" Foreground="White" />
                                     </Grid>
-                                    <Polygon Margin="1.75,0,0,15" HorizontalAlignment="Center" Points="0,0 30,0, 15,20" Stroke="Black" Fill="Black" />
+                                    <Polygon HorizontalAlignment="Center" Margin="0,0,0,15" Points="0,0 40,0, 20,25" Fill="#CC119EDA" />
                                     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
                                     <Image MaxHeight="90" Source="{Binding ImageURL}"></Image>
                                 </StackPanel>
                             </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
                 </StackPanel>
                 
             </GroupBox>
