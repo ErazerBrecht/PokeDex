@@ -4,14 +4,14 @@
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         Title="MainWindow" WindowState="Maximized" Height="1000">
     <Grid>
-        
+
         <Grid Name="MainGrid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="6*"></ColumnDefinition>
                 <ColumnDefinition Width="1.5*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
+
             <ListBox Name="PokemonListBox" SelectionChanged="PokemonListBox_OnSelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
@@ -23,7 +23,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            
+
             <GroupBox Header="Information + Stats" Grid.Column="1">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -31,19 +31,19 @@
                         <RowDefinition Height="200"></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    
+
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                
+
                     <GroupBox Header="Image" Name="ImageGroupBox">
                         <Image MaxHeight="250" Source="{Binding ImageURL}"></Image>
                     </GroupBox>
-                    
-                    
-                    
+
+
+
                     <GroupBox FontSize="16" Grid.Column="1" Grid.ColumnSpan="2" Header="Information" Name="Information" >
                         <Grid>
                             <Grid.RowDefinitions>
@@ -60,7 +60,7 @@
                                 <ColumnDefinition Width="100"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            
+
                             <TextBlock Text="Name: " Margin="0,0,10,0"></TextBlock>
                             <TextBlock Grid.Row="1" Text="Types:" Margin="0,0,10,0"></TextBlock>
 
@@ -73,17 +73,17 @@
 
 
                             <TextBlock Grid.Column="1" Grid.Row="0" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
-                                <ListBox MinHeight="50" Grid.Column="1" Grid.Row="1" Name="TypesListBox">
-                                    <ListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Padding="-4.5,0,0,0" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
-                                        </DataTemplate>
-                                    </ListBox.ItemTemplate>
-                                </ListBox>
+                            <ListBox MinHeight="50" Grid.Column="1" Grid.Row="1" Name="TypesListBox">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Padding="-4.5,0,0,0" FontWeight="Bold" Text="{Binding Name}"></TextBlock>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
 
-                            
 
-                                <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Description}" Margin="0,20,0,20" TextWrapping="Wrap"></TextBlock>
+
+                            <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Description}" Margin="0,20,0,20" TextWrapping="Wrap"></TextBlock>
 
                             <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding Species}"></TextBlock>
                             <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal">
@@ -101,19 +101,19 @@
                                 <TextBlock Text="%"></TextBlock>
                             </StackPanel>
 
-                                <TextBlock Grid.Column="1" Grid.Row="7" Text="{Binding MaleFemaleRatio}"></TextBlock>
+                            <TextBlock Grid.Column="1" Grid.Row="7" Text="{Binding MaleFemaleRatio}"></TextBlock>
 
 
                         </Grid>
 
-                                    
-                                    
-                                    
-                            
+
+
+
+
 
                     </GroupBox>
-                    
-                    
+
+
                     <GroupBox  FontSize="16" Grid.Row="1" Grid.ColumnSpan="2" Header="Stats">
                         <Grid>
                             <Grid.RowDefinitions>
@@ -129,15 +129,15 @@
                                 <ColumnDefinition Width="30"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            
-                                <TextBlock>HP</TextBlock>
-                                <TextBlock Grid.Row="1">Attack</TextBlock>
-                                <TextBlock Grid.Row="2">Defense</TextBlock>
-                                <TextBlock Grid.Row="3">SP. Attack</TextBlock>
-                                <TextBlock Grid.Row="4" Margin="0,0,15,0">SP. Defense</TextBlock>
-                                <TextBlock Grid.Row="5">Speed</TextBlock>
 
-                            
+                            <TextBlock>HP</TextBlock>
+                            <TextBlock Grid.Row="1">Attack</TextBlock>
+                            <TextBlock Grid.Row="2">Defense</TextBlock>
+                            <TextBlock Grid.Row="3">SP. Attack</TextBlock>
+                            <TextBlock Grid.Row="4" Margin="0,0,15,0">SP. Defense</TextBlock>
+                            <TextBlock Grid.Row="5">Speed</TextBlock>
+
+
                             <TextBlock Grid.Column="1" Text="{Binding Hp}"></TextBlock>
                             <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Attack}"></TextBlock>
                             <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Defense}"></TextBlock>
@@ -154,7 +154,7 @@
 
                         </Grid>
                     </GroupBox>
-                    
+
                     <GroupBox Grid.Row="1" Grid.Column="2" Header="Abilities">
                         <ItemsControl Name="AbilityListBox">
                             <ItemsControl.ItemTemplate>
@@ -166,70 +166,83 @@
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
                     </GroupBox>
-                    
+
                     <GroupBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Header="Moves">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                        
+
                             <GroupBox Header="Level Up">
                                 <ListBox Name="MoveListBox" SelectionChanged="MoveListBox_OnSelectionChanged">
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal">
-                                                <TextBlock Text="{Binding Level}" Width="35"></TextBlock>
+                                                <TextBlock Text="{Binding Level}" Width="40"></TextBlock>
                                                 <TextBlock Text="{Binding Name}"></TextBlock>
                                             </StackPanel>
                                         </DataTemplate>
                                     </ListBox.ItemTemplate>
                                 </ListBox>
                             </GroupBox>
-                       
+
                             <GroupBox Header="TM/HM" Grid.Column="1">
                                 <ListBox Name="MachineListBox" SelectionChanged="MoveListBox_OnSelectionChanged">
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal">
-                                                <TextBlock Text="{Binding Level}" Width="35"></TextBlock>
+                                                <TextBlock Text="{Binding Level}" Width="40"></TextBlock>
                                                 <TextBlock Text="{Binding Name}"></TextBlock>
                                             </StackPanel>
                                         </DataTemplate>
                                     </ListBox.ItemTemplate>
                                 </ListBox>
                             </GroupBox>
-                        
-                        </Grid>    
+
+                        </Grid>
                     </GroupBox>
 
                 </Grid>
             </GroupBox>
-            
+
             <GroupBox Header="Evolutions" Grid.Column="2">
+                <!-- <GroupBox.Style>
+                    <Style TargetType="GroupBox">
+                        <Setter Property="Visibility" Value="Visible"></Setter>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Evolutions.Count}" Value="0">
+                                <Setter Property="Visibility" Value="Collapsed"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </GroupBox.Style>
+                -->
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding Name}"></TextBlock>
-                    <Image MaxHeight="90" Source="{Binding ImageURL}"></Image>
-                    <ItemsControl Name="EvolutionsListBox">
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel HorizontalAlignment="Center">
-                                    <Grid Margin="0,15,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" ShowGridLines="True">
-                                        <Rectangle Fill="#CC119EDA" Height="30" Width="25"></Rectangle>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Level}" Margin="0,0,0,0" Foreground="White" />
-                                    </Grid>
-                                    <Polygon HorizontalAlignment="Center" Margin="0,0,0,15" Points="0,0 40,0, 20,25" Fill="#CC119EDA" />
-                                    <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
-                                    <Image MaxHeight="90" Source="{Binding ImageURL}"></Image>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                    </ItemsControl>
+                    <Image MaxHeight="150" Source="{Binding ImageURL}"></Image>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl Name="EvolutionsListBox">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel HorizontalAlignment="Center">
+                                        <Grid Margin="0,15,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" ShowGridLines="True">
+                                            <Rectangle Fill="#CC119EDA" Height="30" Width="25"></Rectangle>
+                                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Level}" Margin="0,0,0,0" Foreground="White" />
+                                        </Grid>
+                                        <Polygon HorizontalAlignment="Center" Margin="0,0,0,15" Points="0,0 40,0, 20,25" Fill="#CC119EDA" />
+                                        <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
+                                        <Image Height="150" Source="{Binding ImageURL}"></Image>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
                 </StackPanel>
-                
+
             </GroupBox>
 
         </Grid>
-        
+
     </Grid>
 </controls:MetroWindow>
