@@ -45,9 +45,9 @@ namespace PL_WPF
 
         private void MoveListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (MoveListBox.SelectedIndex >= 0)
-            {
-                var list = sender as ListBox;
+            var list = sender as ListBox;
+            if (list.SelectedIndex >= 0)
+            {               
                 var selectedMove = list.SelectedItem as JsonParse.Move;
                 var registerwindow = new Moves(selectedMove);
                 registerwindow.Show();
