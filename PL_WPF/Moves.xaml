@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         Name="MainWindow"
-        Title="{Binding Name}" Height="140" Width="250" ResizeMode="NoResize">
+        Title="{Binding Name}" Height="140" Width="250" ResizeMode="NoResize" BorderThickness="2" BorderBrush="#CC119EDA">
     <Grid Margin="10">
         <StackPanel>
             <StackPanel.Resources>
