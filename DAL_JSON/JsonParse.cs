@@ -60,6 +60,7 @@ namespace DAL_JSON
             public List<Move> MovesWeb { get; set; }
             public List<Move> MachinesWeb { get; set; }
             public List<Type> Types { get; set; }
+            public List<Description> Descriptions { get; set; }
 
             //Skills
             public int Hp { get; set; }
@@ -107,6 +108,14 @@ namespace DAL_JSON
             public string Method { get; set; }
             public string To { get; set; }
             public string ImageURL { get; set; }
+        }
+
+        public class Description
+        {
+            public string Name { get; set; }
+            [JsonProperty(PropertyName = "description")]
+            public string DescriptionText { get; set; }
+            public string Resource_uri { get; set; }
         }
     }
 }

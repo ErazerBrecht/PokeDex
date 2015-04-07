@@ -5,7 +5,7 @@
   "name": "Bulbasaur",
   "species": "Seed pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/bulbasaur.jpg",
-  "Description": "The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.",
+  "Description": "BULBASAUR can be seen napping in bright sunlight. There is a seed on its back. By soaking up the suns rays, the seed grows progressively larger.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 6.9,
   "height": 0.7,
@@ -45,7 +45,7 @@
     },
     {
       "Name": "Growl",
-      "level": "Start",
+      "level": "4",
       "accuracy": 100,
       "power": 0,
       "pp": 40,
@@ -61,7 +61,7 @@
     },
     {
       "Name": "VineWhip",
-      "level": "13",
+      "level": "10",
       "accuracy": 100,
       "power": 35,
       "pp": 10,
@@ -69,39 +69,55 @@
     },
     {
       "Name": "PoisonPowder",
-      "level": "20",
+      "level": "15",
       "accuracy": 75,
       "power": 0,
       "pp": 35,
       "Type": "Poison"
     },
     {
-      "Name": "RazorLeaf",
-      "level": "27",
-      "accuracy": 95,
-      "power": 55,
-      "pp": 25,
-      "Type": "Grass"
-    },
-    {
-      "Name": "Growth",
-      "level": "34",
-      "accuracy": 0,
-      "power": 0,
-      "pp": 40,
-      "Type": "Normal"
-    },
-    {
       "Name": "SleepPowder",
-      "level": "41",
+      "level": "15",
       "accuracy": 75,
       "power": 0,
       "pp": 15,
       "Type": "Grass"
     },
     {
+      "Name": "RazorLeaf",
+      "level": "20",
+      "accuracy": 95,
+      "power": 55,
+      "pp": 25,
+      "Type": "Grass"
+    },
+    {
+      "Name": "SweetScent",
+      "level": "25",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Growth",
+      "level": "32",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Synthesis",
+      "level": "39",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Grass"
+    },
+    {
       "Name": "SolarBeam",
-      "level": "48",
+      "level": "46",
       "accuracy": 100,
       "power": 120,
       "pp": 10,
@@ -110,12 +126,20 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "SwordsDance",
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Curse",
       "level": "TM03",
       "accuracy": 0,
       "power": 0,
-      "pp": 30,
-      "Type": "Normal"
+      "pp": 10,
+      "Type": "???"
     },
     {
       "Name": "Toxic",
@@ -126,44 +150,68 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
-      "level": "TM08",
-      "accuracy": 100,
-      "power": 85,
-      "pp": 15,
-      "Type": "Normal"
-    },
-    {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
-      "pp": 20,
-      "Type": "Normal"
-    },
-    {
-      "Name": "Double-Edge",
+      "Name": "HiddenPower",
       "level": "TM10",
       "accuracy": 100,
-      "power": 100,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "Rage",
-      "level": "TM20",
+      "Name": "SunnyDay",
+      "level": "TM11",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Fire"
+    },
+    {
+      "Name": "SweetScent",
+      "level": "TM12",
       "accuracy": 100,
-      "power": 20,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "MegaDrain",
-      "level": "TM21",
+      "Name": "Snore",
+      "level": "TM13",
       "accuracy": 100,
       "power": 40,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Protect",
+      "level": "TM17",
+      "accuracy": 0,
+      "power": 0,
       "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "GigaDrain",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 5,
       "Type": "Grass"
+    },
+    {
+      "Name": "Endure",
+      "level": "TM20",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Frustration",
+      "level": "TM21",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Normal"
     },
     {
       "Name": "SolarBeam",
@@ -174,12 +222,20 @@
       "Type": "Grass"
     },
     {
-      "Name": "Mimic",
-      "level": "TM31",
-      "accuracy": 0,
+      "Name": "Return",
+      "level": "TM27",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 20,
       "Type": "Normal"
+    },
+    {
+      "Name": "Mud-Slap",
+      "level": "TM31",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 10,
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -190,19 +246,27 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
-      "level": "TM33",
-      "accuracy": 0,
+      "Name": "Swagger",
+      "level": "TM34",
+      "accuracy": 90,
       "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "pp": 15,
+      "Type": "Normal"
     },
     {
-      "Name": "Bide",
-      "level": "TM34",
-      "accuracy": 100,
+      "Name": "SleepTalk",
+      "level": "TM35",
+      "accuracy": 0,
       "power": 0,
       "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DefenseCurl",
+      "level": "TM40",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -214,12 +278,20 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "FuryCutter",
+      "level": "TM49",
+      "accuracy": 95,
+      "power": 10,
+      "pp": 20,
+      "Type": "Bug"
     },
     {
       "Name": "Cut",
@@ -227,6 +299,14 @@
       "accuracy": 95,
       "power": 50,
       "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Flash",
+      "level": "HM05",
+      "accuracy": 70,
+      "power": 0,
+      "pp": 20,
       "Type": "Normal"
     }
   ],
@@ -236,6 +316,78 @@
     },
     {
       "Name": "Grass"
+    }
+  ],
+  "descriptions": [
+    {
+      "name": "bulbasaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/4/"
+    },
+    {
+      "name": "bulbasaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/5/"
+    },
+    {
+      "name": "bulbasaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/6/"
+    },
+    {
+      "name": "Bulbasaur_gen_2",
+      "description": "BULBASAUR can be seen napping in bright sunlight. There is a seed on its back. By soaking up the suns rays, the seed grows progressively larger.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/7/"
+    },
+    {
+      "name": "bulbasaur_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/8/"
+    },
+    {
+      "name": "bulbasaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/9/"
+    },
+    {
+      "name": "bulbasaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/10/"
+    },
+    {
+      "name": "bulbasaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/11/"
+    },
+    {
+      "name": "bulbasaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/12/"
+    },
+    {
+      "name": "bulbasaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/13/"
+    },
+    {
+      "name": "bulbasaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/14/"
+    },
+    {
+      "name": "bulbasaur_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/15/"
+    },
+    {
+      "name": "bulbasaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/2/"
+    },
+    {
+      "name": "bulbasaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/3/"
     }
   ],
   "hp": 45,
@@ -250,7 +402,7 @@
   "name": "Ivysaur",
   "species": "Seed pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/ivysaur.jpg",
-  "Description": "The bulb on its back grows as it absorbs nutrients. The bulb gives off a pleasant aroma when it blooms.",
+  "Description": "There is a bud on this POKMONs back. To support its weight, IVYSAURs legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, its a sign that the bud will bloom into a large flower soon.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 13.0,
   "height": 1.0,
@@ -298,6 +450,14 @@
       "Type": "Grass"
     },
     {
+      "Name": "Growl",
+      "level": "4",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 40,
+      "Type": "Normal"
+    },
+    {
       "Name": "LeechSeed",
       "level": "7",
       "accuracy": 90,
@@ -307,7 +467,7 @@
     },
     {
       "Name": "VineWhip",
-      "level": "13",
+      "level": "10",
       "accuracy": 100,
       "power": 35,
       "pp": 10,
@@ -315,19 +475,35 @@
     },
     {
       "Name": "PoisonPowder",
-      "level": "22",
+      "level": "15",
       "accuracy": 75,
       "power": 0,
       "pp": 35,
       "Type": "Poison"
     },
     {
+      "Name": "SleepPowder",
+      "level": "15",
+      "accuracy": 75,
+      "power": 0,
+      "pp": 15,
+      "Type": "Grass"
+    },
+    {
       "Name": "RazorLeaf",
-      "level": "30",
+      "level": "22",
       "accuracy": 95,
       "power": 55,
       "pp": 25,
       "Type": "Grass"
+    },
+    {
+      "Name": "SweetScent",
+      "level": "29",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Normal"
     },
     {
       "Name": "Growth",
@@ -338,16 +514,16 @@
       "Type": "Normal"
     },
     {
-      "Name": "SleepPowder",
-      "level": "46",
-      "accuracy": 75,
+      "Name": "Synthesis",
+      "level": "47",
+      "accuracy": 0,
       "power": 0,
-      "pp": 15,
+      "pp": 5,
       "Type": "Grass"
     },
     {
       "Name": "SolarBeam",
-      "level": "54",
+      "level": "56",
       "accuracy": 100,
       "power": 120,
       "pp": 10,
@@ -356,12 +532,20 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "SwordsDance",
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Curse",
       "level": "TM03",
       "accuracy": 0,
       "power": 0,
-      "pp": 30,
-      "Type": "Normal"
+      "pp": 10,
+      "Type": "???"
     },
     {
       "Name": "Toxic",
@@ -372,44 +556,60 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
-      "level": "TM08",
-      "accuracy": 100,
-      "power": 85,
-      "pp": 15,
-      "Type": "Normal"
-    },
-    {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
-      "pp": 20,
-      "Type": "Normal"
-    },
-    {
-      "Name": "Double-Edge",
+      "Name": "HiddenPower",
       "level": "TM10",
       "accuracy": 100,
-      "power": 100,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "Rage",
-      "level": "TM20",
+      "Name": "SunnyDay",
+      "level": "TM11",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Fire"
+    },
+    {
+      "Name": "SweetScent",
+      "level": "TM12",
       "accuracy": 100,
-      "power": 20,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "MegaDrain",
-      "level": "TM21",
+      "Name": "Snore",
+      "level": "TM13",
       "accuracy": 100,
       "power": 40,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Protect",
+      "level": "TM17",
+      "accuracy": 0,
+      "power": 0,
       "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "GigaDrain",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 5,
       "Type": "Grass"
+    },
+    {
+      "Name": "Frustration",
+      "level": "TM21",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Normal"
     },
     {
       "Name": "SolarBeam",
@@ -420,12 +620,20 @@
       "Type": "Grass"
     },
     {
-      "Name": "Mimic",
-      "level": "TM31",
-      "accuracy": 0,
+      "Name": "Return",
+      "level": "TM27",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 20,
       "Type": "Normal"
+    },
+    {
+      "Name": "Mud-Slap",
+      "level": "TM31",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 10,
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -436,19 +644,27 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
-      "level": "TM33",
-      "accuracy": 0,
+      "Name": "Swagger",
+      "level": "TM34",
+      "accuracy": 90,
       "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "pp": 15,
+      "Type": "Normal"
     },
     {
-      "Name": "Bide",
-      "level": "TM34",
+      "Name": "SleepTalk",
+      "level": "TM35",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DefenseCurl",
+      "level": "TM40",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -460,12 +676,20 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "FuryCutter",
+      "level": "TM49",
+      "accuracy": 95,
+      "power": 10,
+      "pp": 20,
+      "Type": "Bug"
     },
     {
       "Name": "Cut",
@@ -473,6 +697,14 @@
       "accuracy": 95,
       "power": 50,
       "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Flash",
+      "level": "HM05",
+      "accuracy": 70,
+      "power": 0,
+      "pp": 20,
       "Type": "Normal"
     }
   ],
@@ -482,6 +714,88 @@
     },
     {
       "Name": "Grass"
+    }
+  ],
+  "descriptions": [
+    {
+      "name": "ivysaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/20/"
+    },
+    {
+      "name": "Ivysaur_gen_2",
+      "description": "There is a bud on this POKMONs back. To support its weight, IVYSAURs legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, its a sign that the bud will bloom into a large flower soon.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/21/"
+    },
+    {
+      "name": "ivysaur_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/22/"
+    },
+    {
+      "name": "ivysaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/16/"
+    },
+    {
+      "name": "ivysaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/17/"
+    },
+    {
+      "name": "ivysaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/18/"
+    },
+    {
+      "name": "ivysaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/19/"
+    },
+    {
+      "name": "ivysaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/23/"
+    },
+    {
+      "name": "ivysaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/24/"
+    },
+    {
+      "name": "ivysaur_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/29/"
+    },
+    {
+      "name": "ivysaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/25/"
+    },
+    {
+      "name": "ivysaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/26/"
+    },
+    {
+      "name": "ivysaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/27/"
+    },
+    {
+      "name": "ivysaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/28/"
+    },
+    {
+      "name": "ivysaur_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/30/"
+    },
+    {
+      "name": "ivysaur_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/31/"
     }
   ],
   "hp": 60,
@@ -496,7 +810,7 @@
   "name": "Venusaur",
   "species": "Seed pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/venusaur.jpg",
-  "Description": "It is able to con vert sunlight into energy. As a result, it is more powerful in the summertime.",
+  "Description": "There is a large flower on VENUSAURs back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flowers aroma soothes the emotions of people.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 100.0,
   "height": 2.0,
@@ -544,6 +858,14 @@
       "Type": "Grass"
     },
     {
+      "Name": "Growl",
+      "level": "4",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 40,
+      "Type": "Normal"
+    },
+    {
       "Name": "LeechSeed",
       "level": "7",
       "accuracy": 90,
@@ -553,7 +875,7 @@
     },
     {
       "Name": "VineWhip",
-      "level": "13",
+      "level": "10",
       "accuracy": 100,
       "power": 35,
       "pp": 10,
@@ -561,34 +883,50 @@
     },
     {
       "Name": "PoisonPowder",
-      "level": "22",
+      "level": "15",
       "accuracy": 75,
       "power": 0,
       "pp": 35,
       "Type": "Poison"
     },
     {
+      "Name": "SleepPowder",
+      "level": "15",
+      "accuracy": 75,
+      "power": 0,
+      "pp": 35,
+      "Type": "Grass"
+    },
+    {
       "Name": "RazorLeaf",
-      "level": "30",
+      "level": "22",
       "accuracy": 95,
       "power": 55,
       "pp": 25,
       "Type": "Grass"
     },
     {
+      "Name": "SweetScent",
+      "level": "29",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
       "Name": "Growth",
-      "level": "43",
+      "level": "41",
       "accuracy": 0,
       "power": 0,
       "pp": 40,
       "Type": "Normal"
     },
     {
-      "Name": "SleepPowder",
-      "level": "55",
-      "accuracy": 75,
+      "Name": "Synthesis",
+      "level": "53",
+      "accuracy": 0,
       "power": 0,
-      "pp": 15,
+      "pp": 5,
       "Type": "Grass"
     },
     {
@@ -602,11 +940,27 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "SwordsDance",
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Curse",
       "level": "TM03",
       "accuracy": 0,
       "power": 0,
-      "pp": 30,
+      "pp": 10,
+      "Type": "???"
+    },
+    {
+      "Name": "Roar",
+      "level": "TM05",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
       "Type": "Normal"
     },
     {
@@ -618,26 +972,34 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
-      "level": "TM08",
+      "Name": "HiddenPower",
+      "level": "TM10",
       "accuracy": 100,
-      "power": 85,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
+      "Name": "SunnyDay",
+      "level": "TM11",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Fire"
+    },
+    {
+      "Name": "SweetScent",
+      "level": "TM12",
+      "accuracy": 100,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "Double-Edge",
-      "level": "TM10",
+      "Name": "Snore",
+      "level": "TM13",
       "accuracy": 100,
-      "power": 100,
+      "power": 40,
       "pp": 15,
       "Type": "Normal"
     },
@@ -650,20 +1012,28 @@
       "Type": "Normal"
     },
     {
-      "Name": "Rage",
-      "level": "TM20",
-      "accuracy": 100,
-      "power": 20,
-      "pp": 20,
+      "Name": "Protect",
+      "level": "TM17",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
       "Type": "Normal"
     },
     {
-      "Name": "MegaDrain",
+      "Name": "GigaDrain",
+      "level": "TM19",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 5,
+      "Type": "Grass"
+    },
+    {
+      "Name": "Frustration",
       "level": "TM21",
       "accuracy": 100,
-      "power": 40,
-      "pp": 10,
-      "Type": "Grass"
+      "power": 0,
+      "pp": 20,
+      "Type": "Normal"
     },
     {
       "Name": "SolarBeam",
@@ -674,12 +1044,20 @@
       "Type": "Grass"
     },
     {
-      "Name": "Mimic",
-      "level": "TM31",
-      "accuracy": 0,
+      "Name": "Return",
+      "level": "TM27",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 20,
       "Type": "Normal"
+    },
+    {
+      "Name": "Mud-Slap",
+      "level": "TM31",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 10,
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -690,19 +1068,27 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
-      "level": "TM33",
-      "accuracy": 0,
+      "Name": "Swagger",
+      "level": "TM34",
+      "accuracy": 90,
       "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "pp": 15,
+      "Type": "Normal"
     },
     {
-      "Name": "Bide",
-      "level": "TM34",
+      "Name": "SleepTalk",
+      "level": "TM35",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DefenseCurl",
+      "level": "TM40",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -714,12 +1100,20 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "FuryCutter",
+      "level": "TM49",
+      "accuracy": 95,
+      "power": 10,
+      "pp": 20,
+      "Type": "Bug"
     },
     {
       "Name": "Cut",
@@ -727,6 +1121,14 @@
       "accuracy": 95,
       "power": 50,
       "pp": 30,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Flash",
+      "level": "HM05",
+      "accuracy": 70,
+      "power": 0,
+      "pp": 20,
       "Type": "Normal"
     }
   ],
@@ -736,6 +1138,88 @@
     },
     {
       "Name": "Grass"
+    }
+  ],
+  "descriptions": [
+    {
+      "name": "venusaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/35/"
+    },
+    {
+      "name": "venusaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/32/"
+    },
+    {
+      "name": "venusaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/33/"
+    },
+    {
+      "name": "venusaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/34/"
+    },
+    {
+      "name": "venusaur_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/36/"
+    },
+    {
+      "name": "Venusaur_gen_2",
+      "description": "There is a large flower on VENUSAURs back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flowers aroma soothes the emotions of people.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/37/"
+    },
+    {
+      "name": "venusaur_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/38/"
+    },
+    {
+      "name": "venusaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/39/"
+    },
+    {
+      "name": "venusaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/40/"
+    },
+    {
+      "name": "venusaur_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/41/"
+    },
+    {
+      "name": "venusaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/42/"
+    },
+    {
+      "name": "venusaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/43/"
+    },
+    {
+      "name": "venusaur_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/44/"
+    },
+    {
+      "name": "venusaur_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/45/"
+    },
+    {
+      "name": "venusaur_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/47/"
+    },
+    {
+      "name": "venusaur_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/46/"
     }
   ],
   "hp": 80,
@@ -750,7 +1234,7 @@
   "name": "Charmander",
   "species": "Lizard pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/charmander.jpg",
-  "Description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+  "Description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when CHARMANDER is happy, and blazes when it is enraged.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 8.5,
   "height": 0.6,
@@ -798,47 +1282,63 @@
     },
     {
       "Name": "Ember",
-      "level": "9",
+      "level": "7",
       "accuracy": 100,
       "power": 40,
       "pp": 25,
       "Type": "Fire"
     },
     {
-      "Name": "Leer",
-      "level": "15",
+      "Name": "SmokeScreen",
+      "level": "13",
       "accuracy": 100,
       "power": 0,
-      "pp": 30,
+      "pp": 20,
       "Type": "Normal"
     },
     {
       "Name": "Rage",
-      "level": "22",
+      "level": "19",
       "accuracy": 100,
       "power": 20,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "Slash",
-      "level": "30",
-      "accuracy": 100,
-      "power": 70,
-      "pp": 20,
+      "Name": "ScaryFace",
+      "level": "25",
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
       "Type": "Normal"
     },
     {
       "Name": "Flamethrower",
-      "level": "38",
+      "level": "31",
       "accuracy": 100,
       "power": 95,
       "pp": 15,
       "Type": "Fire"
     },
     {
+      "Name": "Slash",
+      "level": "37",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DragonRage",
+      "level": "43",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 10,
+      "Type": "Dragon"
+    },
+    {
       "Name": "FireSpin",
-      "level": "46",
+      "level": "49",
       "accuracy": 70,
       "power": 15,
       "pp": 15,
@@ -847,28 +1347,28 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "MegaPunch",
+      "Name": "DynamicPunch",
       "level": "TM01",
-      "accuracy": 85,
-      "power": 80,
-      "pp": 20,
+      "accuracy": 50,
+      "power": 100,
+      "pp": 5,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "SwordsDance",
+      "Name": "Curse",
       "level": "TM03",
       "accuracy": 0,
       "power": 0,
-      "pp": 30,
-      "Type": "Normal"
-    },
-    {
-      "Name": "MegaKick",
-      "level": "TM05",
-      "accuracy": 75,
-      "power": 120,
-      "pp": 5,
-      "Type": "Normal"
+      "pp": 10,
+      "Type": "???"
     },
     {
       "Name": "Toxic",
@@ -879,84 +1379,100 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
+      "Name": "RockSmash",
       "level": "TM08",
       "accuracy": 100,
-      "power": 85,
+      "power": 20,
       "pp": 15,
-      "Type": "Normal"
+      "Type": "Fighting"
     },
     {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
-      "pp": 20,
-      "Type": "Normal"
-    },
-    {
-      "Name": "Double-Edge",
+      "Name": "HiddenPower",
       "level": "TM10",
       "accuracy": 100,
-      "power": 100,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "Submission",
+      "Name": "SunnyDay",
+      "level": "TM11",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Snore",
+      "level": "TM13",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Protect",
       "level": "TM17",
-      "accuracy": 80,
-      "power": 80,
-      "pp": 25,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Counter",
-      "level": "TM18",
-      "accuracy": 100,
+      "accuracy": 0,
       "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
+      "pp": 10,
+      "Type": "Normal"
     },
     {
-      "Name": "SeismicToss",
-      "level": "TM19",
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Rage",
+      "Name": "Endure",
       "level": "TM20",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Frustration",
+      "level": "TM21",
       "accuracy": 100,
-      "power": 20,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "DragonRage",
+      "Name": "IronTail",
       "level": "TM23",
+      "accuracy": 75,
+      "power": 100,
+      "pp": 15,
+      "Type": "Steel"
+    },
+    {
+      "Name": "DragonBreath",
+      "level": "TM24",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 20,
+      "Type": "Dragon"
+    },
+    {
+      "Name": "Return",
+      "level": "TM27",
       "accuracy": 100,
       "power": 0,
-      "pp": 10,
-      "Type": "Dragon"
+      "pp": 20,
+      "Type": "Normal"
     },
     {
       "Name": "Dig",
       "level": "TM28",
       "accuracy": 100,
-      "power": 100,
+      "power": 60,
       "pp": 10,
       "Type": "Ground"
     },
     {
-      "Name": "Mimic",
+      "Name": "Mud-Slap",
       "level": "TM31",
-      "accuracy": 0,
-      "power": 0,
+      "accuracy": 100,
+      "power": 20,
       "pp": 10,
-      "Type": "Normal"
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -967,16 +1483,16 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
-      "level": "TM33",
-      "accuracy": 0,
+      "Name": "Swagger",
+      "level": "TM34",
+      "accuracy": 90,
       "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "pp": 15,
+      "Type": "Normal"
     },
     {
-      "Name": "Bide",
-      "level": "TM34",
+      "Name": "SleepTalk",
+      "level": "TM35",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
@@ -999,11 +1515,11 @@
       "Type": "Normal"
     },
     {
-      "Name": "SkullBash",
+      "Name": "DefenseCurl",
       "level": "TM40",
-      "accuracy": 100,
-      "power": 100,
-      "pp": 15,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -1015,12 +1531,28 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "FirePunch",
+      "level": "TM48",
+      "accuracy": 100,
+      "power": 75,
+      "pp": 15,
+      "Type": "Fire"
+    },
+    {
+      "Name": "FuryCutter",
+      "level": "TM49",
+      "accuracy": 95,
+      "power": 10,
+      "pp": 20,
+      "Type": "Bug"
     },
     {
       "Name": "Cut",
@@ -1044,6 +1576,88 @@
       "Name": "Fire"
     }
   ],
+  "descriptions": [
+    {
+      "name": "charmander_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/48/"
+    },
+    {
+      "name": "charmander_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/49/"
+    },
+    {
+      "name": "charmander_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/50/"
+    },
+    {
+      "name": "charmander_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/51/"
+    },
+    {
+      "name": "charmander_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/52/"
+    },
+    {
+      "name": "Charmander_gen_2",
+      "description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when CHARMANDER is happy, and blazes when it is enraged.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/54/"
+    },
+    {
+      "name": "charmander_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/55/"
+    },
+    {
+      "name": "charmander_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/56/"
+    },
+    {
+      "name": "charmander_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/57/"
+    },
+    {
+      "name": "charmander_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/58/"
+    },
+    {
+      "name": "charmander_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/59/"
+    },
+    {
+      "name": "charmander_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/60/"
+    },
+    {
+      "name": "charmander_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/61/"
+    },
+    {
+      "name": "charmander_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/62/"
+    },
+    {
+      "name": "charmander_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/63/"
+    },
+    {
+      "name": "charmander_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/53/"
+    }
+  ],
   "hp": 39,
   "attack": 52,
   "defense": 43,
@@ -1056,7 +1670,7 @@
   "name": "Charmeleon",
   "species": "Flame pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/charmeleon.jpg",
-  "Description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+  "Description": "CHARMELEON mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 19.0,
   "height": 1.1,
@@ -1105,47 +1719,63 @@
     },
     {
       "Name": "Ember",
-      "level": "9",
+      "level": "7",
       "accuracy": 100,
       "power": 40,
       "pp": 25,
       "Type": "Fire"
     },
     {
-      "Name": "Leer",
-      "level": "15",
+      "Name": "SmokeScreen",
+      "level": "13",
       "accuracy": 100,
       "power": 0,
-      "pp": 30,
+      "pp": 20,
       "Type": "Normal"
     },
     {
       "Name": "Rage",
-      "level": "24",
+      "level": "20",
       "accuracy": 100,
       "power": 20,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "Slash",
-      "level": "33",
-      "accuracy": 100,
-      "power": 70,
-      "pp": 20,
+      "Name": "ScaryFace",
+      "level": "27",
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
       "Type": "Normal"
     },
     {
       "Name": "Flamethrower",
-      "level": "42",
+      "level": "34",
       "accuracy": 100,
       "power": 95,
       "pp": 15,
       "Type": "Fire"
     },
     {
+      "Name": "Slash",
+      "level": "41",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DragonRage",
+      "level": "48",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 10,
+      "Type": "Dragon"
+    },
+    {
       "Name": "FireSpin",
-      "level": "56",
+      "level": "55",
       "accuracy": 70,
       "power": 15,
       "pp": 15,
@@ -1154,28 +1784,28 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "MegaPunch",
+      "Name": "DynamicPunch",
       "level": "TM01",
-      "accuracy": 85,
-      "power": 80,
-      "pp": 20,
+      "accuracy": 50,
+      "power": 100,
+      "pp": 5,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "SwordsDance",
+      "Name": "Curse",
       "level": "TM03",
       "accuracy": 0,
       "power": 0,
-      "pp": 30,
-      "Type": "Normal"
-    },
-    {
-      "Name": "MegaKick",
-      "level": "TM05",
-      "accuracy": 75,
-      "power": 120,
-      "pp": 5,
-      "Type": "Normal"
+      "pp": 10,
+      "Type": "???"
     },
     {
       "Name": "Toxic",
@@ -1186,84 +1816,100 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
+      "Name": "RockSmash",
       "level": "TM08",
       "accuracy": 100,
-      "power": 85,
+      "power": 20,
       "pp": 15,
-      "Type": "Normal"
+      "Type": "Fighting"
     },
     {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
-      "pp": 20,
-      "Type": "Normal"
-    },
-    {
-      "Name": "Double-Edge",
+      "Name": "HiddenPower",
       "level": "TM10",
       "accuracy": 100,
-      "power": 100,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "Submission",
+      "Name": "SunnyDay",
+      "level": "TM11",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Fire"
+    },
+    {
+      "Name": "Snore",
+      "level": "TM13",
+      "accuracy": 100,
+      "power": 40,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Protect",
       "level": "TM17",
-      "accuracy": 80,
-      "power": 80,
-      "pp": 25,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Counter",
-      "level": "TM18",
-      "accuracy": 100,
+      "accuracy": 0,
       "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
+      "pp": 10,
+      "Type": "Normal"
     },
     {
-      "Name": "SeismicToss",
-      "level": "TM19",
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Rage",
+      "Name": "Endure",
       "level": "TM20",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Frustration",
+      "level": "TM21",
       "accuracy": 100,
-      "power": 20,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "DragonRage",
+      "Name": "IronTail",
       "level": "TM23",
+      "accuracy": 75,
+      "power": 100,
+      "pp": 15,
+      "Type": "Steel"
+    },
+    {
+      "Name": "DragonBreath",
+      "level": "TM24",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 20,
+      "Type": "Dragon"
+    },
+    {
+      "Name": "Return",
+      "level": "TM27",
       "accuracy": 100,
       "power": 0,
-      "pp": 10,
-      "Type": "Dragon"
+      "pp": 20,
+      "Type": "Normal"
     },
     {
       "Name": "Dig",
       "level": "TM28",
       "accuracy": 100,
-      "power": 100,
+      "power": 60,
       "pp": 10,
       "Type": "Ground"
     },
     {
-      "Name": "Mimic",
+      "Name": "Mud-Slap",
       "level": "TM31",
-      "accuracy": 0,
-      "power": 0,
+      "accuracy": 100,
+      "power": 20,
       "pp": 10,
-      "Type": "Normal"
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -1274,16 +1920,16 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
-      "level": "TM33",
-      "accuracy": 0,
+      "Name": "Swagger",
+      "level": "TM34",
+      "accuracy": 90,
       "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "pp": 15,
+      "Type": "Normal"
     },
     {
-      "Name": "Bide",
-      "level": "TM34",
+      "Name": "SleepTalk",
+      "level": "TM35",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
@@ -1306,11 +1952,11 @@
       "Type": "Normal"
     },
     {
-      "Name": "SkullBash",
+      "Name": "DefenseCurl",
       "level": "TM40",
-      "accuracy": 100,
-      "power": 100,
-      "pp": 15,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -1322,12 +1968,28 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "FirePunch",
+      "level": "TM48",
+      "accuracy": 100,
+      "power": 75,
+      "pp": 15,
+      "Type": "Fire"
+    },
+    {
+      "Name": "FuryCutter",
+      "level": "TM49",
+      "accuracy": 95,
+      "power": 10,
+      "pp": 20,
+      "Type": "Bug"
     },
     {
       "Name": "Cut",
@@ -1351,6 +2013,88 @@
       "Name": "Fire"
     }
   ],
+  "descriptions": [
+    {
+      "name": "charmeleon_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/64/"
+    },
+    {
+      "name": "charmeleon_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/65/"
+    },
+    {
+      "name": "charmeleon_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/66/"
+    },
+    {
+      "name": "charmeleon_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/67/"
+    },
+    {
+      "name": "charmeleon_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/68/"
+    },
+    {
+      "name": "Charmeleon_gen_2",
+      "description": "CHARMELEON mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/69/"
+    },
+    {
+      "name": "charmeleon_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/70/"
+    },
+    {
+      "name": "charmeleon_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/71/"
+    },
+    {
+      "name": "charmeleon_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/72/"
+    },
+    {
+      "name": "charmeleon_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/74/"
+    },
+    {
+      "name": "charmeleon_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/79/"
+    },
+    {
+      "name": "charmeleon_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/75/"
+    },
+    {
+      "name": "charmeleon_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/76/"
+    },
+    {
+      "name": "charmeleon_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/77/"
+    },
+    {
+      "name": "charmeleon_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/78/"
+    },
+    {
+      "name": "charmeleon_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/73/"
+    }
+  ],
   "hp": 58,
   "attack": 64,
   "defense": 58,
@@ -1363,7 +2107,7 @@
   "name": "Charizard",
   "species": "Flame pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/charizard.jpg",
-  "Description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+  "Description": "CHARIZARD flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 90.5,
   "height": 1.7,
@@ -1379,12 +2123,12 @@
   ],
   "MovesWeb": [
     {
-      "Name": "Scratch",
+      "Name": "Ember",
       "level": "Start",
       "accuracy": 100,
       "power": 40,
-      "pp": 35,
-      "Type": "Normal"
+      "pp": 25,
+      "Type": "Fire"
     },
     {
       "Name": "Growl",
@@ -1395,64 +2139,88 @@
       "Type": "Normal"
     },
     {
-      "Name": "Ember",
+      "Name": "Scratch",
       "level": "Start",
       "accuracy": 100,
       "power": 40,
-      "pp": 25,
-      "Type": "Fire"
+      "pp": 35,
+      "Type": "Normal"
     },
     {
-      "Name": "Leer",
+      "Name": "SmokeScreen",
       "level": "Start",
       "accuracy": 100,
       "power": 0,
-      "pp": 30,
+      "pp": 20,
       "Type": "Normal"
     },
     {
       "Name": "Ember",
-      "level": "9",
+      "level": "7",
       "accuracy": 100,
       "power": 40,
       "pp": 25,
       "Type": "Fire"
     },
     {
-      "Name": "Leer",
-      "level": "15",
+      "Name": "SmokeScreen",
+      "level": "13",
       "accuracy": 100,
       "power": 0,
-      "pp": 30,
+      "pp": 20,
       "Type": "Normal"
     },
     {
       "Name": "Rage",
-      "level": "24",
+      "level": "20",
       "accuracy": 100,
       "power": 20,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "Slash",
-      "level": "36",
-      "accuracy": 100,
-      "power": 70,
-      "pp": 20,
+      "Name": "ScaryFace",
+      "level": "27",
+      "accuracy": 90,
+      "power": 0,
+      "pp": 10,
       "Type": "Normal"
     },
     {
       "Name": "Flamethrower",
-      "level": "46",
+      "level": "34",
       "accuracy": 100,
       "power": 95,
       "pp": 15,
       "Type": "Fire"
     },
     {
+      "Name": "WingAttack",
+      "level": "36",
+      "accuracy": 100,
+      "power": 60,
+      "pp": 35,
+      "Type": "Flying"
+    },
+    {
+      "Name": "Slash",
+      "level": "44",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "DragonRage",
+      "level": "54",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 10,
+      "Type": "Dragon"
+    },
+    {
       "Name": "FireSpin",
-      "level": "55",
+      "level": "64",
       "accuracy": 70,
       "power": 15,
       "pp": 15,
@@ -1461,27 +2229,35 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "MegaPunch",
+      "Name": "DynamicPunch",
       "level": "TM01",
-      "accuracy": 85,
-      "power": 80,
-      "pp": 20,
+      "accuracy": 50,
+      "power": 100,
+      "pp": 5,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "SwordsDance",
+      "Name": "Curse",
       "level": "TM03",
       "accuracy": 0,
       "power": 0,
-      "pp": 30,
-      "Type": "Normal"
+      "pp": 10,
+      "Type": "???"
     },
     {
-      "Name": "MegaKick",
+      "Name": "Roar",
       "level": "TM05",
-      "accuracy": 75,
-      "power": 120,
-      "pp": 5,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
       "Type": "Normal"
     },
     {
@@ -1493,26 +2269,34 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
+      "Name": "RockSmash",
       "level": "TM08",
       "accuracy": 100,
-      "power": 85,
+      "power": 20,
+      "pp": 15,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "HiddenPower",
+      "level": "TM10",
+      "accuracy": 100,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
-      "pp": 20,
-      "Type": "Normal"
+      "Name": "SunnyDay",
+      "level": "TM11",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
+      "Type": "Fire"
     },
     {
-      "Name": "Double-Edge",
-      "level": "TM10",
+      "Name": "Snore",
+      "level": "TM13",
       "accuracy": 100,
-      "power": 100,
+      "power": 40,
       "pp": 15,
       "Type": "Normal"
     },
@@ -1525,43 +2309,43 @@
       "Type": "Normal"
     },
     {
-      "Name": "Submission",
+      "Name": "Protect",
       "level": "TM17",
-      "accuracy": 80,
-      "power": 80,
-      "pp": 25,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Counter",
-      "level": "TM18",
-      "accuracy": 100,
+      "accuracy": 0,
       "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
+      "pp": 10,
+      "Type": "Normal"
     },
     {
-      "Name": "SeismicToss",
-      "level": "TM19",
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Rage",
+      "Name": "Endure",
       "level": "TM20",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Frustration",
+      "level": "TM21",
       "accuracy": 100,
-      "power": 20,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
     },
     {
-      "Name": "DragonRage",
+      "Name": "IronTail",
       "level": "TM23",
+      "accuracy": 75,
+      "power": 100,
+      "pp": 15,
+      "Type": "Steel"
+    },
+    {
+      "Name": "DragonBreath",
+      "level": "TM24",
       "accuracy": 100,
-      "power": 0,
-      "pp": 10,
+      "power": 60,
+      "pp": 20,
       "Type": "Dragon"
     },
     {
@@ -1573,28 +2357,28 @@
       "Type": "Ground"
     },
     {
-      "Name": "Fissure",
+      "Name": "Return",
       "level": "TM27",
-      "accuracy": 0,
+      "accuracy": 100,
       "power": 0,
-      "pp": 5,
-      "Type": "Ground"
+      "pp": 20,
+      "Type": "Normal"
     },
     {
       "Name": "Dig",
       "level": "TM28",
       "accuracy": 100,
-      "power": 100,
+      "power": 60,
       "pp": 10,
       "Type": "Ground"
     },
     {
-      "Name": "Mimic",
+      "Name": "Mud-Slap",
       "level": "TM31",
-      "accuracy": 0,
-      "power": 0,
+      "accuracy": 100,
+      "power": 20,
       "pp": 10,
-      "Type": "Normal"
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -1605,20 +2389,28 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
-      "level": "TM33",
-      "accuracy": 0,
+      "Name": "Swagger",
+      "level": "TM34",
+      "accuracy": 90,
       "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "pp": 15,
+      "Type": "Normal"
     },
     {
-      "Name": "Bide",
-      "level": "TM34",
+      "Name": "SleepTalk",
+      "level": "TM35",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
       "Type": "Normal"
+    },
+    {
+      "Name": "Sandstorm",
+      "level": "TM37",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Rock"
     },
     {
       "Name": "FireBlast",
@@ -1637,11 +2429,11 @@
       "Type": "Normal"
     },
     {
-      "Name": "SkullBash",
+      "Name": "DefenseCurl",
       "level": "TM40",
-      "accuracy": 100,
-      "power": 100,
-      "pp": 15,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -1653,12 +2445,36 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "SteelWing",
+      "level": "TM47",
+      "accuracy": 90,
+      "power": 70,
+      "pp": 25,
+      "Type": "Steel"
+    },
+    {
+      "Name": "FirePunch",
+      "level": "TM48",
+      "accuracy": 100,
+      "power": 75,
+      "pp": 15,
+      "Type": "Fire"
+    },
+    {
+      "Name": "FuryCutter",
+      "level": "TM49",
+      "accuracy": 95,
+      "power": 10,
+      "pp": 20,
+      "Type": "Bug"
     },
     {
       "Name": "Cut",
@@ -1670,7 +2486,7 @@
     },
     {
       "Name": "Fly",
-      "level": "HM02Y",
+      "level": "HM02",
       "accuracy": 95,
       "power": 70,
       "pp": 15,
@@ -1693,6 +2509,88 @@
       "Name": "Fire"
     }
   ],
+  "descriptions": [
+    {
+      "name": "charizard_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/80/"
+    },
+    {
+      "name": "charizard_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/81/"
+    },
+    {
+      "name": "charizard_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/82/"
+    },
+    {
+      "name": "charizard_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/83/"
+    },
+    {
+      "name": "charizard_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/84/"
+    },
+    {
+      "name": "Charizard_gen_2",
+      "description": "CHARIZARD flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/85/"
+    },
+    {
+      "name": "charizard_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/86/"
+    },
+    {
+      "name": "charizard_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/87/"
+    },
+    {
+      "name": "charizard_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/88/"
+    },
+    {
+      "name": "charizard_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/89/"
+    },
+    {
+      "name": "charizard_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/92/"
+    },
+    {
+      "name": "charizard_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/93/"
+    },
+    {
+      "name": "charizard_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/94/"
+    },
+    {
+      "name": "charizard_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/95/"
+    },
+    {
+      "name": "charizard_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/90/"
+    },
+    {
+      "name": "charizard_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/91/"
+    }
+  ],
   "hp": 78,
   "attack": 84,
   "defense": 78,
@@ -1705,7 +2603,7 @@
   "name": "Squirtle",
   "species": "Tiny turtle pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/squirtle.jpg",
-  "Description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+  "Description": "Its shell is not just for protection. Its rounded shape and the grooves on its surface minimize resistance in water, enabling SQUIRTLE to swim at high speeds.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 9.0,
   "height": 0.5,
@@ -1745,7 +2643,7 @@
     },
     {
       "Name": "TailWhip",
-      "level": "Start",
+      "level": "4",
       "accuracy": 100,
       "power": 0,
       "pp": 30,
@@ -1753,15 +2651,23 @@
     },
     {
       "Name": "Bubble",
-      "level": "8",
+      "level": "7",
       "accuracy": 100,
       "power": 20,
       "pp": 30,
       "Type": "Water"
     },
     {
+      "Name": "Withdraw",
+      "level": "10",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "Type": "Water"
+    },
+    {
       "Name": "WaterGun",
-      "level": "15",
+      "level": "13",
       "accuracy": 100,
       "power": 40,
       "pp": 25,
@@ -1769,23 +2675,39 @@
     },
     {
       "Name": "Bite",
-      "level": "22",
+      "level": "18",
       "accuracy": 100,
       "power": 60,
       "pp": 25,
+      "Type": "Dark"
+    },
+    {
+      "Name": "RapidSpin",
+      "level": "23",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 40,
       "Type": "Normal"
     },
     {
-      "Name": "Withdraw",
+      "Name": "Protect",
       "level": "28",
       "accuracy": 0,
       "power": 0,
-      "pp": 40,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "RainDance",
+      "level": "33",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
       "Type": "Water"
     },
     {
       "Name": "SkullBash",
-      "level": "35",
+      "level": "40",
       "accuracy": 100,
       "power": 100,
       "pp": 15,
@@ -1793,7 +2715,7 @@
     },
     {
       "Name": "HydroPump",
-      "level": "42",
+      "level": "47",
       "accuracy": 80,
       "power": 120,
       "pp": 5,
@@ -1802,20 +2724,36 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "MegaPunch",
+      "Name": "DynamicPunch",
       "level": "TM01",
-      "accuracy": 85,
-      "power": 80,
-      "pp": 20,
+      "accuracy": 50,
+      "power": 100,
+      "pp": 5,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "MegaKick",
-      "level": "TM05",
-      "accuracy": 75,
-      "power": 120,
-      "pp": 5,
-      "Type": "Normal"
+      "Name": "Curse",
+      "level": "TM03",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "???"
+    },
+    {
+      "Name": "Rollout",
+      "level": "TM04",
+      "accuracy": 90,
+      "power": 30,
+      "pp": 20,
+      "Type": "Rock"
     },
     {
       "Name": "Toxic",
@@ -1826,90 +2764,90 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
+      "Name": "RockSmash",
       "level": "TM08",
       "accuracy": 100,
-      "power": 85,
+      "power": 20,
       "pp": 15,
-      "Type": "Normal"
+      "Type": "Fighting"
     },
     {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
-      "pp": 20,
-      "Type": "Normal"
-    },
-    {
-      "Name": "Double-Edge",
+      "Name": "HiddenPower",
       "level": "TM10",
       "accuracy": 100,
-      "power": 100,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "BubbleBeam",
-      "level": "TM11",
-      "accuracy": 100,
-      "power": 65,
-      "pp": 20,
-      "Type": "Water"
-    },
-    {
-      "Name": "WaterGun",
-      "level": "TM12",
-      "accuracy": 100,
-      "power": 40,
-      "pp": 25,
-      "Type": "Water"
-    },
-    {
-      "Name": "IceBeam",
+      "Name": "Snore",
       "level": "TM13",
       "accuracy": 100,
-      "power": 95,
-      "pp": 10,
-      "Type": "Ice"
+      "power": 40,
+      "pp": 15,
+      "Type": "Normal"
     },
     {
       "Name": "Blizzard",
       "level": "TM14",
-      "accuracy": 90,
+      "accuracy": 70,
       "power": 120,
       "pp": 5,
       "Type": "Ice"
     },
     {
-      "Name": "Submission",
+      "Name": "IcyWind",
+      "level": "TM16",
+      "accuracy": 95,
+      "power": 55,
+      "pp": 15,
+      "Type": "Ice"
+    },
+    {
+      "Name": "Protect",
       "level": "TM17",
-      "accuracy": 80,
-      "power": 80,
-      "pp": 25,
-      "Type": "Fighting"
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
     },
     {
-      "Name": "Counter",
+      "Name": "RainDance",
       "level": "TM18",
-      "accuracy": 100,
+      "accuracy": 0,
       "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
+      "pp": 5,
+      "Type": "Water"
     },
     {
-      "Name": "SeismicToss",
-      "level": "TM19",
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Rage",
+      "Name": "Endure",
       "level": "TM20",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Frustration",
+      "level": "TM21",
       "accuracy": 100,
-      "power": 20,
+      "power": 0,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "IronTail",
+      "level": "TM23",
+      "accuracy": 75,
+      "power": 100,
+      "pp": 15,
+      "Type": "Steel"
+    },
+    {
+      "Name": "Return",
+      "level": "TM27",
+      "accuracy": 100,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
     },
@@ -1917,17 +2855,17 @@
       "Name": "Dig",
       "level": "TM28",
       "accuracy": 100,
-      "power": 100,
+      "power": 60,
       "pp": 10,
       "Type": "Ground"
     },
     {
-      "Name": "Mimic",
+      "Name": "Mud-Slap",
       "level": "TM31",
-      "accuracy": 0,
-      "power": 0,
+      "accuracy": 100,
+      "power": 20,
       "pp": 10,
-      "Type": "Normal"
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -1938,27 +2876,35 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
+      "Name": "IcePunch",
       "level": "TM33",
-      "accuracy": 0,
-      "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "accuracy": 100,
+      "power": 75,
+      "pp": 15,
+      "Type": "Ice"
     },
     {
-      "Name": "Bide",
+      "Name": "Swagger",
       "level": "TM34",
+      "accuracy": 90,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SleepTalk",
+      "level": "TM35",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
       "Type": "Normal"
     },
     {
-      "Name": "SkullBash",
+      "Name": "DefenseCurl",
       "level": "TM40",
-      "accuracy": 100,
-      "power": 100,
-      "pp": 15,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -1970,11 +2916,11 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
     },
     {
@@ -1992,11 +2938,109 @@
       "power": 80,
       "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "Whirlpool",
+      "level": "HM06",
+      "accuracy": 70,
+      "power": 15,
+      "pp": 15,
+      "Type": "Water"
+    },
+    {
+      "Name": "Waterfall",
+      "level": "HM07",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Water"
     }
   ],
   "types": [
     {
       "Name": "Water"
+    }
+  ],
+  "descriptions": [
+    {
+      "name": "squirtle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/96/"
+    },
+    {
+      "name": "squirtle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/97/"
+    },
+    {
+      "name": "squirtle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/98/"
+    },
+    {
+      "name": "squirtle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/99/"
+    },
+    {
+      "name": "squirtle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/100/"
+    },
+    {
+      "name": "squirtle_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/109/"
+    },
+    {
+      "name": "Squirtle_gen_2",
+      "description": "Its shell is not just for protection. Its rounded shape and the grooves on its surface minimize resistance in water, enabling SQUIRTLE to swim at high speeds.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/102/"
+    },
+    {
+      "name": "squirtle_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/103/"
+    },
+    {
+      "name": "squirtle_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/104/"
+    },
+    {
+      "name": "squirtle_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/110/"
+    },
+    {
+      "name": "squirtle_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/105/"
+    },
+    {
+      "name": "squirtle_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/106/"
+    },
+    {
+      "name": "squirtle_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/107/"
+    },
+    {
+      "name": "squirtle_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/111/"
+    },
+    {
+      "name": "squirtle_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/108/"
+    },
+    {
+      "name": "squirtle_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/101/"
     }
   ],
   "hp": 44,
@@ -2011,7 +3055,7 @@
   "name": "Wartortle",
   "species": "Turtle pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/wartortle.jpg",
-  "Description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+  "Description": "Its large tail is covered with rich, thick fur that deepens in color with age. The scratches on its shell are evidence of this POKMONs toughness in battle.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 22.5,
   "height": 1.0,
@@ -2059,16 +3103,32 @@
       "Type": "Water"
     },
     {
+      "Name": "TailWhip",
+      "level": "4",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
       "Name": "Bubble",
-      "level": "8",
+      "level": "7",
       "accuracy": 100,
       "power": 20,
       "pp": 30,
       "Type": "Water"
     },
     {
+      "Name": "Withdraw",
+      "level": "10",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "Type": "Water"
+    },
+    {
       "Name": "WaterGun",
-      "level": "15",
+      "level": "13",
       "accuracy": 100,
       "power": 40,
       "pp": 25,
@@ -2076,18 +3136,34 @@
     },
     {
       "Name": "Bite",
-      "level": "24",
+      "level": "19",
       "accuracy": 100,
       "power": 60,
       "pp": 25,
+      "Type": "Dark"
+    },
+    {
+      "Name": "RapidSpin",
+      "level": "25",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 40,
       "Type": "Normal"
     },
     {
-      "Name": "Withdraw",
+      "Name": "Protect",
       "level": "31",
       "accuracy": 0,
       "power": 0,
-      "pp": 40,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "RainDance",
+      "level": "37",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
       "Type": "Water"
     },
     {
@@ -2109,20 +3185,36 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "MegaPunch",
+      "Name": "DynamicPunch",
       "level": "TM01",
-      "accuracy": 85,
-      "power": 80,
-      "pp": 20,
+      "accuracy": 50,
+      "power": 100,
+      "pp": 5,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "MegaKick",
-      "level": "TM05",
-      "accuracy": 75,
-      "power": 120,
-      "pp": 5,
-      "Type": "Normal"
+      "Name": "Curse",
+      "level": "TM03",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "???"
+    },
+    {
+      "Name": "Rollout",
+      "level": "TM04",
+      "accuracy": 90,
+      "power": 30,
+      "pp": 20,
+      "Type": "Rock"
     },
     {
       "Name": "Toxic",
@@ -2133,90 +3225,90 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
+      "Name": "RockSmash",
       "level": "TM08",
       "accuracy": 100,
-      "power": 85,
+      "power": 20,
       "pp": 15,
-      "Type": "Normal"
+      "Type": "Fighting"
     },
     {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
-      "pp": 20,
-      "Type": "Normal"
-    },
-    {
-      "Name": "Double-Edge",
+      "Name": "HiddenPower",
       "level": "TM10",
       "accuracy": 100,
-      "power": 100,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "BubbleBeam",
-      "level": "TM11",
-      "accuracy": 100,
-      "power": 65,
-      "pp": 20,
-      "Type": "Water"
-    },
-    {
-      "Name": "WaterGun",
-      "level": "TM12",
-      "accuracy": 100,
-      "power": 40,
-      "pp": 25,
-      "Type": "Water"
-    },
-    {
-      "Name": "IceBeam",
+      "Name": "Snore",
       "level": "TM13",
       "accuracy": 100,
-      "power": 95,
-      "pp": 10,
-      "Type": "Ice"
+      "power": 40,
+      "pp": 15,
+      "Type": "Normal"
     },
     {
       "Name": "Blizzard",
       "level": "TM14",
-      "accuracy": 90,
+      "accuracy": 70,
       "power": 120,
       "pp": 5,
       "Type": "Ice"
     },
     {
-      "Name": "Submission",
+      "Name": "IcyWind",
+      "level": "TM16",
+      "accuracy": 95,
+      "power": 55,
+      "pp": 15,
+      "Type": "Ice"
+    },
+    {
+      "Name": "Protect",
       "level": "TM17",
-      "accuracy": 80,
-      "power": 80,
-      "pp": 25,
-      "Type": "Fighting"
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
     },
     {
-      "Name": "Counter",
+      "Name": "RainDance",
       "level": "TM18",
-      "accuracy": 100,
+      "accuracy": 0,
       "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
+      "pp": 5,
+      "Type": "Water"
     },
     {
-      "Name": "SeismicToss",
-      "level": "TM19",
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Rage",
+      "Name": "Endure",
       "level": "TM20",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Frustration",
+      "level": "TM21",
       "accuracy": 100,
-      "power": 20,
+      "power": 0,
+      "pp": 20,
+      "Type": "Normal"
+    },
+    {
+      "Name": "IronTail",
+      "level": "TM23",
+      "accuracy": 75,
+      "power": 100,
+      "pp": 15,
+      "Type": "Steel"
+    },
+    {
+      "Name": "Return",
+      "level": "TM27",
+      "accuracy": 100,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
     },
@@ -2224,17 +3316,17 @@
       "Name": "Dig",
       "level": "TM28",
       "accuracy": 100,
-      "power": 100,
+      "power": 60,
       "pp": 10,
       "Type": "Ground"
     },
     {
-      "Name": "Mimic",
+      "Name": "Mud-Slap",
       "level": "TM31",
-      "accuracy": 0,
-      "power": 0,
+      "accuracy": 100,
+      "power": 20,
       "pp": 10,
-      "Type": "Normal"
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -2245,27 +3337,35 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
+      "Name": "IcePunch",
       "level": "TM33",
-      "accuracy": 0,
-      "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "accuracy": 100,
+      "power": 75,
+      "pp": 15,
+      "Type": "Ice"
     },
     {
-      "Name": "Bide",
+      "Name": "Swagger",
       "level": "TM34",
+      "accuracy": 90,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SleepTalk",
+      "level": "TM35",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
       "Type": "Normal"
     },
     {
-      "Name": "SkullBash",
+      "Name": "DefenseCurl",
       "level": "TM40",
-      "accuracy": 100,
-      "power": 100,
-      "pp": 15,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -2277,11 +3377,11 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
     },
     {
@@ -2299,11 +3399,109 @@
       "power": 80,
       "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "Whirlpool",
+      "level": "HM06",
+      "accuracy": 70,
+      "power": 15,
+      "pp": 15,
+      "Type": "Water"
+    },
+    {
+      "Name": "Waterfall",
+      "level": "HM07",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Water"
     }
   ],
   "types": [
     {
       "Name": "Water"
+    }
+  ],
+  "descriptions": [
+    {
+      "name": "Wartortle_gen_2",
+      "description": "Its large tail is covered with rich, thick fur that deepens in color with age. The scratches on its shell are evidence of this POKMONs toughness in battle.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/118/"
+    },
+    {
+      "name": "wartortle_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/119/"
+    },
+    {
+      "name": "wartortle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/112/"
+    },
+    {
+      "name": "wartortle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/113/"
+    },
+    {
+      "name": "wartortle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/114/"
+    },
+    {
+      "name": "wartortle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/115/"
+    },
+    {
+      "name": "wartortle_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/116/"
+    },
+    {
+      "name": "wartortle_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/117/"
+    },
+    {
+      "name": "wartortle_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/120/"
+    },
+    {
+      "name": "wartortle_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/124/"
+    },
+    {
+      "name": "wartortle_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/121/"
+    },
+    {
+      "name": "wartortle_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/122/"
+    },
+    {
+      "name": "wartortle_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/123/"
+    },
+    {
+      "name": "wartortle_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/125/"
+    },
+    {
+      "name": "wartortle_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/126/"
+    },
+    {
+      "name": "wartortle_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/127/"
     }
   ],
   "hp": 59,
@@ -2318,7 +3516,7 @@
   "name": "Blastoise",
   "species": "Shellfish pokemon",
   "ImageURL": "http://img.pokemondb.net/artwork/blastoise.jpg",
-  "Description": "A brutal POKMON with pressurized water jets on its shell. They are used for high speed tackles.",
+  "Description": "BLASTOISE has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet.",
   "male_female_ratio": "Male: 87,5%    Female: 12,5%",
   "weight": 85.5,
   "height": 1.6,
@@ -2358,24 +3556,48 @@
       "Type": "Water"
     },
     {
-      "Name": "WaterGun",
+      "Name": "Withdraw",
       "level": "Start",
-      "accuracy": 100,
-      "power": 40,
-      "pp": 25,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
       "Type": "Water"
     },
     {
+      "Name": "Protect",
+      "level": "Start",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "TailWhip",
+      "level": "4",
+      "accuracy": 100,
+      "power": 0,
+      "pp": 30,
+      "Type": "Normal"
+    },
+    {
       "Name": "Bubble",
-      "level": "8",
+      "level": "7",
       "accuracy": 100,
       "power": 20,
       "pp": 30,
       "Type": "Water"
     },
     {
+      "Name": "Withdraw",
+      "level": "10",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
+      "Type": "Water"
+    },
+    {
       "Name": "WaterGun",
-      "level": "15",
+      "level": "13",
       "accuracy": 100,
       "power": 40,
       "pp": 25,
@@ -2383,23 +3605,39 @@
     },
     {
       "Name": "Bite",
-      "level": "24",
+      "level": "19",
       "accuracy": 100,
       "power": 60,
       "pp": 25,
+      "Type": "Dark"
+    },
+    {
+      "Name": "RapidSpin",
+      "level": "25",
+      "accuracy": 100,
+      "power": 20,
+      "pp": 40,
       "Type": "Normal"
     },
     {
-      "Name": "Withdraw",
+      "Name": "Protect",
       "level": "31",
       "accuracy": 0,
       "power": 0,
-      "pp": 40,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "RainDance",
+      "level": "42",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 5,
       "Type": "Water"
     },
     {
       "Name": "SkullBash",
-      "level": "42",
+      "level": "55",
       "accuracy": 100,
       "power": 100,
       "pp": 15,
@@ -2407,7 +3645,7 @@
     },
     {
       "Name": "HydroPump",
-      "level": "52",
+      "level": "68",
       "accuracy": 80,
       "power": 120,
       "pp": 5,
@@ -2416,19 +3654,43 @@
   ],
   "MachinesWeb": [
     {
-      "Name": "MegaPunch",
+      "Name": "DynamicPunch",
       "level": "TM01",
-      "accuracy": 85,
-      "power": 80,
-      "pp": 20,
+      "accuracy": 50,
+      "power": 100,
+      "pp": 5,
+      "Type": "Fighting"
+    },
+    {
+      "Name": "Headbutt",
+      "level": "TM02",
+      "accuracy": 100,
+      "power": 70,
+      "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "MegaKick",
+      "Name": "Curse",
+      "level": "TM03",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "???"
+    },
+    {
+      "Name": "Rollout",
+      "level": "TM04",
+      "accuracy": 90,
+      "power": 30,
+      "pp": 20,
+      "Type": "Rock"
+    },
+    {
+      "Name": "Roar",
       "level": "TM05",
-      "accuracy": 75,
-      "power": 120,
-      "pp": 5,
+      "accuracy": 100,
+      "power": 0,
+      "pp": 20,
       "Type": "Normal"
     },
     {
@@ -2440,57 +3702,33 @@
       "Type": "Poison"
     },
     {
-      "Name": "BodySlam",
+      "Name": "RockSmash",
       "level": "TM08",
       "accuracy": 100,
-      "power": 85,
+      "power": 20,
       "pp": 15,
-      "Type": "Normal"
+      "Type": "Fighting"
     },
     {
-      "Name": "TakeDown",
-      "level": "TM09",
-      "accuracy": 85,
-      "power": 90,
-      "pp": 20,
-      "Type": "Normal"
-    },
-    {
-      "Name": "Double-Edge",
+      "Name": "HiddenPower",
       "level": "TM10",
       "accuracy": 100,
-      "power": 100,
+      "power": 0,
       "pp": 15,
       "Type": "Normal"
     },
     {
-      "Name": "BubbleBeam",
-      "level": "TM11",
-      "accuracy": 100,
-      "power": 65,
-      "pp": 20,
-      "Type": "Water"
-    },
-    {
-      "Name": "WaterGun",
-      "level": "TM12",
-      "accuracy": 100,
-      "power": 40,
-      "pp": 25,
-      "Type": "Water"
-    },
-    {
-      "Name": "IceBeam",
+      "Name": "Snore",
       "level": "TM13",
       "accuracy": 100,
-      "power": 95,
-      "pp": 10,
-      "Type": "Ice"
+      "power": 40,
+      "pp": 15,
+      "Type": "Normal"
     },
     {
       "Name": "Blizzard",
       "level": "TM14",
-      "accuracy": 90,
+      "accuracy": 70,
       "power": 120,
       "pp": 5,
       "Type": "Ice"
@@ -2504,36 +3742,52 @@
       "Type": "Normal"
     },
     {
-      "Name": "Submission",
+      "Name": "IcyWind",
+      "level": "TM16",
+      "accuracy": 95,
+      "power": 55,
+      "pp": 15,
+      "Type": "Ice"
+    },
+    {
+      "Name": "Protect",
       "level": "TM17",
-      "accuracy": 80,
-      "power": 80,
-      "pp": 25,
-      "Type": "Fighting"
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
     },
     {
-      "Name": "Counter",
+      "Name": "RainDance",
       "level": "TM18",
-      "accuracy": 100,
+      "accuracy": 0,
       "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
+      "pp": 5,
+      "Type": "Water"
     },
     {
-      "Name": "SeismicToss",
-      "level": "TM19",
-      "accuracy": 100,
-      "power": 0,
-      "pp": 20,
-      "Type": "Fighting"
-    },
-    {
-      "Name": "Rage",
+      "Name": "Endure",
       "level": "TM20",
+      "accuracy": 0,
+      "power": 0,
+      "pp": 10,
+      "Type": "Normal"
+    },
+    {
+      "Name": "Frustration",
+      "level": "TM21",
       "accuracy": 100,
-      "power": 20,
+      "power": 0,
       "pp": 20,
       "Type": "Normal"
+    },
+    {
+      "Name": "IronTail",
+      "level": "TM23",
+      "accuracy": 75,
+      "power": 100,
+      "pp": 15,
+      "Type": "Steel"
     },
     {
       "Name": "Earthquake",
@@ -2544,28 +3798,28 @@
       "Type": "Ground"
     },
     {
-      "Name": "Fissure",
+      "Name": "Return",
       "level": "TM27",
-      "accuracy": 0,
+      "accuracy": 100,
       "power": 0,
-      "pp": 5,
-      "Type": "Ground"
+      "pp": 20,
+      "Type": "Normal"
     },
     {
       "Name": "Dig",
       "level": "TM28",
       "accuracy": 100,
-      "power": 100,
+      "power": 60,
       "pp": 10,
       "Type": "Ground"
     },
     {
-      "Name": "Mimic",
+      "Name": "Mud-Slap",
       "level": "TM31",
-      "accuracy": 0,
-      "power": 0,
+      "accuracy": 100,
+      "power": 20,
       "pp": 10,
-      "Type": "Normal"
+      "Type": "Ground"
     },
     {
       "Name": "DoubleTeam",
@@ -2576,27 +3830,35 @@
       "Type": "Normal"
     },
     {
-      "Name": "Reflect",
+      "Name": "IcePunch",
       "level": "TM33",
-      "accuracy": 0,
-      "power": 0,
-      "pp": 20,
-      "Type": "Psychic"
+      "accuracy": 100,
+      "power": 75,
+      "pp": 15,
+      "Type": "Ice"
     },
     {
-      "Name": "Bide",
+      "Name": "Swagger",
       "level": "TM34",
+      "accuracy": 90,
+      "power": 0,
+      "pp": 15,
+      "Type": "Normal"
+    },
+    {
+      "Name": "SleepTalk",
+      "level": "TM35",
       "accuracy": 0,
       "power": 0,
       "pp": 10,
       "Type": "Normal"
     },
     {
-      "Name": "SkullBash",
+      "Name": "DefenseCurl",
       "level": "TM40",
-      "accuracy": 100,
-      "power": 100,
-      "pp": 15,
+      "accuracy": 0,
+      "power": 0,
+      "pp": 40,
       "Type": "Normal"
     },
     {
@@ -2608,11 +3870,11 @@
       "Type": "Psychic"
     },
     {
-      "Name": "Substitute",
-      "level": "TM50",
-      "accuracy": 0,
+      "Name": "Attract",
+      "level": "TM45",
+      "accuracy": 100,
       "power": 0,
-      "pp": 10,
+      "pp": 15,
       "Type": "Normal"
     },
     {
@@ -2630,11 +3892,109 @@
       "power": 80,
       "pp": 15,
       "Type": "Normal"
+    },
+    {
+      "Name": "Whirlpool",
+      "level": "HM06",
+      "accuracy": 70,
+      "power": 15,
+      "pp": 15,
+      "Type": "Water"
+    },
+    {
+      "Name": "Waterfall",
+      "level": "HM07",
+      "accuracy": 100,
+      "power": 80,
+      "pp": 15,
+      "Type": "Water"
     }
   ],
   "types": [
     {
       "Name": "Water"
+    }
+  ],
+  "descriptions": [
+    {
+      "name": "blastoise_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/128/"
+    },
+    {
+      "name": "blastoise_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/129/"
+    },
+    {
+      "name": "blastoise_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/130/"
+    },
+    {
+      "name": "blastoise_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/131/"
+    },
+    {
+      "name": "blastoise_gen_1",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/132/"
+    },
+    {
+      "name": "Blastoise_gen_2",
+      "description": "BLASTOISE has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet.",
+      "resource_uri": "http://pokeapi.co/api/v1/description/133/"
+    },
+    {
+      "name": "blastoise_gen_2",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/134/"
+    },
+    {
+      "name": "blastoise_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/137/"
+    },
+    {
+      "name": "blastoise_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/138/"
+    },
+    {
+      "name": "blastoise_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/139/"
+    },
+    {
+      "name": "blastoise_gen_4",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/140/"
+    },
+    {
+      "name": "blastoise_gen_5",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/141/"
+    },
+    {
+      "name": "blastoise_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/142/"
+    },
+    {
+      "name": "blastoise_gen_6",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/143/"
+    },
+    {
+      "name": "blastoise_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/136/"
+    },
+    {
+      "name": "blastoise_gen_3",
+      "description": null,
+      "resource_uri": "http://pokeapi.co/api/v1/description/135/"
     }
   ],
   "hp": 79,

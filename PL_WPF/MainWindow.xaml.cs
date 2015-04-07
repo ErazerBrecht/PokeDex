@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BS_PokedexManager;
 using DAL_JSON;
 
 namespace PL_WPF
@@ -24,7 +25,7 @@ namespace PL_WPF
         public MainWindow()
         {
             InitializeComponent();
-            var ListPokemons = DAL_JSON.JsonParse.GetPokemons();
+            var ListPokemons = BS_PokedexManager.Business.GeneratePokeList();
             PokemonListBox.ItemsSource = ListPokemons;
         }
 

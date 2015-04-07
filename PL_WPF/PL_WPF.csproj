@@ -108,6 +108,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BS_PokedexManager\BS_PokedexManager.csproj">
+      <Project>{6bac69c5-7bfd-4069-90a6-720bffb64b0f}</Project>
+      <Name>BS_PokedexManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL_JSON\DAL_JSON.csproj">
       <Project>{55fd8475-52fe-459c-9e99-81bf96f0d6a5}</Project>
       <Name>DAL_JSON</Name>
