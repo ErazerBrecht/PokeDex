@@ -11,11 +11,11 @@ namespace DAL_JSON
 {
     public class JsonParse
     {
-        private static ObservableCollection<Pokemon> _pokeObservable;
+        private static List<Pokemon> _pokeList;
 
-        public static ObservableCollection<Pokemon> GetPokemons()
+        public static List<Pokemon> GetPokemons()
         {
-            _pokeObservable = new ObservableCollection<Pokemon>();
+            _pokeList = new List<Pokemon>();
 
             using (StreamReader sr = new StreamReader("JSON.txt"))
             {
@@ -24,11 +24,11 @@ namespace DAL_JSON
 
                 foreach (Pokemon p in jPokemons.AllPokemons)
                 {
-                    _pokeObservable.Add(p);
+                    _pokeList.Add(p);
                 }
             }
 
-            return _pokeObservable;
+            return _pokeList;
         }
 
         public class Rootobject
@@ -108,6 +108,7 @@ namespace DAL_JSON
             public string Method { get; set; }
             public string To { get; set; }
             public string ImageURL { get; set; }
+            public string Resource_uri { get; set; }
         }
 
         public class Description
