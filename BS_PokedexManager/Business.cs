@@ -31,6 +31,8 @@ namespace BS_PokedexManager
             RemovePokemons(list);
             ParseDescriptions(list, b);
             ParseEvolutions(list, b);
+            ParseMoves(list, b);
+            ParseMachines(list, b);
 
             ObservableCollection<JsonParse.Pokemon> pokeObservable = new ObservableCollection<JsonParse.Pokemon>(list);
             return pokeObservable;
@@ -53,7 +55,7 @@ namespace BS_PokedexManager
                         string _jsonString = client.DownloadString(p.Descriptions[i].Resource_uri);
                         p.Descriptions[i] = JsonConvert.DeserializeObject<DAL_JSON.JsonParse.Description>(_jsonString);
                         p.Description = p.Descriptions[i].DescriptionText;
-                        b.ReportProgress(p.Pkdx_id / (GEN / 100));
+                        b.ReportProgress(Convert.ToInt32(p.Pkdx_id / (GEN / 33.3)));
                         break;
                     }
                 }
@@ -104,6 +106,24 @@ namespace BS_PokedexManager
                     e.ImageURL = pokemons[Convert.ToInt32((e.Resource_uri.Split('/')[6])) - 1].ImageURL;
                 }
 
+            }
+        }
+
+        private static void ParseMoves(List<JsonParse.Pokemon> pokemons, BackgroundWorker b)
+        {
+            foreach (var v in pokemons)
+            {
+                v.MovesWeb = WebScraper.ScrapeLevelMoves(v.Name);
+                b.ReportProgress(33 + (Convert.ToInt32(v.Pkdx_id / (GEN / 33.3))));
+            }
+        }
+
+        private static void ParseMachines(List<JsonParse.Pokemon> pokemons, BackgroundWorker b)
+        {
+            foreach (var v in pokemons)
+            {
+                v.MachinesWeb = WebScraper.ScrapeMachineMoves(v.Name);
+                b.ReportProgress(66 + (Convert.ToInt32(v.Pkdx_id / (GEN / 33.3))));
             }
         }
     }

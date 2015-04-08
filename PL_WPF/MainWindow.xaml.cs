@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,11 +23,10 @@ namespace PL_WPF
     /// </summary>
     public partial class MainWindow
     {
-        public MainWindow()
+        public MainWindow(ObservableCollection<JsonParse.Pokemon> ListPokemons )
         {
             InitializeComponent();
-            //var ListPokemons = BS_PokedexManager.Business.GeneratePokeList();
-            //PokemonListBox.ItemsSource = ListPokemons;
+            PokemonListBox.ItemsSource = ListPokemons;
         }
 
         private void PokemonListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
