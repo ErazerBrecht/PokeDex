@@ -10,12 +10,12 @@ namespace BS_PokedexManager
 {
     class WebScraper
     {
-        public static List<JsonParse.Move> ScrapeLevelMoves(string namePokémon)
+        public static List<JsonParse.Move> ScrapeLevelMoves(string namePokémon, string generation)
         {
             List<JsonParse.Move> moves = new List<JsonParse.Move>();
 
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_II_learnset");
+            HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_"+ generation +"_learnset");
 
             foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table"))
             {
@@ -85,12 +85,12 @@ namespace BS_PokedexManager
             return null;
         }
 
-        public static List<JsonParse.Move> ScrapeMachineMoves(string namePokémon)
+        public static List<JsonParse.Move> ScrapeMachineMoves(string namePokémon, string generation)
         {
             List<JsonParse.Move> machines = new List<JsonParse.Move>();
 
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_II_learnset");
+            HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_"+ generation +"_learnset");
 
             foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table"))
             {
