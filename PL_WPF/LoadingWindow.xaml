@@ -1,8 +1,23 @@
-﻿<Window x:Class="PL_WPF.LoadingWindow"
+﻿<controls:MetroWindow x:Class="PL_WPF.LoadingWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="LoadingWindow" Height="300" Width="300" ContentRendered="LoadingWindow_OnContentRendered">
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        Title="Pokédex" Height="225" Width="300" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
-        <ProgressBar Name="ProgressBar" Height="30"></ProgressBar>
+        <StackPanel Margin="10,0,10,10">
+            <TextBlock>Hi,</TextBlock>
+            <TextBlock>It seems the first time you used the pokedex!</TextBlock>
+            <TextBlock Margin="0,0,0,10">Please choose the generation you want to use</TextBlock>
+            
+            <StackPanel HorizontalAlignment="Center" Name="RadioButtonStackPanel">
+                <RadioButton Click="RadioButton_Click">I</RadioButton>
+                <RadioButton Click="RadioButton_Click">II</RadioButton>
+                <RadioButton Click="RadioButton_Click">III</RadioButton>
+                <RadioButton Click="RadioButton_Click">IV</RadioButton>
+                <RadioButton Click="RadioButton_Click">V</RadioButton>
+            </StackPanel>
+
+        </StackPanel>
+        <ProgressBar VerticalAlignment="Bottom" Name="ProgressBar" Height="30"></ProgressBar>
     </Grid>
-</Window>
+</controls:MetroWindow>

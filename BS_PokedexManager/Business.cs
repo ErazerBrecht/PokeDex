@@ -14,7 +14,7 @@ namespace BS_PokedexManager
     public class Business
     {
         private static WebClient client = new WebClient();
-        private static int GEN = 151;
+        private static int GEN;
 
         public enum Generation
         {
@@ -25,8 +25,9 @@ namespace BS_PokedexManager
             V = 649,
         }
 
-        public static ObservableCollection<JsonParse.Pokemon> GeneratePokeList(BackgroundWorker b)
+        public static ObservableCollection<JsonParse.Pokemon> GeneratePokeList(Generation g, BackgroundWorker b)
         {
+            GEN = Convert.ToInt32(g);
             var list = DAL_JSON.JsonParse.GetPokemons();
             RemovePokemons(list);
             ParseDescriptions(list, b);
@@ -45,7 +46,6 @@ namespace BS_PokedexManager
 
         private static void ParseDescriptions(List<JsonParse.Pokemon> pokemons, BackgroundWorker b)
         {
-            Console.WriteLine("\nStarting to add description from GEN 2 to Pokemon as string");
             foreach (DAL_JSON.JsonParse.Pokemon p in pokemons)
             {
                 for (int i = 0; i < p.Descriptions.Count; i++)
