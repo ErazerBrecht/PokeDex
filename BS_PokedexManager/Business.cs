@@ -7,6 +7,7 @@ using DAL_JSON;
 using Newtonsoft.Json;
 using System.Net;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace BS_PokedexManager
 {
@@ -24,12 +25,12 @@ namespace BS_PokedexManager
             V = 649,
         }
 
-        public static ObservableCollection<JsonParse.Pokemon> GeneratePokeList()
+        public static ObservableCollection<JsonParse.Pokemon> GeneratePokeList(BackgroundWorker b)
         {
             var list = DAL_JSON.JsonParse.GetPokemons();
             RemovePokemons(list);
-            ParseDescriptions(list);
-            ParseEvolutions(list);
+            ParseDescriptions(list, b);
+            ParseEvolutions(list, b);
 
             ObservableCollection<JsonParse.Pokemon> pokeObservable = new ObservableCollection<JsonParse.Pokemon>(list);
             return pokeObservable;
@@ -40,7 +41,7 @@ namespace BS_PokedexManager
             pokemons.RemoveRange(GEN, pokemons.Count - GEN);
         }
 
-        private static void ParseDescriptions(List<JsonParse.Pokemon> pokemons)
+        private static void ParseDescriptions(List<JsonParse.Pokemon> pokemons, BackgroundWorker b)
         {
             Console.WriteLine("\nStarting to add description from GEN 2 to Pokemon as string");
             foreach (DAL_JSON.JsonParse.Pokemon p in pokemons)
@@ -52,13 +53,14 @@ namespace BS_PokedexManager
                         string _jsonString = client.DownloadString(p.Descriptions[i].Resource_uri);
                         p.Descriptions[i] = JsonConvert.DeserializeObject<DAL_JSON.JsonParse.Description>(_jsonString);
                         p.Description = p.Descriptions[i].DescriptionText;
+                        b.ReportProgress(p.Pkdx_id / (GEN / 100));
                         break;
                     }
                 }
             }
         }
 
-        private static void ParseEvolutions(List<JsonParse.Pokemon> pokemons)
+        private static void ParseEvolutions(List<JsonParse.Pokemon> pokemons, BackgroundWorker b)
         {
             foreach (JsonParse.Pokemon p in pokemons)
             {
@@ -92,6 +94,8 @@ namespace BS_PokedexManager
                         }
 
                     }
+
+                    
                 }
 
                 //Add pictures uri to all evolutions!
@@ -99,6 +103,7 @@ namespace BS_PokedexManager
                 {
                     e.ImageURL = pokemons[Convert.ToInt32((e.Resource_uri.Split('/')[6])) - 1].ImageURL;
                 }
+
             }
         }
     }

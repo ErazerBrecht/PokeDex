@@ -25,8 +25,8 @@ namespace PL_WPF
         public MainWindow()
         {
             InitializeComponent();
-            var ListPokemons = BS_PokedexManager.Business.GeneratePokeList();
-            PokemonListBox.ItemsSource = ListPokemons;
+            //var ListPokemons = BS_PokedexManager.Business.GeneratePokeList();
+            //PokemonListBox.ItemsSource = ListPokemons;
         }
 
         private void PokemonListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)

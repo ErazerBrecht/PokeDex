@@ -1,0 +1,8 @@
+﻿<Window x:Class="PL_WPF.LoadingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LoadingWindow" Height="300" Width="300" ContentRendered="LoadingWindow_OnContentRendered">
+    <Grid>
+        <ProgressBar Name="ProgressBar" Height="30"></ProgressBar>
+    </Grid>
+</Window>
