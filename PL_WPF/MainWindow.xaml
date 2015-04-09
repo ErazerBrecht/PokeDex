@@ -5,6 +5,7 @@
         Title="MainWindow" WindowState="Maximized" Height="1000">
     <Grid>
 
+
         <Grid Name="MainGrid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -23,6 +24,10 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+            
+            <StackPanel VerticalAlignment="Bottom" Margin="5">
+                <Button Name="BtnSetting" Click="BtnSetting_OnClick">SETTING</Button>
+            </StackPanel>
 
             <GroupBox Header="Information + Stats" Grid.Column="1">
                 <Grid>

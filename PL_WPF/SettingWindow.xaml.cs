@@ -21,22 +21,16 @@ using DAL_JSON;
 namespace PL_WPF
 {
     /// <summary>
-    /// Interaction logic for LoadingWindow.xaml
+    /// Interaction logic for SettingWindow.xaml
     /// </summary>
-    public partial class LoadingWindow
+    public partial class SettingWindow
     {
         private Business.Generation generation;
         private ObservableCollection<JsonParse.Pokemon> ListPokemons; 
 
-        public LoadingWindow()
+        public SettingWindow()
         {
             InitializeComponent();
-            ListPokemons = BS_PokedexManager.Business.CheckSetting();
-            if (ListPokemons != null)
-            {
-                CloseWindow();
-            }
-
         }
 
         void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -65,8 +59,6 @@ namespace PL_WPF
 
         private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
-            //Need to close MainWindow!!!
-
             RadioButton rb = (RadioButton)sender;
             generation = (Business.Generation)Enum.Parse(typeof(Business.Generation), rb.Content.ToString());
 

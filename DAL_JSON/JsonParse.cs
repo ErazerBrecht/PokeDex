@@ -13,11 +13,11 @@ namespace DAL_JSON
     {
         private static List<Pokemon> _pokeList;
 
-        public static List<Pokemon> GetPokemons()
+        public static List<Pokemon> GetPokemons(string filename = "JSON.txt")
         {
             _pokeList = new List<Pokemon>();
 
-            using (StreamReader sr = new StreamReader("JSON.txt"))
+            using (StreamReader sr = new StreamReader(filename))
             {
                 string json = sr.ReadToEnd();
                 Rootobject jPokemons = JsonConvert.DeserializeObject<Rootobject>(json);

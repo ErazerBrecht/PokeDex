@@ -54,5 +54,12 @@ namespace PL_WPF
                 registerwindow.Show();
             }
         }
+
+        private void BtnSetting_OnClick(object sender, RoutedEventArgs e)
+        {
+            var v = new SettingWindow();
+            v.Show();
+
+        }
     }
 }

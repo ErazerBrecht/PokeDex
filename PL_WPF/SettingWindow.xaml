@@ -1,0 +1,26 @@
+﻿<controls:MetroWindow x:Class="PL_WPF.SettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        Title="Pokédex" Height="200" Width="300" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="10,0,10,10">
+
+            <TextBlock>Please choose the generation you want to use:</TextBlock>
+            
+            <StackPanel Margin="0,10,0,0" HorizontalAlignment="Center" Name="RadioButtonStackPanel">
+                <RadioButton Click="RadioButton_Click">I</RadioButton>
+                <RadioButton Click="RadioButton_Click">II</RadioButton>
+                <RadioButton Click="RadioButton_Click">III</RadioButton>
+                <RadioButton Click="RadioButton_Click">IV</RadioButton>
+                <RadioButton Click="RadioButton_Click">V</RadioButton>
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel VerticalAlignment="Bottom" >
+            <TextBlock FontSize="10" Name="DescriptionTextBlock" VerticalAlignment="Bottom" Text="{Binding Description}"></TextBlock>
+            <ProgressBar Name="ProgressBar" Value="{Binding Procent}" Height="30"></ProgressBar>
+        </StackPanel>
+    </Grid>
+</controls:MetroWindow>

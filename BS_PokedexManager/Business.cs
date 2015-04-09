@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using System.Net;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 
 namespace BS_PokedexManager
 {
@@ -29,11 +30,21 @@ namespace BS_PokedexManager
 
         public static DescriptionProgressBar DescriptionProgress = new DescriptionProgressBar();
 
+        public static ObservableCollection<JsonParse.Pokemon> CheckSetting()
+        {
+            if (Properties.Settings.Default.Generation != null)
+            {
+                ObservableCollection<JsonParse.Pokemon> pokeObservable = new ObservableCollection<JsonParse.Pokemon>(DAL_JSON.JsonParse.GetPokemons("GeneratedList.txt"));
+                return pokeObservable;
+            }
+
+            return null;
+        }
+
         public static ObservableCollection<JsonParse.Pokemon> GeneratePokeList(Generation g, BackgroundWorker b)
         {
             //TODO: Save latest generated list! Then add application variable to remember wich generation this was.
             //TODO: Then parse pokemons from that list (much much much faster!)
-
             _maxPokemonGen = Convert.ToInt32(g);
             _stringGen = g.ToString();
 
@@ -62,12 +73,17 @@ namespace BS_PokedexManager
             //Add / Remove the generation dependant information 
             RemovePokemons(list);
             ParseDescriptions(list, b);
-            ParseEvolutions(list, b);
+            ParseEvolutions(list);
             ParseMoves(list, b);
             ParseMachines(list, b);
+            SavePokemons(list);
+            Properties.Settings.Default.Generation = _stringGen;
+            Properties.Settings.Default.Save();
 
-            ObservableCollection<JsonParse.Pokemon> pokeObservable = new ObservableCollection<JsonParse.Pokemon>(list);
+            ObservableCollection<JsonParse.Pokemon> pokeObservable =
+                new ObservableCollection<JsonParse.Pokemon>(list);
             return pokeObservable;
+
         }
 
         private static void RemovePokemons(List<JsonParse.Pokemon> pokemons)
@@ -94,7 +110,7 @@ namespace BS_PokedexManager
             }
         }
 
-        private static void ParseEvolutions(List<JsonParse.Pokemon> pokemons, BackgroundWorker b)
+        private static void ParseEvolutions(List<JsonParse.Pokemon> pokemons)
         {
             foreach (JsonParse.Pokemon p in pokemons)
             {
@@ -123,8 +139,11 @@ namespace BS_PokedexManager
                         {
                             //Add the evolution of the evolution to the list. Only when that evolution of the evolution is posible in the current generation
                             //As example we add Venusaur here!
-                            if (Convert.ToInt32((pokemons[pokemonid - 1].Evolutions[0].Resource_uri.Split('/')[6])) <= _maxPokemonGen)
-                                p.Evolutions.AddRange(pokemons[pokemonid - 1].Evolutions);
+                            foreach (JsonParse.Evolution e in pokemons[pokemonid - 1].Evolutions)
+                            {
+                                if (Convert.ToInt32((e.Resource_uri.Split('/')[6])) <= _maxPokemonGen)
+                                    p.Evolutions.Add(e);
+                            }
                         }
                     }
                 }
@@ -141,7 +160,7 @@ namespace BS_PokedexManager
         private static void ParseMoves(List<JsonParse.Pokemon> pokemons, BackgroundWorker b)
         {
             DescriptionProgress.Description = "Adding the correct moves to the pokemons (Webscraping)";
-            
+
             foreach (var v in pokemons)
             {
                 v.MovesWeb = WebScraper.ScrapeLevelMoves(v.Name, _stringGen);
@@ -152,11 +171,29 @@ namespace BS_PokedexManager
         private static void ParseMachines(List<JsonParse.Pokemon> pokemons, BackgroundWorker b)
         {
             DescriptionProgress.Description = "Adding the correct machines (TM/HM) to the pokemons (Webscraping)";
-            
+
             foreach (var v in pokemons)
             {
                 v.MachinesWeb = WebScraper.ScrapeMachineMoves(v.Name, _stringGen);
                 b.ReportProgress(66 + (Convert.ToInt32(v.Pkdx_id / (_maxPokemonGen / 33.3333))));
+            }
+        }
+
+        private static void SavePokemons(List<JsonParse.Pokemon> pokemons)
+        {
+            using (StreamWriter sw = new StreamWriter("GeneratedList.txt"))
+            {
+                sw.Write("{Property1:\n");
+                sw.Write("[\n");
+                foreach (JsonParse.Pokemon p in pokemons)
+                {
+                    string json = JsonConvert.SerializeObject(p, Formatting.Indented);
+                    sw.Write(json);
+                    sw.Write(",\n");
+                }
+
+                sw.Write("]\n");
+                sw.Write("}\n");
             }
         }
     }
