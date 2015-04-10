@@ -17,12 +17,12 @@ namespace BS_PokedexManager
         private static WebClient client = new WebClient();
         private static int _maxPokemonGen;
         private static int _gen;
-        private static string _stringGen;
+        public static string StringGen { get; set; }
 
         public enum Generation
         {
-            I = 3,      //151
-            II = 6,     //251
+            I = 151,      //151
+            II = 251,     //251
             III = 386,
             IV = 493,
             V = 649,
@@ -34,6 +34,7 @@ namespace BS_PokedexManager
         {
             if (Properties.Settings.Default.Generation != null)
             {
+                StringGen = Properties.Settings.Default.Generation;
                 ObservableCollection<JsonParse.Pokemon> pokeObservable = new ObservableCollection<JsonParse.Pokemon>(DAL_JSON.JsonParse.GetPokemons("GeneratedList.txt"));
                 return pokeObservable;
             }
@@ -46,7 +47,7 @@ namespace BS_PokedexManager
             //TODO: Save latest generated list! Then add application variable to remember wich generation this was.
             //TODO: Then parse pokemons from that list (much much much faster!)
             _maxPokemonGen = Convert.ToInt32(g);
-            _stringGen = g.ToString();
+            StringGen = g.ToString();
 
             switch (g)
             {
@@ -77,7 +78,7 @@ namespace BS_PokedexManager
             ParseMoves(list, b);
             ParseMachines(list, b);
             SavePokemons(list);
-            Properties.Settings.Default.Generation = _stringGen;
+            Properties.Settings.Default.Generation = StringGen;
             Properties.Settings.Default.Save();
 
             ObservableCollection<JsonParse.Pokemon> pokeObservable =
@@ -163,7 +164,7 @@ namespace BS_PokedexManager
 
             foreach (var v in pokemons)
             {
-                v.MovesWeb = WebScraper.ScrapeLevelMoves(v.Name, _stringGen);
+                v.MovesWeb = WebScraper.ScrapeLevelMoves(v.Name, StringGen);
                 b.ReportProgress(33 + (Convert.ToInt32(v.Pkdx_id / (_maxPokemonGen / 33.3333))));
             }
         }
@@ -174,7 +175,7 @@ namespace BS_PokedexManager
 
             foreach (var v in pokemons)
             {
-                v.MachinesWeb = WebScraper.ScrapeMachineMoves(v.Name, _stringGen);
+                v.MachinesWeb = WebScraper.ScrapeMachineMoves(v.Name, StringGen);
                 b.ReportProgress(66 + (Convert.ToInt32(v.Pkdx_id / (_maxPokemonGen / 33.3333))));
             }
         }

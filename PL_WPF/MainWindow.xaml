@@ -12,6 +12,10 @@
                 <ColumnDefinition Width="6*"></ColumnDefinition>
                 <ColumnDefinition Width="1.5*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
 
             <ListBox Name="PokemonListBox" SelectionChanged="PokemonListBox_OnSelectionChanged">
                 <ListBox.ItemTemplate>
@@ -25,11 +29,15 @@
                 </ListBox.ItemTemplate>
             </ListBox>
             
-            <StackPanel VerticalAlignment="Bottom" Margin="5">
+            <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="5,10,5,5">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontStyle="Italic" Margin="0,0,5,5">Generation:  </TextBlock>
+                    <TextBlock FontWeight="ExtraBold" Name="GenerationTextBlock"></TextBlock>
+                </StackPanel>
                 <Button Name="BtnSetting" Click="BtnSetting_OnClick">SETTING</Button>
             </StackPanel>
 
-            <GroupBox Header="Information + Stats" Grid.Column="1">
+            <GroupBox Header="Information + Stats" Grid.Column="1" Grid.RowSpan="2">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -211,7 +219,7 @@
                 </Grid>
             </GroupBox>
 
-            <GroupBox Header="Evolutions" Grid.Column="2">
+            <GroupBox Header="Evolutions" Grid.Column="2" Grid.RowSpan="2">
                 <!-- <GroupBox.Style>
                     <Style TargetType="GroupBox">
                         <Setter Property="Visibility" Value="Visible"></Setter>

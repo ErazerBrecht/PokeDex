@@ -27,6 +27,7 @@ namespace PL_WPF
         {
             InitializeComponent();
             PokemonListBox.ItemsSource = ListPokemons;
+            GenerationTextBlock.Text = Business.StringGen;
         }
 
         private void PokemonListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -40,7 +41,6 @@ namespace PL_WPF
                 MachineListBox.ItemsSource = selectedPokemon.MachinesWeb;
                 EvolutionsListBox.ItemsSource = selectedPokemon.Evolutions;
                 AbilityListBox.ItemsSource = selectedPokemon.Abilities;
-
             }
         }
 
