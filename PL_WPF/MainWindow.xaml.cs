@@ -28,6 +28,7 @@ namespace PL_WPF
             InitializeComponent();
             PokemonListBox.ItemsSource = ListPokemons;
             GenerationTextBlock.Text = Business.StringGen;
+            StatsGrid.DataContext = Business.MaxStatsValue;
         }
 
         private void PokemonListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -18,6 +18,7 @@ namespace BS_PokedexManager
         private static int _maxPokemonGen;
         private static int _gen;
         public static string StringGen { get; set; }
+        public static MaxValue MaxStatsValue = new MaxValue();
 
         public enum Generation
         {
@@ -36,10 +37,46 @@ namespace BS_PokedexManager
             {
                 StringGen = Properties.Settings.Default.Generation;
                 ObservableCollection<JsonParse.Pokemon> pokeObservable = new ObservableCollection<JsonParse.Pokemon>(DAL_JSON.JsonParse.GetPokemons("GeneratedList.txt"));
+                CalculateMaxStats(StringGen);
                 return pokeObservable;
             }
 
             return null;
+        }
+
+        private static void CalculateMaxStats(string generation) 
+        {
+            switch (generation)
+            {
+                case "I":
+                    MaxStatsValue.MaxHp = 250;
+                    MaxStatsValue.MaxAttack = 134;
+                    MaxStatsValue.MaxDefense = 180;
+                    MaxStatsValue.MaxSPAttack = 154;
+                    MaxStatsValue.MaxSPDefense = 154;
+                    MaxStatsValue.MaxSpeed = 140;
+                    break;
+                case "II":
+                    MaxStatsValue.MaxHp = 255;
+                    MaxStatsValue.MaxAttack = 134;
+                    MaxStatsValue.MaxDefense = 230;
+                    MaxStatsValue.MaxSPAttack = 154;
+                    MaxStatsValue.MaxSPDefense = 230;
+                    MaxStatsValue.MaxSpeed = 140;
+                    break;
+                case "III":
+                    MaxStatsValue.MaxHp = 255;
+                    MaxStatsValue.MaxAttack = 160;
+                    MaxStatsValue.MaxDefense = 230;
+                    MaxStatsValue.MaxSPAttack = 154;
+                    MaxStatsValue.MaxSPDefense = 230;
+                    MaxStatsValue.MaxSpeed = 160;
+                    break;
+                case "IV":
+                    break;
+                case "V":
+                    break;
+            }
         }
 
         public static ObservableCollection<JsonParse.Pokemon> GeneratePokeList(Generation g, BackgroundWorker b)
@@ -80,6 +117,8 @@ namespace BS_PokedexManager
             SavePokemons(list);
             Properties.Settings.Default.Generation = StringGen;
             Properties.Settings.Default.Save();
+
+            CalculateMaxStats(StringGen);
 
             ObservableCollection<JsonParse.Pokemon> pokeObservable =
                 new ObservableCollection<JsonParse.Pokemon>(list);
@@ -197,6 +236,16 @@ namespace BS_PokedexManager
                 sw.Write("}\n");
             }
         }
+    }
+
+    public class MaxValue
+    {
+        public int MaxHp { get; set; }
+        public int MaxAttack { get; set; }
+        public int MaxDefense { get; set; }
+        public int MaxSPAttack { get; set; }
+        public int MaxSPDefense { get; set; }
+        public int MaxSpeed { get; set; }
     }
 
     public class DescriptionProgressBar : INotifyPropertyChanged

@@ -128,7 +128,7 @@
 
 
                     <GroupBox  FontSize="16" Grid.Row="1" Grid.ColumnSpan="2" Header="Stats">
-                        <Grid>
+                        <Grid Name="StatsGrid">
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
                                 <RowDefinition></RowDefinition>
@@ -151,19 +151,19 @@
                             <TextBlock Grid.Row="5">Speed</TextBlock>
 
 
-                            <TextBlock Grid.Column="1" Text="{Binding Hp}"></TextBlock>
-                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Attack}"></TextBlock>
-                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Defense}"></TextBlock>
-                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding SpAttack}"></TextBlock>
-                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding SpDefense}"></TextBlock>
-                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Speed}"></TextBlock>
+                            <TextBlock Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.Hp}"></TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.Attack}"></TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.Defense}"></TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.SpAttack}"></TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.SpDefense}"></TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.Speed}"></TextBlock>
 
-                            <ProgressBar Grid.Column="2" Maximum="250" Value="{Binding Hp}"></ProgressBar>
-                            <ProgressBar Grid.Row="1" Maximum="134" Grid.Column="2" Value="{Binding Attack}"></ProgressBar>
-                            <ProgressBar Grid.Row="2" Maximum="180" Grid.Column="2" Value="{Binding Defense}"></ProgressBar>
-                            <ProgressBar Grid.Row="3" Maximum="154" Grid.Column="2" Value="{Binding SpAttack}"></ProgressBar>
-                            <ProgressBar Grid.Row="4" Maximum="154" Grid.Column="2" Value="{Binding SpDefense}"></ProgressBar>
-                            <ProgressBar Grid.Row="5" Maximum="140" Grid.Column="2" Value="{Binding Speed}"></ProgressBar>
+                            <ProgressBar Grid.Column="2" Maximum="{Binding MaxHp}" Value="{Binding ElementName=MainGrid, Path=DataContext.Hp}"></ProgressBar>
+                            <ProgressBar Grid.Row="1" Maximum="{Binding MaxAttack}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.Attack}"></ProgressBar>
+                            <ProgressBar Grid.Row="2" Maximum="{Binding MaxDefense}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.Defense}"></ProgressBar>
+                            <ProgressBar Grid.Row="3" Maximum="{Binding MaxSPAttack}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.SpAttack}"></ProgressBar>
+                            <ProgressBar Grid.Row="4" Maximum="{Binding MaxSPDefense}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.SpDefense}"></ProgressBar>
+                            <ProgressBar Grid.Row="5" Maximum="{Binding MaxSpeed}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.Speed}"></ProgressBar>
 
                         </Grid>
                     </GroupBox>
