@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,10 +34,10 @@ namespace BS_PokedexManager
 
         public static ObservableCollection<JsonParse.Pokemon> CheckSetting()
         {
-            if (Properties.Settings.Default.Generation != null)
+            if (!String.IsNullOrEmpty(Properties.Settings.Default.Generation))
             {
                 StringGen = Properties.Settings.Default.Generation;
-                ObservableCollection<JsonParse.Pokemon> pokeObservable = new ObservableCollection<JsonParse.Pokemon>(DAL_JSON.JsonParse.GetPokemons("GeneratedList.txt"));
+                ObservableCollection<JsonParse.Pokemon> pokeObservable = new ObservableCollection<JsonParse.Pokemon>(DAL_JSON.JsonParse.GetPokemons(Path.Combine(Application.LocalUserAppDataPath, "GeneratedList.txt")));
                 CalculateMaxStats(StringGen);
                 return pokeObservable;
             }
@@ -221,7 +222,7 @@ namespace BS_PokedexManager
 
         private static void SavePokemons(List<JsonParse.Pokemon> pokemons)
         {
-            using (StreamWriter sw = new StreamWriter("GeneratedList.txt"))
+            using (StreamWriter sw = new StreamWriter(Path.Combine(Application.LocalUserAppDataPath, "GeneratedList.txt")))
             {
                 sw.Write("{Property1:\n");
                 sw.Write("[\n");
