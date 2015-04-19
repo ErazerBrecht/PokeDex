@@ -37,7 +37,17 @@
                 <Button Name="BtnSetting" Click="BtnSetting_OnClick">SETTING</Button>
             </StackPanel>
 
-            <GroupBox Header="Information + Stats" Grid.Column="1" Grid.RowSpan="2">
+            <GroupBox Header="Information + Stats" Grid.Column="1" Grid.RowSpan="2" Name="InformationGroupBox">
+                <GroupBox.Style>
+                    <Style TargetType="GroupBox" BasedOn="{StaticResource MetroGroupBox}">
+                        <Setter Property="Grid.ColumnSpan" Value="1"></Setter>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Evolutions.Count}" Value="0">
+                                <Setter Property="Grid.ColumnSpan" Value="2"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </GroupBox.Style>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -220,8 +230,8 @@
             </GroupBox>
 
             <GroupBox Header="Evolutions" Grid.Column="2" Grid.RowSpan="2">
-                <!-- <GroupBox.Style>
-                    <Style TargetType="GroupBox">
+                <GroupBox.Style>
+                    <Style TargetType="GroupBox" BasedOn="{StaticResource MetroGroupBox}">
                         <Setter Property="Visibility" Value="Visible"></Setter>
                         <Style.Triggers>
                             <DataTrigger Binding="{Binding Evolutions.Count}" Value="0">
@@ -230,7 +240,7 @@
                         </Style.Triggers>
                     </Style>
                 </GroupBox.Style>
-                -->
+                
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding Name}"></TextBlock>
                     <Image MaxHeight="150" Source="{Binding ImageURL}"></Image>
