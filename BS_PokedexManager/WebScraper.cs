@@ -15,82 +15,170 @@ namespace BS_PokedexManager
             List<JsonParse.Move> moves = new List<JsonParse.Move>();
 
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_"+ generation +"_learnset");
+            HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_" + generation + "_learnset");
 
-            foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table"))
+            if (namePokémon == "Deoxys")
             {
-                HtmlNode row = table.SelectNodes("tr")[1];
-
-                foreach (HtmlNode cell in row.SelectNodes("td"))
+                foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table"))
                 {
-                    foreach (HtmlNode innerTable in cell.SelectNodes("table"))
+                    HtmlNode row;
+
+                    row = table.SelectNodes("tr")[2];
+
+                    foreach (HtmlNode cell in row.SelectNodes("td"))
                     {
-                        foreach (HtmlNode innerRow in innerTable.SelectNodes("tr"))
+                        foreach (HtmlNode innerTable in cell.SelectNodes("table"))
                         {
-                            if ((innerRow.SelectNodes("td") != null) && innerRow.SelectNodes("td").Count > 1)
+                            foreach (HtmlNode innerRow in innerTable.SelectNodes("tr"))
                             {
+
                                 foreach (HtmlNode innerCell in innerRow.SelectNodes("td"))
                                 {
-
-
-                                    if (innerCell.SelectNodes("span") != null &&
-                                        innerCell.SelectNodes("span").Count > 0)
+                                    foreach (HtmlNode innerinnerTable in innerCell.SelectNodes("table"))
                                     {
-                                        foreach (var innerSpan in innerCell.SelectNodes("span"))
+                                        foreach (HtmlNode innerinnerRow in innerinnerTable.SelectNodes("tr"))
                                         {
-                                            innerCell.RemoveChild(innerSpan);
+                                            if ((innerinnerRow.SelectNodes("td") != null) &&
+                                                innerinnerRow.SelectNodes("td").Count > 1)
+                                            {
+                                                foreach (HtmlNode innerinnerCell in innerinnerRow.SelectNodes("td"))
+                                                {
+                                                    if (innerinnerCell.SelectNodes("span") != null &&
+                                                        innerinnerCell.SelectNodes("span").Count > 0)
+                                                    {
+                                                        foreach (var innerSpan in innerinnerCell.SelectNodes("span"))
+                                                        {
+                                                            innerinnerCell.RemoveChild(innerSpan);
+                                                        }
+                                                    }
+                                                }
+
+                                                JsonParse.Move temp = new JsonParse.Move();
+                                                temp.Level = innerinnerRow.SelectNodes("td")[0].InnerText.Replace(" ", "")
+                                                    .Replace("\n", "");
+                                                temp.Name = innerinnerRow.SelectNodes("td")[1].InnerText.Replace(" ", "")
+                                                    .Replace("\n", "");
+                                                temp.Type = innerinnerRow.SelectNodes("td")[2].InnerText.Replace(" ", "")
+                                                    .Replace("\n", "");
+
+                                                try
+                                                {
+                                                    temp.Power =
+                                                        Convert.ToInt32(innerinnerRow.SelectNodes("td")[3].InnerText.Replace("\n", ""));
+                                                }
+                                                catch
+                                                {
+                                                    temp.Power = 0;
+                                                }
+
+                                                try
+                                                {
+                                                    temp.Accuracy =
+                                                        Convert.ToInt32(innerinnerRow.SelectNodes("td")[4].InnerText.Replace("%\n", ""));
+                                                }
+                                                catch
+                                                {
+                                                    temp.Accuracy = 0;
+                                                }
+
+                                                temp.PP =
+                                                    Convert.ToInt32(
+                                                        innerinnerRow.SelectNodes("td")[5].InnerText.Replace("\n", "").Replace("}", ""));
+                                                moves.Add(temp);
+                                            }
                                         }
+
+                                        if (moves.Count > 0)
+                                            return moves;
                                     }
                                 }
-
-                                JsonParse.Move temp = new JsonParse.Move();
-                                temp.Level = innerRow.SelectNodes("td")[0].InnerText.Replace(" ", "").Replace("\n", "");
-                                temp.Name = innerRow.SelectNodes("td")[1].InnerText.Replace(" ", "").Replace("\n", "");
-                                temp.Type = innerRow.SelectNodes("td")[2].InnerText.Replace(" ", "").Replace("\n", "");
-
-                                try
-                                {
-                                    temp.Power = Convert.ToInt32(innerRow.SelectNodes("td")[3].InnerText.Replace("\n", ""));
-                                }
-                                catch
-                                {
-                                    temp.Power = 0;
-                                }
-
-                                try
-                                {
-                                    temp.Accuracy = Convert.ToInt32(innerRow.SelectNodes("td")[4].InnerText.Replace("%\n", ""));
-                                }
-                                catch
-                                {
-                                    temp.Accuracy = 0;
-                                }
-
-                                temp.PP = Convert.ToInt32(innerRow.SelectNodes("td")[5].InnerText.Replace("\n", "").Replace("}", ""));
-                                moves.Add(temp);
-
-
                             }
+
                         }
-
-
-
                     }
-
-                    return moves;
-
                 }
+
+                return null;
             }
 
-            return null;
-        }
 
+
+            else
+            {
+                foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table"))
+                {
+                    HtmlNode row = table.SelectNodes("tr")[1];
+
+                    foreach (HtmlNode cell in row.SelectNodes("td"))
+                    {
+                        foreach (HtmlNode innerTable in cell.SelectNodes("table"))
+                        {
+                            foreach (HtmlNode innerRow in innerTable.SelectNodes("tr"))
+                            {
+                                if ((innerRow.SelectNodes("td") != null) && innerRow.SelectNodes("td").Count > 1)
+                                {
+                                    foreach (HtmlNode innerCell in innerRow.SelectNodes("td"))
+                                    {
+
+
+                                        if (innerCell.SelectNodes("span") != null &&
+                                            innerCell.SelectNodes("span").Count > 0)
+                                        {
+                                            foreach (var innerSpan in innerCell.SelectNodes("span"))
+                                            {
+                                                innerCell.RemoveChild(innerSpan);
+                                            }
+                                        }
+                                    }
+
+                                    JsonParse.Move temp = new JsonParse.Move();
+                                    temp.Level = innerRow.SelectNodes("td")[0].InnerText.Replace(" ", "").Replace("\n", "");
+                                    temp.Name = innerRow.SelectNodes("td")[1].InnerText.Replace(" ", "").Replace("\n", "");
+                                    temp.Type = innerRow.SelectNodes("td")[2].InnerText.Replace(" ", "").Replace("\n", "");
+
+                                    try
+                                    {
+                                        temp.Power = Convert.ToInt32(innerRow.SelectNodes("td")[3].InnerText.Replace("\n", ""));
+                                    }
+                                    catch
+                                    {
+                                        temp.Power = 0;
+                                    }
+
+                                    try
+                                    {
+                                        temp.Accuracy = Convert.ToInt32(innerRow.SelectNodes("td")[4].InnerText.Replace("%\n", ""));
+                                    }
+                                    catch
+                                    {
+                                        temp.Accuracy = 0;
+                                    }
+
+                                    temp.PP = Convert.ToInt32(innerRow.SelectNodes("td")[5].InnerText.Replace("\n", "").Replace("}", ""));
+                                    moves.Add(temp);
+
+
+                                }
+                            }
+
+
+
+                        }
+
+                        return moves;
+
+                    }
+                }
+
+                return null;
+            }
+        }
         public static List<JsonParse.Move> ScrapeMachineMoves(string namePokémon, string generation)
         {
             List<JsonParse.Move> machines = new List<JsonParse.Move>();
 
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_"+ generation +"_learnset");
+            HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_" + generation + "_learnset");
 
             foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table"))
             {
