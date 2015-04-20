@@ -82,8 +82,6 @@ namespace BS_PokedexManager
 
         public static ObservableCollection<JsonParse.Pokemon> GeneratePokeList(Generation g, BackgroundWorker b)
         {
-            //TODO: Save latest generated list! Then add application variable to remember wich generation this was.
-            //TODO: Then parse pokemons from that list (much much much faster!)
             _maxPokemonGen = Convert.ToInt32(g);
             StringGen = g.ToString();
 
@@ -259,7 +257,7 @@ namespace BS_PokedexManager
             set
             {
                 _description = value;
-                NoticeMe(Description);
+                NoticeMe("Description");
             }
         }
 

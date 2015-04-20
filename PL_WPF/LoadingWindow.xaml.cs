@@ -59,7 +59,6 @@ namespace PL_WPF
         void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {    
             ProgressBar.Value = e.ProgressPercentage;
-            //TODO: Doesn't work!!!!
             DescriptionTextBlock.DataContext = BS_PokedexManager.Business.DescriptionProgress;
         }
 
