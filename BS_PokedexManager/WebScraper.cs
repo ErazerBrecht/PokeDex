@@ -10,9 +10,9 @@ namespace BS_PokedexManager
 {
     class WebScraper
     {
-        public static List<JsonParse.Move> ScrapeLevelMoves(string namePokémon, string generation)
+        public static List<Move> ScrapeLevelMoves(string namePokémon, string generation)
         {
-            List<JsonParse.Move> moves = new List<JsonParse.Move>();
+            List<Move> moves = new List<Move>();
 
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_" + generation + "_learnset");
@@ -53,7 +53,7 @@ namespace BS_PokedexManager
                                                     }
                                                 }
 
-                                                JsonParse.Move temp = new JsonParse.Move();
+                                                Move temp = new Move();
                                                 temp.Level = innerinnerRow.SelectNodes("td")[0].InnerText.Replace(" ", "")
                                                     .Replace("\n", "");
                                                 temp.Name = innerinnerRow.SelectNodes("td")[1].InnerText.Replace(" ", "")
@@ -131,7 +131,7 @@ namespace BS_PokedexManager
                                         }
                                     }
 
-                                    JsonParse.Move temp = new JsonParse.Move();
+                                    Move temp = new Move();
                                     temp.Level = innerRow.SelectNodes("td")[0].InnerText.Replace(" ", "").Replace("\n", "");
                                     temp.Name = innerRow.SelectNodes("td")[1].InnerText.Replace(" ", "").Replace("\n", "");
                                     temp.Type = innerRow.SelectNodes("td")[2].InnerText.Replace(" ", "").Replace("\n", "");
@@ -173,9 +173,9 @@ namespace BS_PokedexManager
                 return null;
             }
         }
-        public static List<JsonParse.Move> ScrapeMachineMoves(string namePokémon, string generation)
+        public static List<Move> ScrapeMachineMoves(string namePokémon, string generation)
         {
-            List<JsonParse.Move> machines = new List<JsonParse.Move>();
+            List<Move> machines = new List<Move>();
 
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = web.Load("http://bulbapedia.bulbagarden.net/wiki/" + namePokémon + "_(Pok%C3%A9mon)/Generation_" + generation + "_learnset");
@@ -189,7 +189,7 @@ namespace BS_PokedexManager
                         if (row.SelectNodes("td")[1].InnerText.Contains("TM") ||
                             row.SelectNodes("td")[1].InnerText.Contains("HM"))
                         {
-                            JsonParse.Move temp = new JsonParse.Move();
+                            Move temp = new Move();
                             temp.Level = row.SelectNodes("td")[1].InnerText.Replace(" ", "").Replace("\n", "");
                             temp.Name = row.SelectNodes("td")[2].InnerText.Replace(" ", "").Replace("\n", "");
                             temp.Type = row.SelectNodes("td")[3].InnerText.Replace(" ", "").Replace("\n", "");

@@ -26,7 +26,7 @@ namespace PL_WPF
     public partial class LoadingWindow
     {
         private Business.Generation generation;
-        private ObservableCollection<JsonParse.Pokemon> ListPokemons; 
+        private ObservableCollection<Pokemon> ListPokemons; 
 
         public LoadingWindow()
         {

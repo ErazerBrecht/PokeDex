@@ -20,7 +20,7 @@ namespace PL_WPF
     /// </summary>
     public partial class Moves
     {
-        public Moves(JsonParse.Move m)
+        public Moves(Move m)
         {
             InitializeComponent();
             MainWindow.DataContext = m;
