@@ -67,7 +67,7 @@ namespace DAL_JSON
 
         public string TypeURL
         {
-            get { return "http://www.serebii.net/pokedex-bw/type/" + Type.ToLower() + ".gif"; }
+            get { return "http://veekun.com/dex/media/types/en/" + Type.ToLower() + ".png"; }
         }
 
         //public string Description { get; set; }

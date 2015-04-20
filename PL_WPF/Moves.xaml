@@ -5,37 +5,34 @@
         Name="MainWindow"
         Title="{Binding Name}" Height="140" Width="250" ResizeMode="NoResize" BorderThickness="2" BorderBrush="#CC119EDA">
     <Grid Margin="10">
-        <StackPanel>
-            <StackPanel.Resources>
-                <Style TargetType="TextBlock">
-                    <Setter Property="FontSize" Value="16"/>
-                </Style>
-            </StackPanel.Resources>
-            <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    
-                <StackPanel>
-                    <TextBlock Text="Type"></TextBlock>
-                    <TextBlock Text="Power"></TextBlock>
-                    <TextBlock Text="Accuracy"></TextBlock>
-                    <TextBlock Text="PP"></TextBlock>
-                </StackPanel>
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+        </Grid.Resources>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
 
-                <StackPanel Grid.Column="1">
-                    <!--<TextBlock Text="{Binding Type}"></TextBlock>-->
-                    <Image MaxHeight="12" HorizontalAlignment="Left" Source="{Binding TypeURL}"></Image>
-                    <TextBlock Text="{Binding Power}"></TextBlock>
-                    <TextBlock Text="{Binding Accuracy}"></TextBlock>
-                    <TextBlock Text="{Binding PP}"></TextBlock>
-                </StackPanel>
-            </Grid>
-                
-                
-                
-                    
-            </StackPanel>
+            <TextBlock Text="Type"></TextBlock>
+            <TextBlock Grid.Row="1" Text="Power"></TextBlock>
+            <TextBlock Grid.Row="2" Text="Accuracy"></TextBlock>
+            <TextBlock Grid.Row="3" Text="PP"></TextBlock>
+
+            <!--<TextBlock Grid.Column="1" Text="{Binding Type}"></TextBlock>-->
+            <Image Grid.Column="1" MaxHeight="17" HorizontalAlignment="Left" Source="{Binding TypeURL}"></Image>
+            <TextBlock Grid.Column="1"  Grid.Row="1" Text="{Binding Power}"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Accuracy}"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding PP}"></TextBlock>
+        </Grid>
+
     </Grid>
 </controls:MetroWindow>
