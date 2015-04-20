@@ -240,11 +240,12 @@
                         </Style.Triggers>
                     </Style>
                 </GroupBox.Style>
-                
-                <StackPanel>
+               
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
                     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding Name}"></TextBlock>
                     <Image MaxHeight="150" Source="{Binding ImageURL}"></Image>
-                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+
                         <ItemsControl Name="EvolutionsListBox">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
@@ -260,8 +261,9 @@
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
-                    </ScrollViewer>
+           
                 </StackPanel>
+                </ScrollViewer>
 
             </GroupBox>
 
