@@ -23,7 +23,7 @@ namespace PL_WPF
     /// </summary>
     public partial class MainWindow
     {
-        public MainWindow(ObservableCollection<JsonParse.Pokemon> ListPokemons )
+        public MainWindow(ObservableCollection<Pokemon> ListPokemons )
         {
             InitializeComponent();
             PokemonListBox.ItemsSource = ListPokemons;
@@ -35,7 +35,7 @@ namespace PL_WPF
         {
             if (PokemonListBox.SelectedIndex >= 0)
             {
-                var selectedPokemon = PokemonListBox.SelectedItem as JsonParse.Pokemon;
+                var selectedPokemon = PokemonListBox.SelectedItem as Pokemon;
                 MainGrid.DataContext = selectedPokemon;
                 TypesListBox.ItemsSource = selectedPokemon.Types;
                 MoveListBox.ItemsSource = selectedPokemon.MovesWeb;
@@ -50,7 +50,7 @@ namespace PL_WPF
             var list = sender as ListBox;
             if (list.SelectedIndex >= 0)
             {               
-                var selectedMove = list.SelectedItem as JsonParse.Move;
+                var selectedMove = list.SelectedItem as Move;
                 var registerwindow = new Moves(selectedMove);
                 registerwindow.Show();
             }
@@ -63,4 +63,28 @@ namespace PL_WPF
 
         }
     }
+
+    public class Convertor : IValueConverter
+    {
+
+        public object Convert(object value, System.Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            double temp = (double)value;
+
+            if (temp < 6)
+                return "Red";
+
+            if (temp < 16)
+                return "Orange";
+
+            return "Green";
+
+        }
+
+        public object ConvertBack(object value, System.Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
 }
