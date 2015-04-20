@@ -94,6 +94,12 @@ namespace DAL_JSON
             public int Power { get; set; }
             public int PP { get; set; }
             public string Type { get; set; }
+
+            public string TypeURL
+            {
+                get { return "http://www.serebii.net/pokedex-bw/type/"+ Type.ToLower() +".gif"; }
+            }
+
             //public string Description { get; set; }
         }
 

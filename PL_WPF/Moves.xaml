@@ -25,7 +25,8 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
-                    <TextBlock Text="{Binding Type}"></TextBlock>
+                    <!--<TextBlock Text="{Binding Type}"></TextBlock>-->
+                    <Image MaxHeight="12" HorizontalAlignment="Left" Source="{Binding TypeURL}"></Image>
                     <TextBlock Text="{Binding Power}"></TextBlock>
                     <TextBlock Text="{Binding Accuracy}"></TextBlock>
                     <TextBlock Text="{Binding PP}"></TextBlock>
