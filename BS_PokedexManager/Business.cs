@@ -246,29 +246,4 @@ namespace BS_PokedexManager
         public int MaxSPDefense { get; set; }
         public int MaxSpeed { get; set; }
     }
-
-    public class DescriptionProgressBar : INotifyPropertyChanged
-    {
-        private string _description;
-
-        public string Description
-        {
-            get { return _description; }
-            set
-            {
-                _description = value;
-                NoticeMe("Description");
-            }
-        }
-
-        public void NoticeMe(string p)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(p));
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-    }
 }
