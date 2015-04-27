@@ -31,14 +31,17 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            
-            <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="5,10,5,5">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock FontStyle="Italic" Margin="0,0,5,5">Generation:  </TextBlock>
-                    <TextBlock FontWeight="ExtraBold" Name="GenerationTextBlock"></TextBlock>
-                </StackPanel>
-                <Button Name="BtnSetting" Click="BtnSetting_OnClick">SETTING</Button>
+
+            <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="5,0,5,0" Orientation="Horizontal">
+                <TextBlock FontStyle="Italic" Margin="0,0,5,5">Generation:</TextBlock>
+                <TextBlock FontWeight="ExtraBold" Name="GenerationTextBlock"></TextBlock>
             </StackPanel>
+            
+            <DockPanel Grid.Row="1" Grid.Column="1">
+                <Button HorizontalAlignment="Left" Name="BtnSetting" Click="BtnSetting_OnClick">SETTING</Button>
+                <Button DockPanel.Dock="Right" HorizontalAlignment="Right" Margin="20,0,0,0">Search</Button>
+                <TextBox MinWidth="200" DockPanel.Dock="Right" HorizontalAlignment="Right"></TextBox>
+            </DockPanel>
 
             <GroupBox Header="Information + Stats" Grid.Column="1" Grid.Row="0" Name="InformationGroupBox">
                 <GroupBox.Style>
