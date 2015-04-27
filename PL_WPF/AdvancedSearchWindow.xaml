@@ -1,0 +1,80 @@
+﻿<controls:MetroWindow x:Class="PL_WPF.AdvancedSearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        Title="Pokédex" Height="435" Width="300" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="Image">
+            <Setter Property="MaxHeight" Value="17" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Margin="10,0,10,10">
+            <TextBlock>Advanced Search</TextBlock>
+            <TextBlock>Type:</TextBlock>
+
+            <StackPanel Margin="0,10,0,0" Name="RadioButtonStackPanel">
+                <RadioButton Click="RadioButton_Click">
+                    <Image  Source="{Binding Normal}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Fighting}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Flying}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Poison}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Ground}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Rock}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Bug}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Ghost}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Steel}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Fire}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Water}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Grass}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Electric}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Psychic}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Ice}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Dragon}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Dark}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Fairy}"></Image>
+                </RadioButton>
+                <RadioButton Click="RadioButton_Click">
+                    <Image Source="{Binding Unknown}"></Image>
+                </RadioButton>
+            </StackPanel>
+
+        </StackPanel>
+
+        
+    </Grid>
+</controls:MetroWindow>
