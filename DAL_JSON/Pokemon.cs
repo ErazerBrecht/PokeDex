@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Windows.Forms;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,15 @@ namespace DAL_JSON
 
         public string Species { get; set; }
         public string ImageURL { get; set; }
+
+        public string SoundURL
+        {
+            get
+            {
+                string id = Pkdx_id.ToString("000");
+                return Path.Combine(Application.LocalUserAppDataPath, "PokemonCries", id + ".wav");
+            }
+        }
 
         public double Weight { get; set; }
         public double Height { get; set; }

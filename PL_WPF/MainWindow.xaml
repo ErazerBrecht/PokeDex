@@ -40,7 +40,7 @@
                 <Button Name="BtnSetting" Click="BtnSetting_OnClick">SETTING</Button>
             </StackPanel>
 
-            <GroupBox Header="Information + Stats" Grid.Column="1" Grid.RowSpan="2" Name="InformationGroupBox">
+            <GroupBox Header="Information + Stats" Grid.Column="1" Grid.Row="0" Name="InformationGroupBox">
                 <GroupBox.Style>
                     <Style TargetType="GroupBox" BasedOn="{StaticResource MetroGroupBox}">
                         <Setter Property="Grid.ColumnSpan" Value="1"></Setter>
@@ -228,11 +228,15 @@
 
                         </Grid>
                     </GroupBox>
+                    
+                    <GroupBox Grid.Row="2" Grid.Column="2">
+                        <MediaElement Source="{Binding SoundURL}"/>
+                    </GroupBox>
 
                 </Grid>
             </GroupBox>
 
-            <GroupBox Header="Evolutions" Grid.Column="2" Grid.RowSpan="2">
+            <GroupBox Header="Evolutions" Grid.Column="2" Grid.Row="0">
                 <GroupBox.Style>
                     <Style TargetType="GroupBox" BasedOn="{StaticResource MetroGroupBox}">
                         <Setter Property="Visibility" Value="Visible"></Setter>
@@ -271,6 +275,7 @@
             </GroupBox>
 
         </Grid>
+        
 
     </Grid>
 </controls:MetroWindow>

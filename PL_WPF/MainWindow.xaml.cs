@@ -60,13 +60,13 @@ namespace PL_WPF
         {
             var v = new SettingWindow();
             v.Show();
-
         }
     }
 
+
+
     public class Convertor : IValueConverter
     {
-
         public object Convert(object value, System.Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             double temp = (double)value;
@@ -78,7 +78,6 @@ namespace PL_WPF
                 return "Orange";
 
             return "Green";
-
         }
 
         public object ConvertBack(object value, System.Type targetType, object parameter, System.Globalization.CultureInfo culture)
