@@ -23,10 +23,12 @@ namespace PL_WPF
     /// </summary>
     public partial class MainWindow
     {
+        private ObservableCollection<Pokemon> _listPokemons;
         public MainWindow(ObservableCollection<Pokemon> ListPokemons )
         {
             InitializeComponent();
             PokemonListBox.ItemsSource = ListPokemons;
+            _listPokemons = ListPokemons;
             GenerationTextBlock.Text = Business.StringGen;
             StatsGrid.DataContext = Business.MaxStatsValue;
         }
@@ -60,6 +62,12 @@ namespace PL_WPF
         {
             var v = new SettingWindow();
             v.Show();
+        }
+
+        private void BtnSearch_OnClick(object sender, RoutedEventArgs e)
+        {
+            var result = _listPokemons.Where(v => v.Name.ToLower().Contains(SearchNameTextBox.Text.ToLower()));
+            PokemonListBox.ItemsSource = result;
         }
     }
 
