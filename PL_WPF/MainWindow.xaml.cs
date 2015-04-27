@@ -64,10 +64,16 @@ namespace PL_WPF
             v.Show();
         }
 
-        private void BtnSearch_OnClick(object sender, RoutedEventArgs e)
+        private void Search(object sender, RoutedEventArgs e)
         {
             var result = _listPokemons.Where(v => v.Name.ToLower().Contains(SearchNameTextBox.Text.ToLower()));
             PokemonListBox.ItemsSource = result;
+        }
+
+        private void BtnAdvancedSearch_OnClick(object sender, RoutedEventArgs e)
+        {
+            var v = new AdvancedSearchWindow(_listPokemons);
+            v.Show();
         }
     }
 

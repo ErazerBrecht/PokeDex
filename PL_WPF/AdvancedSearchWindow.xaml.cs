@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BS_PokedexManager;
 using DAL_JSON;
+using Type = DAL_JSON.Type;
 
 namespace PL_WPF
 {
@@ -25,12 +26,14 @@ namespace PL_WPF
     /// </summary>
     public partial class AdvancedSearchWindow
     {
-        private Business.Generation generation;
-        private ObservableCollection<Pokemon> ListPokemons; 
+        public ObservableCollection<Pokemon> ListPokemons;
+        private string _chosenType;
 
-        public AdvancedSearchWindow()
+        public AdvancedSearchWindow(ObservableCollection<Pokemon> listPokemons)
         {
             InitializeComponent();
+            ListPokemons = listPokemons;
+
             var Test = new
             {
                 Normal = "http://veekun.com/dex/media/types/en/normal.png",
@@ -55,24 +58,21 @@ namespace PL_WPF
             };
 
             RadioButtonStackPanel.DataContext = Test;
-            
 
-        }
-
-        private void CloseWindow()
-        {
-            var v = new MainWindow(ListPokemons);
-            v.Show();
-            this.Close();
         }
 
         private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
-            //Need to close MainWindow!!!
-
             RadioButton rb = (RadioButton)sender;
-            //generation = (Business.Generation)Enum.Parse(typeof(Business.Generation), rb.Content.ToString());
+            _chosenType = rb.Name;
+            //var result = ListPokemons.Select(m => m.Types.Where(t => t.Name == _chosenType));
         }
 
+        private void AdvancedSearchWindow_OnClosing(object sender, CancelEventArgs e)
+        {
+            Type temp = new Type() { Name = _chosenType };
+            var result = ListPokemons.Select(m => m.Types.Where(t => t.Name == _chosenType));
+            //ListPokemons = result;
+        }
     }
 }
