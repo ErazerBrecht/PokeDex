@@ -26,13 +26,13 @@ namespace PL_WPF
     public partial class LoadingWindow
     {
         private Business.Generation generation;
-        private ObservableCollection<Pokemon> ListPokemons; 
+        private ListClass _list; 
 
         public LoadingWindow()
         {
             InitializeComponent();
-            ListPokemons = BS_PokedexManager.Business.CheckSetting();
-            if (ListPokemons != null)
+            _list = BS_PokedexManager.Business.CheckSetting();
+            if (_list != null)
             {
                 CloseWindow();
             }
@@ -46,14 +46,14 @@ namespace PL_WPF
 
         private void CloseWindow()
         {
-            var v = new MainWindow(ListPokemons);
+            var v = new MainWindow(_list);
             v.Show();
             this.Close();
         }
 
         void worker_DoWork(object sender, DoWorkEventArgs e)
         {
-            ListPokemons = BS_PokedexManager.Business.GeneratePokeList(generation, sender as BackgroundWorker);
+            _list = BS_PokedexManager.Business.GeneratePokeList(generation, sender as BackgroundWorker);
         }
 
         void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)

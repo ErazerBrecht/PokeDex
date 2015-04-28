@@ -26,13 +26,13 @@ namespace PL_WPF
     /// </summary>
     public partial class AdvancedSearchWindow
     {
-        //public ObservableCollection<Pokemon> ListPokemons { get; set; }
+        private ListClass _listClass;
         private string _chosenType;
 
-        public AdvancedSearchWindow(ObservableCollection<Pokemon> listPokemons)
+        public AdvancedSearchWindow(ListClass listClass)
         {
             InitializeComponent();
-            //ListPokemons = listPokemons;
+            _listClass = listClass;
 
             var Test = new
             {
@@ -64,15 +64,16 @@ namespace PL_WPF
         {
             RadioButton rb = (RadioButton)sender;
             _chosenType = rb.Name;
+            var result = _listClass.ListPokemons.Where(m => m.Types.Any(u => u.Name == _chosenType)).ToList();
+            _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
         }
 
         private void AdvancedSearchWindow_OnClosing(object sender, CancelEventArgs e)
         {
-            Type temp = new Type() { Name = _chosenType };
             //var result = ListPokemons.Select(m => m.Types).Where(Selec)
             //var result = ListPokemons.Select(p => p.Types.Where(x => x.Name == "Water"));
-            var result = MainWindow.ListPokemons.Where(m => m.Types.Any(u => u.Name == _chosenType)).ToList();
-            MainWindow.ListPokemons = new ObservableCollection<Pokemon>(result);
+            var result = _listClass.ListPokemons.Where(m => m.Types.Any(u => u.Name == _chosenType)).ToList();
+            _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
         }
     }
 }

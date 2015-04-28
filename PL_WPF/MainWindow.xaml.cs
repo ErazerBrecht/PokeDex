@@ -24,36 +24,13 @@ namespace PL_WPF
     /// </summary>
     public partial class MainWindow
     {
-        private static ObservableCollection<Pokemon> _listPokemons;
-        static public ObservableCollection<Pokemon> ListPokemons {
-            get
-            {
-                return _listPokemons;
-            }
-            set
-            {
-                _listPokemons = value;
-                NoticeMe("ListPokemons");
-            }
-        }
+        private ListClass _listClass;
 
-        
-        static public void NoticeMe(string p)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(null, new PropertyChangedEventArgs(p));
-            }
-        }
-
-        static public event EventHandler<PropertyChangedEventArgs> PropertyChanged;
-
-
-        public MainWindow(ObservableCollection<Pokemon> listPokemons )
+        public MainWindow(ListClass list)
         {
             InitializeComponent();
-            ListPokemons = listPokemons;
-            PokemonListBox.ItemsSource = ListPokemons;
+            _listClass = list;
+            PokemonListBox.ItemsSource = _listClass.ListPokemons;
             GenerationTextBlock.Text = Business.StringGen;
             StatsGrid.DataContext = Business.MaxStatsValue;
         }
@@ -91,13 +68,13 @@ namespace PL_WPF
 
         private void Search(object sender, RoutedEventArgs e)
         {
-            var result = _listPokemons.Where(v => v.Name.ToLower().Contains(SearchNameTextBox.Text.ToLower()));
+            var result = _listClass.ListPokemons.Where(v => v.Name.ToLower().Contains(SearchNameTextBox.Text.ToLower()));
             PokemonListBox.ItemsSource = result;
         }
 
         private void BtnAdvancedSearch_OnClick(object sender, RoutedEventArgs e)
         {
-            var v = new AdvancedSearchWindow(_listPokemons);
+            var v = new AdvancedSearchWindow(_listClass);
             v.Show();
         }
     }

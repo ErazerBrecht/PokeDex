@@ -32,14 +32,15 @@ namespace BS_PokedexManager
 
         public static DescriptionProgressBar DescriptionProgress = new DescriptionProgressBar();
 
-        public static ObservableCollection<Pokemon> CheckSetting()
+        public static ListClass CheckSetting()
         {
             if (!String.IsNullOrEmpty(Properties.Settings.Default.Generation))
             {
                 StringGen = Properties.Settings.Default.Generation;
                 ObservableCollection<Pokemon> pokeObservable = new ObservableCollection<Pokemon>(DAL_JSON.JsonParse.GetPokemons(Path.Combine(Application.LocalUserAppDataPath, "GeneratedList.txt")));
                 CalculateMaxStats(StringGen);
-                return pokeObservable;
+                ListClass l = new ListClass(pokeObservable);
+                return l;
             }
 
             return null;
@@ -80,7 +81,7 @@ namespace BS_PokedexManager
             }
         }
 
-        public static ObservableCollection<Pokemon> GeneratePokeList(Generation g, BackgroundWorker b)
+        public static ListClass GeneratePokeList(Generation g, BackgroundWorker b)
         {
             _maxPokemonGen = Convert.ToInt32(g);
             StringGen = g.ToString();
@@ -121,7 +122,10 @@ namespace BS_PokedexManager
 
             ObservableCollection<Pokemon> pokeObservable =
                 new ObservableCollection<Pokemon>(list);
-            return pokeObservable;
+
+            ListClass l = new ListClass(pokeObservable);
+
+            return l;
 
         }
 

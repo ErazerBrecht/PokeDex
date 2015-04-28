@@ -26,7 +26,7 @@ namespace PL_WPF
     public partial class SettingWindow
     {
         private Business.Generation generation;
-        private ObservableCollection<Pokemon> ListPokemons; 
+        private ListClass _listClass;
 
         public SettingWindow()
         {
@@ -40,14 +40,14 @@ namespace PL_WPF
 
         private void CloseWindow()
         {
-            var v = new MainWindow(ListPokemons);
+            var v = new MainWindow(_listClass);
             v.Show();
             this.Close();
         }
 
         void worker_DoWork(object sender, DoWorkEventArgs e)
         {
-            ListPokemons = BS_PokedexManager.Business.GeneratePokeList(generation, sender as BackgroundWorker);
+            _listClass = BS_PokedexManager.Business.GeneratePokeList(generation, sender as BackgroundWorker);
         }
 
         void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
