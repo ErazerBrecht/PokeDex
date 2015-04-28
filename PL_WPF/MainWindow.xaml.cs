@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,12 +24,36 @@ namespace PL_WPF
     /// </summary>
     public partial class MainWindow
     {
-        private ObservableCollection<Pokemon> _listPokemons;
-        public MainWindow(ObservableCollection<Pokemon> ListPokemons )
+        private static ObservableCollection<Pokemon> _listPokemons;
+        static public ObservableCollection<Pokemon> ListPokemons {
+            get
+            {
+                return _listPokemons;
+            }
+            set
+            {
+                _listPokemons = value;
+                NoticeMe("ListPokemons");
+            }
+        }
+
+        
+        static public void NoticeMe(string p)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(null, new PropertyChangedEventArgs(p));
+            }
+        }
+
+        static public event EventHandler<PropertyChangedEventArgs> PropertyChanged;
+
+
+        public MainWindow(ObservableCollection<Pokemon> listPokemons )
         {
             InitializeComponent();
+            ListPokemons = listPokemons;
             PokemonListBox.ItemsSource = ListPokemons;
-            _listPokemons = ListPokemons;
             GenerationTextBlock.Text = Business.StringGen;
             StatsGrid.DataContext = Business.MaxStatsValue;
         }
