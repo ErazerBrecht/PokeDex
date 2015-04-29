@@ -30,7 +30,7 @@ namespace PL_WPF
         {
             InitializeComponent();
             _listClass = list;
-            PokemonListBox.ItemsSource = _listClass.ListPokemons;
+            PokemonListBox.DataContext = _listClass;
             GenerationTextBlock.Text = Business.StringGen;
             StatsGrid.DataContext = Business.MaxStatsValue;
         }

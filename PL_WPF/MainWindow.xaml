@@ -20,7 +20,7 @@
                 <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <ListBox Name="PokemonListBox" SelectionChanged="PokemonListBox_OnSelectionChanged">
+            <ListBox Name="PokemonListBox" ItemsSource="{Binding ListPokemons}" SelectionChanged="PokemonListBox_OnSelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
