@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BS_PokedexManager;
 using DAL_JSON;
+using MahApps.Metro.Controls;
 using Type = DAL_JSON.Type;
 
 namespace PL_WPF
@@ -33,6 +34,14 @@ namespace PL_WPF
         {
             InitializeComponent();
             _listClass = listClass;
+
+            _chosenType = _listClass.ChosenType;
+            RadioButtonStackPanel.FindChild<RadioButton>(_chosenType).IsChecked = true;
+
+            if (_chosenType == null)
+                _chosenType = "Normal";
+            else
+                CbxEnableTypeFiltering.IsChecked = true;
 
             var imageType = new
             {
@@ -64,14 +73,22 @@ namespace PL_WPF
         {
             RadioButton rb = (RadioButton)sender;
             _chosenType = rb.Name;
+            _listClass.ChosenType = _chosenType;
         }
 
         private void AdvancedSearchWindow_OnClosing(object sender, CancelEventArgs e)
         {
-            //var result = ListPokemons.Select(m => m.Types).Where(Selec)
-            //var result = ListPokemons.Select(p => p.Types.Where(x => x.Name == "Water"));
-            var result = _listClass.OriginalListPokemons.Where(p => p.Types.Any(t => t.Name == _chosenType)).ToList();
-            _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
+            if (CbxEnableTypeFiltering.IsChecked == true)
+            {
+                //Searched damn long for this query...
+                var result =
+                    _listClass.OriginalListPokemons.Where(p => p.Types.Any(t => t.Name == _chosenType)).ToList();
+                _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
+            }
+            else
+            {
+                _listClass.ListPokemons = _listClass.OriginalListPokemons;
+            }
         }
     }
 }

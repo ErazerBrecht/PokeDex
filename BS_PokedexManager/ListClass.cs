@@ -42,6 +42,6 @@ namespace BS_PokedexManager
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ObservableCollection<Pokemon> OriginalListPokemons { get; set; }
-
+        public string ChosenType { get; set; }
     }
 }
