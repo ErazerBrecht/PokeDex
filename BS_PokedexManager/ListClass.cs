@@ -13,7 +13,8 @@ namespace BS_PokedexManager
     {
         public ListClass(ObservableCollection<Pokemon> listPokemons)
         {
-            ListPokemons = listPokemons;
+            OriginalListPokemons = listPokemons;
+            ListPokemons = OriginalListPokemons;
         }
 
         private ObservableCollection<Pokemon> _listPokemons;
@@ -39,6 +40,8 @@ namespace BS_PokedexManager
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public ObservableCollection<Pokemon> OriginalListPokemons { get; set; }
 
     }
 }

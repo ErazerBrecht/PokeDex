@@ -34,7 +34,7 @@ namespace PL_WPF
             InitializeComponent();
             _listClass = listClass;
 
-            var Test = new
+            var imageType = new
             {
                 Normal = "http://veekun.com/dex/media/types/en/normal.png",
                 Fighting= "http://veekun.com/dex/media/types/en/fighting.png",
@@ -57,22 +57,20 @@ namespace PL_WPF
                 Unknown = "http://veekun.com/dex/media/types/en/unknown.png"
             };
 
-            RadioButtonStackPanel.DataContext = Test;
+            RadioButtonStackPanel.DataContext = imageType;
         }
 
         private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
             RadioButton rb = (RadioButton)sender;
             _chosenType = rb.Name;
-            var result = _listClass.ListPokemons.Where(m => m.Types.Any(u => u.Name == _chosenType)).ToList();
-            _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
         }
 
         private void AdvancedSearchWindow_OnClosing(object sender, CancelEventArgs e)
         {
             //var result = ListPokemons.Select(m => m.Types).Where(Selec)
             //var result = ListPokemons.Select(p => p.Types.Where(x => x.Name == "Water"));
-            var result = _listClass.ListPokemons.Where(m => m.Types.Any(u => u.Name == _chosenType)).ToList();
+            var result = _listClass.OriginalListPokemons.Where(p => p.Types.Any(t => t.Name == _chosenType)).ToList();
             _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
         }
     }
