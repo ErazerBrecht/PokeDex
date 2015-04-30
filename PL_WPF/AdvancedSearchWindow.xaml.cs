@@ -29,6 +29,8 @@ namespace PL_WPF
     {
         private ListClass _listClass;
         private string _chosenType;
+        private string _chosenStat;
+        private bool _ascendingOrDescending;
 
         public AdvancedSearchWindow(ListClass listClass)
         {
@@ -43,6 +45,7 @@ namespace PL_WPF
             else
                 CbxEnableTypeFiltering.IsChecked = true;
 
+            //Use of anonymous object to split UI and Code! I find it easier to make changes in .cs than in .xaml file!
             var imageType = new
             {
                 Normal = "http://veekun.com/dex/media/types/en/normal.png",
@@ -76,6 +79,22 @@ namespace PL_WPF
             _listClass.ChosenType = _chosenType;
         }
 
+        private void RadioButtonStats_Click(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+            _chosenStat = rb.Content.ToString();
+        }
+
+        private void RadioButtonAscDesc_Click(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = (RadioButton) sender;
+
+            if (rb.Name == "Asc")
+                _ascendingOrDescending = false;
+            else
+                _ascendingOrDescending = true;
+        }
+
         private void AdvancedSearchWindow_OnClosing(object sender, CancelEventArgs e)
         {
             if (CbxEnableTypeFiltering.IsChecked == true)
@@ -85,6 +104,17 @@ namespace PL_WPF
                     _listClass.OriginalListPokemons.Where(p => p.Types.Any(t => t.Name == _chosenType)).ToList();
                 _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
             }
+            else if (CbxEnableStatsOrdering.IsChecked == true)
+            {
+                var parameter = typeof (Pokemon).GetProperty(_chosenStat);
+                var result = _listClass.OriginalListPokemons.OrderBy(p => parameter.GetValue(p, null)).ToList();
+
+                if (_ascendingOrDescending)
+                    result.Reverse();
+
+                _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
+            }
+
             else
             {
                 _listClass.ListPokemons = _listClass.OriginalListPokemons;
