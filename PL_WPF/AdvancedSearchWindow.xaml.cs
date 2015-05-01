@@ -81,6 +81,7 @@ namespace PL_WPF
 
         private void RadioButtonStats_Click(object sender, RoutedEventArgs e)
         {
+            CbxEnableStatsOrdering.IsChecked = true;
             RadioButton rb = (RadioButton)sender;
             _chosenStat = rb.Content.ToString();
         }
