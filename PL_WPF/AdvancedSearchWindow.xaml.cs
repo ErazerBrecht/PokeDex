@@ -74,6 +74,7 @@ namespace PL_WPF
 
         private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
+            CbxEnableTypeFiltering.IsChecked = true;
             RadioButton rb = (RadioButton)sender;
             _chosenType = rb.Name;
             _listClass.ChosenType = _chosenType;
@@ -98,22 +99,29 @@ namespace PL_WPF
 
         private void AdvancedSearchWindow_OnClosing(object sender, CancelEventArgs e)
         {
+            var source = _listClass.OriginalListPokemons;
+
             if (CbxEnableTypeFiltering.IsChecked == true)
             {
                 //Searched damn long for this query...
-                var result =
-                    _listClass.OriginalListPokemons.Where(p => p.Types.Any(t => t.Name == _chosenType)).ToList();
-                _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
+                var result = source.Where(p => p.Types.Any(t => t.Name == _chosenType)).ToList();
+                source = new ObservableCollection<Pokemon>(result);
             }
-            else if (CbxEnableStatsOrdering.IsChecked == true)
+            
+            if (CbxEnableStatsOrdering.IsChecked == true)
             {
                 var parameter = typeof (Pokemon).GetProperty(_chosenStat);
-                var result = _listClass.OriginalListPokemons.OrderBy(p => parameter.GetValue(p, null)).ToList();
+                var result = source.OrderBy(p => parameter.GetValue(p, null)).ToList();
 
                 if (_ascendingOrDescending)
                     result.Reverse();
 
-                _listClass.ListPokemons = new ObservableCollection<Pokemon>(result);
+                source = new ObservableCollection<Pokemon>(result);
+            }
+
+            if (CbxEnableTypeFiltering.IsChecked == true || CbxEnableStatsOrdering.IsChecked == true)
+            {
+                _listClass.ListPokemons = source;
             }
 
             else
