@@ -233,7 +233,10 @@
                     </GroupBox>
                     
                     <GroupBox Grid.Row="2" Grid.Column="2">
-                        <MediaElement Source="{Binding SoundURL}"/>
+                        <StackPanel>
+                            <MediaElement Name="CrySound" Source="{Binding SoundURL}"/>
+                            <Button Name="SoundReplayButton" Click="SoundReplayButton_OnClick">TestReplay</Button>
+                        </StackPanel>
                     </GroupBox>
 
                 </Grid>

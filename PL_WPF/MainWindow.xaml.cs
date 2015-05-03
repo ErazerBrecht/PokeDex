@@ -88,6 +88,14 @@ namespace PL_WPF
                 PokemonListBox.SelectedIndex = index;
             }
         }
+
+        private void SoundReplayButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            CrySound.LoadedBehavior = MediaState.Manual;
+            CrySound.Stop();
+            CrySound.Position = TimeSpan.FromSeconds(0);
+            CrySound.Play();
+        }
     }
 
     public class Convertor : IValueConverter
