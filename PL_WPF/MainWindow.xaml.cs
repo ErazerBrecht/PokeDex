@@ -77,9 +77,18 @@ namespace PL_WPF
             var v = new AdvancedSearchWindow(_listClass);
             v.Show();
         }
+
+        private void EvolutionsListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (EvolutionsListBox.SelectedIndex >= 0)
+            {
+                var selectedPokemon = EvolutionsListBox.SelectedItem as Evolution;
+                List<Pokemon> tempList = new List<Pokemon>(_listClass.ListPokemons);
+                int index = tempList.FindIndex(p => p.Name.Equals(selectedPokemon.To, StringComparison.Ordinal));
+                PokemonListBox.SelectedIndex = index;
+            }
+        }
     }
-
-
 
     public class Convertor : IValueConverter
     {

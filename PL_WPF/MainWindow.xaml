@@ -256,10 +256,16 @@
                     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding Name}"></TextBlock>
                     <Image MaxHeight="150" Source="{Binding ImageURL}"></Image>
 
-                        <ItemsControl Name="EvolutionsListBox">
-                            <ItemsControl.ItemTemplate>
+                        <ListBox Name="EvolutionsListBox" SelectionChanged="EvolutionsListBox_OnSelectionChanged">
+                            <ListBox.Resources>
+                                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
+                                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+                                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="Transparent" />
+                            </ListBox.Resources>
+                            
+                            <ListBox.ItemTemplate>
                                 <DataTemplate>
-                                    <StackPanel HorizontalAlignment="Center">
+                                    <StackPanel HorizontalAlignment="Center" >
                                         <Grid Margin="0,15,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" ShowGridLines="True">
                                             <Rectangle Fill="#CC119EDA" Height="30" Width="25"></Rectangle>
                                             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Level}" Margin="0,0,0,0" Foreground="White" />
@@ -269,8 +275,8 @@
                                         <Image Height="150" Source="{Binding ImageURL}"></Image>
                                     </StackPanel>
                                 </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
            
                 </StackPanel>
                 </ScrollViewer>
