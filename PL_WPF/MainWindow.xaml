@@ -232,10 +232,10 @@
                         </Grid>
                     </GroupBox>
                     
-                    <GroupBox Grid.Row="2" Grid.Column="2">
+                    <GroupBox Grid.Row="2" Grid.Column="2" Header="Sound (CRY)">
                         <StackPanel>
                             <MediaElement Name="CrySound" Source="{Binding SoundURL}"/>
-                            <Button Name="SoundReplayButton" Click="SoundReplayButton_OnClick">TestReplay</Button>
+                            <Button Name="SoundReplayButton" Click="SoundReplayButton_OnClick">Replay</Button>
                         </StackPanel>
                     </GroupBox>
 
@@ -275,7 +275,7 @@
                                         </Grid>
                                         <Polygon HorizontalAlignment="Center" Margin="0,0,0,15" Points="0,0 40,0, 20,25" Fill="#CC119EDA" />
                                         <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10" Text="{Binding To}"></TextBlock>
-                                        <Image Height="150" Source="{Binding ImageURL}"></Image>
+                                        <Image Height="150" MaxWidth="225" Source="{Binding ImageURL}"></Image>
                                     </StackPanel>
                                 </DataTemplate>
                             </ListBox.ItemTemplate>
