@@ -32,9 +32,7 @@ namespace PL_WPF
         {
             InitializeComponent();
 
-            if (
-    !File.Exists(Path.Combine(System.Windows.Forms.Application.LocalUserAppDataPath, "PokemonCries",
-        "001.wav")))
+            if (!File.Exists(Path.Combine(System.Windows.Forms.Application.LocalUserAppDataPath, "PokemonCries","001.wav")))
             {
                 DirectoryCopy("PokemonCries", Path.Combine(System.Windows.Forms.Application.LocalUserAppDataPath, "PokemonCries"), true);
             }

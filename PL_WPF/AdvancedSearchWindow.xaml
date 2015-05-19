@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-        Title="Advanded Search" Height="600" Width="300" WindowStyle="None" WindowStartupLocation="CenterScreen" Closing="AdvancedSearchWindow_OnClosing" ResizeMode="NoResize" BorderThickness="2" BorderBrush="#CC119EDA">
+        Title="Advanded Search" Height="700" Width="300" WindowStyle="None" WindowStartupLocation="CenterScreen" Closing="AdvancedSearchWindow_OnClosing" ResizeMode="NoResize" BorderThickness="2" BorderBrush="#CC119EDA">
     <Window.Resources>
         <Style TargetType="Image">
             <Setter Property="MaxHeight" Value="17" />
@@ -14,7 +14,7 @@
                 <GroupBox.Header>
                     <StackPanel Orientation="Horizontal">
                         <CheckBox x:Name="CbxEnableTypeFiltering"/>
-                        <TextBlock Foreground="White" Margin="15,0,0,0"><Run Text="Pokémon Types"/></TextBlock>
+                        <TextBlock Foreground="White" Margin="15,0,0,0"><Run Text="SELECT POKÉMON TYPES"/></TextBlock>
                     </StackPanel>
                 </GroupBox.Header>
                 <StackPanel Margin="0,10,0,0" x:Name="RadioButtonStackPanel">
@@ -82,7 +82,7 @@
                 <GroupBox.Header>
                     <DockPanel>
                         <CheckBox Name="CbxEnableStatsOrdering"/>
-                        <TextBlock Foreground="White" Margin="15,0,0,0"><Run Text="Order on Stats"/></TextBlock>
+                        <TextBlock Foreground="White" Margin="15,0,0,0"><Run Text="ORDER ON STATS"/></TextBlock>
                         <RadioButton Name="Desc" Click="RadioButtonAscDesc_Click" Foreground="White" HorizontalAlignment="Right" DockPanel.Dock="Right">▲</RadioButton>
                         <RadioButton IsChecked="True"  Name="Asc" Click="RadioButtonAscDesc_Click" Foreground="White" HorizontalAlignment="Right" Margin="0,0,10,0">▼</RadioButton>
                     </DockPanel>
@@ -97,6 +97,14 @@
                 </StackPanel>
 
             </GroupBox>
+
+            <GroupBox Header="Order">
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox x:Name="CbxEnableOrder"/>
+                    <TextBlock><Run Text="Order by Type"/></TextBlock>
+                </StackPanel>
+            </GroupBox>
+
         </StackPanel>
 
 

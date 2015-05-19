@@ -101,6 +101,12 @@ namespace PL_WPF
         {
             var source = _listClass.OriginalListPokemons;
 
+            if (CbxEnableOrder.IsChecked == true)
+            {
+                var result = source.OrderBy(p => p.Types[0].Name).ToList();
+                source = new ObservableCollection<Pokemon>(result);
+            }
+
             if (CbxEnableTypeFiltering.IsChecked == true)
             {
                 //Searched damn long for this query...
@@ -119,15 +125,8 @@ namespace PL_WPF
                 source = new ObservableCollection<Pokemon>(result);
             }
 
-            if (CbxEnableTypeFiltering.IsChecked == true || CbxEnableStatsOrdering.IsChecked == true)
-            {
                 _listClass.ListPokemons = source;
-            }
-
-            else
-            {
-                _listClass.ListPokemons = _listClass.OriginalListPokemons;
-            }
+            
         }
     }
 }
