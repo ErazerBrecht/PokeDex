@@ -177,8 +177,8 @@
                             <ProgressBar Grid.Column="2" Maximum="{Binding MaxHp}" Value="{Binding ElementName=MainGrid, Path=DataContext.Hp}"></ProgressBar>
                             <ProgressBar Grid.Row="1" Maximum="{Binding MaxAttack}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.Attack}"></ProgressBar>
                             <ProgressBar Grid.Row="2" Maximum="{Binding MaxDefense}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.Defense}"></ProgressBar>
-                            <ProgressBar Grid.Row="3" Maximum="{Binding MaxSPAttack}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.SpAttack}"></ProgressBar>
-                            <ProgressBar Grid.Row="4" Maximum="{Binding MaxSPDefense}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.SpDefense}"></ProgressBar>
+                            <ProgressBar Grid.Row="3" Maximum="{Binding MaxSPAttack}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.SPAttack}"></ProgressBar>
+                            <ProgressBar Grid.Row="4" Maximum="{Binding MaxSPDefense}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.SPDefense}"></ProgressBar>
                             <ProgressBar Grid.Row="5" Maximum="{Binding MaxSpeed}" Grid.Column="2" Value="{Binding ElementName=MainGrid, Path=DataContext.Speed}"></ProgressBar>
 
                         </Grid>
@@ -260,6 +260,7 @@
                     <Image MaxHeight="150" Source="{Binding ImageURL}"></Image>
 
                         <ListBox Name="EvolutionsListBox" SelectionChanged="EvolutionsListBox_OnSelectionChanged">
+                            <!-- This should remove selection color from listbox! But doesn't work probably the fault of Mahapps -->
                             <ListBox.Resources>
                                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
                                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />

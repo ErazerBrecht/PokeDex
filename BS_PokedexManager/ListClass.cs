@@ -43,5 +43,6 @@ namespace BS_PokedexManager
 
         public ObservableCollection<Pokemon> OriginalListPokemons { get; set; }
         public string ChosenType { get; set; }
+        public string ChosenOrder { get; set; }
     }
 }

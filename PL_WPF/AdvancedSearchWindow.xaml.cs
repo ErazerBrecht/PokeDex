@@ -29,8 +29,9 @@ namespace PL_WPF
     {
         private ListClass _listClass;
         private string _chosenType;
-        private string _chosenStat;
+        private string _chosenOrder;
         private bool _ascendingOrDescending;
+        private Order _typeOrder;
 
         public AdvancedSearchWindow(ListClass listClass)
         {
@@ -40,16 +41,23 @@ namespace PL_WPF
             _chosenType = _listClass.ChosenType;
             RadioButtonStackPanel.FindChild<RadioButton>(_chosenType).IsChecked = true;
 
+            _chosenOrder = _listClass.ChosenOrder;
+            if (_chosenOrder != null)
+                OrderStackPanel.Children.OfType<RadioButton>().Where(t => t.Content.ToString() == _chosenOrder).FirstOrDefault().IsChecked = true;
+
             if (_chosenType == null)
                 _chosenType = "Normal";
             else
                 CbxEnableTypeFiltering.IsChecked = true;
 
+            if (_chosenOrder != null)
+                CbxEnableStatsOrdering.IsChecked = true;
+
             //Use of anonymous object to split UI and Code! I find it easier to make changes in .cs than in .xaml file!
             var imageType = new
             {
                 Normal = "http://veekun.com/dex/media/types/en/normal.png",
-                Fighting= "http://veekun.com/dex/media/types/en/fighting.png",
+                Fighting = "http://veekun.com/dex/media/types/en/fighting.png",
                 Flying = "http://veekun.com/dex/media/types/en/flying.png",
                 Poison = "http://veekun.com/dex/media/types/en/poison.png",
                 Ground = "http://veekun.com/dex/media/types/en/ground.png",
@@ -84,12 +92,34 @@ namespace PL_WPF
         {
             CbxEnableStatsOrdering.IsChecked = true;
             RadioButton rb = (RadioButton)sender;
-            _chosenStat = rb.Content.ToString();
+            _chosenOrder = rb.Content.ToString();
+            _typeOrder = Order.Skill;
+        }
+
+        private void RadioButtonType_Click(object sender, RoutedEventArgs e)
+        {
+            CbxEnableStatsOrdering.IsChecked = true;
+            _chosenOrder = "Type";
+            _typeOrder = Order.Type;
+        }
+
+        private void RadioButtonSpecies_Click(object sender, RoutedEventArgs e)
+        {
+            CbxEnableStatsOrdering.IsChecked = true;
+            _chosenOrder = "Species";
+            _typeOrder = Order.Species;
+        }
+
+        private void RadioButtonAbility_Click(object sender, RoutedEventArgs e)
+        {
+            CbxEnableStatsOrdering.IsChecked = true;
+            _chosenOrder = "Ability";
+            _typeOrder = Order.Ability;
         }
 
         private void RadioButtonAscDesc_Click(object sender, RoutedEventArgs e)
         {
-            RadioButton rb = (RadioButton) sender;
+            RadioButton rb = (RadioButton)sender;
 
             if (rb.Name == "Asc")
                 _ascendingOrDescending = false;
@@ -97,15 +127,9 @@ namespace PL_WPF
                 _ascendingOrDescending = true;
         }
 
-        private void AdvancedSearchWindow_OnClosing(object sender, CancelEventArgs e)
+        private void ButtonConfirm_OnClick(object sender, RoutedEventArgs e)
         {
             var source = _listClass.OriginalListPokemons;
-
-            if (CbxEnableOrder.IsChecked == true)
-            {
-                var result = source.OrderBy(p => p.Types[0].Name).ToList();
-                source = new ObservableCollection<Pokemon>(result);
-            }
 
             if (CbxEnableTypeFiltering.IsChecked == true)
             {
@@ -113,20 +137,51 @@ namespace PL_WPF
                 var result = source.Where(p => p.Types.Any(t => t.Name == _chosenType)).ToList();
                 source = new ObservableCollection<Pokemon>(result);
             }
-            
+            else
+                _listClass.ChosenType = null;
+
             if (CbxEnableStatsOrdering.IsChecked == true)
             {
-                var parameter = typeof (Pokemon).GetProperty(_chosenStat);
-                var result = source.OrderBy(p => parameter.GetValue(p, null)).ToList();
+                List<Pokemon> result;
+
+                if (_typeOrder == Order.Skill)
+                {
+                    //Get value of specific parameter As example if want to sort on hp, I need to check the hp of every pokemon
+                    //I made it that I don't have to change the code when I want to search on an another parameter as example Speed!
+                    //Equal functionality a lot of if / else if ... much more code!!!
+                    var parameter = typeof (Pokemon).GetProperty(_chosenOrder);
+                    result = source.OrderBy(p => parameter.GetValue(p, null)).ToList();
+                }
+
+                else if (_typeOrder == Order.Type)
+                    result = source.OrderBy(p => p.Types[0].Name).ToList();
+                else if (_typeOrder == Order.Species)
+                    result = source.OrderBy(p => p.Species[0].ToString()).ToList();
+                else
+                    result = source.OrderBy(p => p.Abilities[0].Name).ToList();
 
                 if (_ascendingOrDescending)
                     result.Reverse();
 
                 source = new ObservableCollection<Pokemon>(result);
-            }
 
-                _listClass.ListPokemons = source;
-            
+            }
+            else
+                _chosenOrder = null;
+
+            _listClass.ChosenOrder = _chosenOrder;
+            _listClass.ListPokemons = source;
+            this.Close();
+        }
+
+        enum Order
+        {
+            Skill, Type, Species, Ability
+        }
+
+        private void CbxEnableStatsOrdering_OnClick(object sender, RoutedEventArgs e)
+        {
+            FirstOrderRadioButton.IsChecked = true;
         }
     }
 }

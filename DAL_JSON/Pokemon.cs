@@ -49,10 +49,10 @@ namespace DAL_JSON
         public int Defense { get; set; }
 
         [JsonProperty(PropertyName = "sp_atk")]
-        public int SpAttack { get; set; }
+        public int SPAttack { get; set; }
 
         [JsonProperty(PropertyName = "sp_def")]
-        public int SpDefense { get; set; }
+        public int SPDefense { get; set; }
 
         public int Speed { get; set; }
     }
