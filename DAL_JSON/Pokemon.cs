@@ -55,6 +55,19 @@ namespace DAL_JSON
         public int SPDefense { get; set; }
 
         public int Speed { get; set; }
+
+        public string SpeedAsImage
+        {
+            get
+            {
+                if (Speed >= 90)
+                    return "Resources/Pikachu.png";
+                else if (Speed >= 50)
+                    return "Resources/Kirlia.png";
+                else
+                    return "Resources/Shuckle.png";
+            }
+        }
     }
 
     public class Ability

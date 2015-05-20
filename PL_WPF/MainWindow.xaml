@@ -37,10 +37,10 @@
                 <TextBlock FontWeight="ExtraBold" Name="GenerationTextBlock"></TextBlock>
             </StackPanel>
             
-            <DockPanel Grid.Row="1" Grid.Column="1" Margin="5,0,5,5">
-                <Button HorizontalAlignment="Left" Name="BtnSetting" Click="BtnSetting_OnClick">SETTING</Button>
+            <DockPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,0,5,5" HorizontalAlignment="Right">
+                <Button HorizontalAlignment="Left" Margin="0,0,20,0"  Name="BtnSetting" Click="BtnSetting_OnClick">SETTING</Button>
                 <Button DockPanel.Dock="Right" HorizontalAlignment="Right" Margin="20,0,0,0" Name="btnAdvancedSearch" Click="BtnAdvancedSearch_OnClick">Advanced Search</Button>
-                <TextBox TextChanged="Search" Name="SearchNameTextBox" MinWidth="200" DockPanel.Dock="Right" HorizontalAlignment="Right"></TextBox>
+                <TextBox MaxWidth="200" TextChanged="Search" Name="SearchNameTextBox" MinWidth="200" DockPanel.Dock="Right" HorizontalAlignment="Right"></TextBox>
             </DockPanel>
 
             <GroupBox Header="Information + Stats" Grid.Column="1" Grid.Row="0" Name="InformationGroupBox">
@@ -57,7 +57,8 @@
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="200"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
 
@@ -143,7 +144,7 @@
                     </GroupBox>
 
 
-                    <GroupBox  FontSize="16" Grid.Row="1" Grid.ColumnSpan="2" Header="Stats">
+                    <GroupBox  FontSize="16" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Header="Stats">
                         <Grid Name="StatsGrid">
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -170,8 +171,8 @@
                             <TextBlock Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.Hp}"></TextBlock>
                             <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.Attack}"></TextBlock>
                             <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.Defense}"></TextBlock>
-                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.SpAttack}"></TextBlock>
-                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.SpDefense}"></TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.SPAttack}"></TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.SPDefense}"></TextBlock>
                             <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding ElementName=MainGrid, Path=DataContext.Speed}"></TextBlock>
 
                             <ProgressBar Grid.Column="2" Maximum="{Binding MaxHp}" Value="{Binding ElementName=MainGrid, Path=DataContext.Hp}"></ProgressBar>
@@ -185,18 +186,27 @@
                     </GroupBox>
 
                     <GroupBox Grid.Row="1" Grid.Column="2" Header="Abilities">
-                        <ItemsControl Name="AbilityListBox">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel>
-                                        <TextBlock Text="{Binding Name}"></TextBlock>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
+                        <Grid>                            
+                            <ItemsControl Name="AbilityListBox" Margin="10,0,-10,0">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Name}"></TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Grid> 
                     </GroupBox>
 
-                    <GroupBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Header="Moves">
+                    <GroupBox Grid.Row="2" Grid.Column="2" Header="Sound (CRY)">
+                        <StackPanel Grid.Row="1">
+                            <MediaElement Name="CrySound" Source="{Binding SoundURL}"/>
+                            <Button Margin="10" Name="SoundReplayButton" Click="SoundReplayButton_OnClick">Replay</Button>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Header="Moves">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition></ColumnDefinition>
@@ -232,13 +242,10 @@
                         </Grid>
                     </GroupBox>
                     
-                    <GroupBox Grid.Row="2" Grid.Column="2" Header="Sound (CRY)">
-                        <StackPanel>
-                            <MediaElement Name="CrySound" Source="{Binding SoundURL}"/>
-                            <Button Name="SoundReplayButton" Click="SoundReplayButton_OnClick">Replay</Button>
-                        </StackPanel>
+                    <GroupBox Grid.Row="3" Grid.Column="2" Header="Speed As Image">
+                        <Image Source="{Binding SpeedAsImage}"></Image>
                     </GroupBox>
-
+                    
                 </Grid>
             </GroupBox>
 
