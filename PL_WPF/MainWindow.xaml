@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:local="clr-namespace:PL_WPF"
-        Title="MainWindow" WindowState="Maximized" Height="1000">
+        Title="Pokédex" WindowState="Maximized" Height="1000">
     <Window.Resources>
         <local:Convertor x:Key="ColorConvertor" />
     </Window.Resources>
