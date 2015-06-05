@@ -33,7 +33,10 @@ Main Window:
 ![alt tag](http://i.imgur.com/BQGqZLn.png)
 
 
+
 Other Windows:
+
+
 ![alt tag](http://i.imgur.com/nUo2t9Y.png)
 
 
